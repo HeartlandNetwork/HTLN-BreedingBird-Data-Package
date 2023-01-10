@@ -11,13 +11,13 @@ https://www.nps.gov/im/htln/birds.htm
 
 20221031
 
-Successfully installed packages associated with NPSdataverse (yay!). 
+Installed packages associated with NPSdataverse from here:
 
 https://github.com/nationalparkservice/NPSdataverse
 
 20221110
 
-Downloaded EML_Creation_Script.R from here
+Downloaded EML_Creation_Script.R from here:
 
 https://github.com/nationalparkservice/NPS_EML_Script
 
@@ -37,12 +37,8 @@ rights, keywords, methods, and personnel. Then ran function to create "attribute
 
 20221222
 
-Re-ran T-SQL to pull .csv file. Removed CUVA data for now, formatting issues with PlotID. Come back to this
+Re-ran T-SQL to pull .csv file. Removed CUVA data for now due to formatting issues with PlotID. Come back to this...
 
-20230106
-
-Started my first git project and successfully pushed files to a GitHub project. Yay!
-Renamed this project specific to breeding birds. Will fork to other datasets someday!
 
 20220109
 
@@ -52,7 +48,17 @@ Downloaded this project to laptop and started using Git locally. Will modify thi
 -----------------
 # Tasks
 
-1. Get final version of PointIDs with lat/long in decimal degrees
+1. Get final version of PointIDs with lat/long in decimal degrees - DONE!
 2. Fill out the .txt files for the metadata information
+	abstract.txt
+	additional_info.txt
+	attributes_tbl_BirdObs_Import_Text.txt
+	custom_units.txt
+	intellectual_rights.txt
+	keywords.txt
+	methods.txt
+	personnel.txt
+	
+	
 3. Continue working with the EML creation script
 
