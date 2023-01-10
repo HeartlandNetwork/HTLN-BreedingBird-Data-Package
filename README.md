@@ -44,6 +44,10 @@ Re-ran T-SQL to pull .csv file. Removed CUVA data for now, formatting issues wit
 Started my first git project and successfully pushed files to a GitHub project. Yay!
 Renamed this project specific to breeding birds. Will fork to other datasets someday!
 
+20220109
+
+Downloaded this project to laptop and started using Git locally. Will modify this file then try to get new changes to show on GitHub...
+
 
 -----------------
 # Tasks
