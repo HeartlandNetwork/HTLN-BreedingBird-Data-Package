@@ -59,6 +59,5 @@ Downloaded this project to laptop and started using Git locally. Will modify thi
 	methods.txt
 	personnel.txt
 	
-	
 3. Continue working with the EML creation script
 

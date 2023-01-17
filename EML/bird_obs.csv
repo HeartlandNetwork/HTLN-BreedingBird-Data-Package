@@ -1,0 +1,8 @@
+Plot,Event,Temperature_C,Wind,Precip,Percent_Cloud,Noise,ObservationNumber,Interval,AOUCode,Distance,DetectionType,Sex,Age,FlockSize,IsPreviousPlot,IsFlyover,Comments
+WICR1,WICRTweety2008May200609AM,15,0,0,30,1,1,0-3 min,NOBO,63,4,Male,Adult,1,0,0,NULL
+WICR1,WICRTweety2008May200609AM,15,0,0,30,1,2,0-3 min,CACH,21,1,Male,Adult,1,0,0,NULL
+WICR1,WICRTweety2008May200609AM,15,0,0,30,1,3,0-3 min,EAME,169,2,Male,Adult,1,0,0,NULL
+WICR1,WICRTweety2008May200609AM,15,0,0,30,1,4,0-3 min,CARW,37,1,Male,Adult,1,0,0,NULL
+WICR1,WICRTweety2008May200609AM,15,0,0,30,1,5,0-3 min,BRTH,59,2,Male,Adult,1,0,0,NULL
+WICR1,WICRTweety2008May200609AM,15,0,0,30,1,6,0-3 min,INBU,18,1,Male,Adult,1,0,0,NULL
+WICR1,WICRTweety2008May200609AM,15,0,0,30,1,7,>3-5 min,BLJA,84,2,Male,Adult,1,0,0,NULL
