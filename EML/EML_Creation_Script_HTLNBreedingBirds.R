@@ -41,7 +41,9 @@ data_type <- "ongoing"
 #working_folder <- paste0(str_trim(getwd()),"C:\\Users\\GRowell\\work\\Projects\\DataPackage\\dataset","BirdObs.csv") 
 #working_folder <- paste0("C:\\Users\\GRowell\\work\\Projects\\DataPackage\\dataset","BirdObs.csv") 
 
-setwd("C:\\Users\\GRowell\\work\\Projects\\DataPackage\\EML_Creation_Script")
+#setwd("C:\\Users\\GRowell\\work\\Projects\\DataPackage\\EML_Creation_Script")
+
+getwd()
 
 working_folder <- getwd()
 
@@ -82,10 +84,10 @@ data_taxa_tables <- c("bird_obs.csv")
 # Table and fields that contain geographic coordinates and site names to fill the geographic coverage metadata
 # Comment these out and do not run FUNCTION 4 (below) if your data package does not contain geographic information.
 
-data_coordinates_table <- "Test_Location_LL2.csv"
-data_latitude <- "decimalLatitude"
-data_longitude <- "decimalLongitude"
-data_sitename <- "Point_ID"
+data_coordinates_table <- "HtlnTweetyCoorDD.csv"
+data_latitude <- "Lat_DD"
+data_longitude <- "Lon_DD"
+data_sitename <- "Location_ID"
     
 # Start date and end date. This should indicate the first and last data point in the data package (across all files) and
 # does not include any planning, pre- or post-processing time. The format should be one that complies with the
