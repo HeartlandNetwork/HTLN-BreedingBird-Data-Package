@@ -48,7 +48,7 @@ working_folder <- getwd()
 working_folder
   
 # Vector of dataset filenames 
-data_files <- c("HtLNBreedingBirds_BirdObs.csv")
+data_files <- c("bird_obs.csv")
   
 # Vector of dataset names (brief name for each file)
 data_names <- c("bird_data")
@@ -74,7 +74,7 @@ data_urls <-c(rep(DSURL, length(data_files)))
 # Single file or Vector (list) of tables and fields with scientific names that can be used to fill the taxonomic coverage metadata. Add
 # additional items as necessary. Comment these out and do not run FUNCTION 5 (below) if your data package does not
 # contain species information.
-data_taxa_tables <- c("BirdSpecies.csv")
+data_taxa_tables <- c("bird_obs.csv")
 #alternatively, if you have multiple files with taxanomic info:
 # data_taxa_tables <-c("qry_Export_AA_VegetationDetails1.csv", "qry_Export_AA_VegetationDetails2.csv", "etc.csv")
 #data_taxa_fields <- c("Scientific_Name")
