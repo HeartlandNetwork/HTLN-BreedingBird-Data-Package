@@ -1,8 +1,8 @@
 # HTLN-BreedingBird-Data-Package
 ----------------
-Contains files and scripts for creating NPS HTLN data package components. The main areas are metadata (EML) and data validation including exploratory data analyses / data summary / certification documents for dataset publishing. The working example is the HTLN breeding bird protocol and database. The directory ./src is my file dumping ground. Files stored in other directories are functioning executable scripts. Thanks for reading!
+Contains files and scripts for creating NPS HTLN data package components. The main areas are metadata (EML) and validation scripts for the dataset (Validate). The working example is the HTLN breeding bird protocol and database. The 2022 breeding bird protocol revision is located in Documentation. The directory ./src is my file dumping ground. Files stored in other directories are functioning executable scripts. Thanks for reading!
 
-Background info on HTLN breeding bird monitoring project is here:
+Addtional background info on HTLN breeding bird monitoring project is here:
 
 https://www.nps.gov/im/htln/birds.htm
 
@@ -37,27 +37,22 @@ rights, keywords, methods, and personnel. Then ran function to create "attribute
 
 20221222
 
-Re-ran T-SQL to pull .csv file. Removed CUVA data for now due to formatting issues with PlotID. Come back to this...
+Re-ran T-SQL to pull .csv file. Removed CUVA data for now due to formatting issues with PlotID. Come back to this at some future point.
 
+20230119
 
-20220109
-
-Downloaded this project to laptop and started using Git locally. Will modify this file then try to get new changes to show on GitHub...
+Added the spatial file containing lat/long decimal degrees for all sampling sites. Focus on EML directory. This will be executable scripts and working example for breeding birds. Clone this for other datasets. 
 
 
 -----------------
 # Tasks
 
-1. Get final version of PointIDs with lat/long in decimal degrees - DONE!
-2. Fill out the .txt files for the metadata information
-	abstract.txt
-	additional_info.txt
-	attributes_tbl_BirdObs_Import_Text.txt
-	custom_units.txt
-	intellectual_rights.txt
-	keywords.txt
-	methods.txt
-	personnel.txt
-	
-3. Continue working with the EML creation script
+Continue working with EML_Creation_Script_HTLNBreedingBirds. Get working example going.
+
+Import habitat data.
+
+Start thinking about validation testing for the bird observation data and the habitat data.
+
+Include the lookup tables for the site and bird observation categorical data.
+
 
