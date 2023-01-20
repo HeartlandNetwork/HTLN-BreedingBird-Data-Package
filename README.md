@@ -43,11 +43,17 @@ Re-ran T-SQL to pull .csv file. Removed CUVA data for now due to formatting issu
 
 Added the spatial file containing lat/long decimal degrees for all sampling sites. Focus on EML directory. This will be executable scripts and working example for breeding birds. Clone this for other datasets. 
 
+20230120
+
+Created branch for taxonomy. Write T-SQL to create species list including TSN, Family, Genus, Species, CommonName. Challenge - write R script to insert Kingdom, Phylum, Order into each species record using Tidyverse.
+
 
 -----------------
 # Tasks
 
 Continue working with EML_Creation_Script_HTLNBreedingBirds. Get working example going.
+
+Create taxonomy
 
 Import habitat data.
 
