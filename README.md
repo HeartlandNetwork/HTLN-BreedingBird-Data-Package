@@ -45,7 +45,7 @@ Added the spatial file containing lat/long decimal degrees for all sampling site
 
 20230120
 
-Created branch for taxonomy. Write T-SQL to create species list including TSN, Family, Genus, Species, CommonName. Challenge - write R script to insert Kingdom, Phylum, Order into each species record using Tidyverse.
+Created branch for taxonomy. Write T-SQL to create species list including TSN, Family, Genus, Species, CommonName. Need write R script to insert Kingdom, Phylum, Order into each species record.
 
 
 -----------------
@@ -53,12 +53,12 @@ Created branch for taxonomy. Write T-SQL to create species list including TSN, F
 
 Continue working with EML_Creation_Script_HTLNBreedingBirds. Get working example going.
 
-Create taxonomy
+Create taxonomy 
 
 Import habitat data.
 
-Start thinking about validation testing for the bird observation data and the habitat data.
+Develop validation testing for the bird observation data and the habitat data.
 
-Include the lookup tables for the site and bird observation categorical data.
+Include lookup tables for the site and bird observation and habitat categorical data.
 
 
