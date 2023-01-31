@@ -47,18 +47,34 @@ Added the spatial file containing lat/long decimal degrees for all sampling site
 
 Created branch for taxonomy. Write T-SQL to create species list including TSN, Family, Genus, Species, CommonName. Need write R script to insert Kingdom, Phylum, Order into each species record.
 
+20230130
+
+Created species list based on observation data. List includes TSN, Family, Genus, Species, AOUCode, CommonName. 
+Need copy of ITIS to join Orders to TSNs
+
 
 -----------------
 # Tasks
 
-Continue working with EML_Creation_Script_HTLNBreedingBirds. Get working example going.
+Continue working with EML_Creation_Script_HTLNBreedingBirds
 
 Create taxonomy 
+	Download and install ITIS database
+	Join on TSNs and export Orders
+	Then join to create TSN, AOUCode, Kingdom, Phylum, Class, [Order], 
+		Family, Genus, Species, CommonName
+		
+Download all site - bird observation and habitat to include complete categorical data.
+	Need to join all categorical data and download to be included in datasets
 
-Import habitat data.
+Import habitat data
+	Import individual habitat tables from existing T-SQL scripts
+	How to write metadata? What to include?
 
 Develop validation testing for the bird observation data and the habitat data.
+	Review JPs project
+	Start list of validation requirements
 
-Include lookup tables for the site and bird observation and habitat categorical data.
+
 
 
