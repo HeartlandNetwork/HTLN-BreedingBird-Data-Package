@@ -2,7 +2,7 @@
 ----------------
 Contains files and scripts for creating NPS HTLN data package components. The main areas are metadata (EML) and validation scripts for the dataset (Validate). The working example is the HTLN breeding bird protocol and database. The 2022 breeding bird protocol revision is located in Documentation. The directory ./src is my file dumping ground. Files stored in other directories are functioning executable scripts. Thanks for reading!
 
-Addtional background info on HTLN breeding bird monitoring project is here:
+Additional background info on HTLN breeding bird monitoring project is here:
 
 https://www.nps.gov/im/htln/birds.htm
 
@@ -52,6 +52,10 @@ Created branch for taxonomy. Write T-SQL to create species list including TSN, F
 Created species list based on observation data. List includes TSN, Family, Genus, Species, AOUCode, CommonName. 
 Need copy of ITIS to join Orders to TSNs
 
+20230213
+
+Created branch called 'itis'. Downloaded copy of itis. Need to install SQL Server on new computer.
+
 
 -----------------
 # Tasks
@@ -62,10 +66,10 @@ Create taxonomy
 	Download and install ITIS database
 	Join on TSNs and export Orders
 	Then join to create TSN, AOUCode, Kingdom, Phylum, Class, [Order], 
-		Family, Genus, Species, CommonName
+		Family, Genus, Species, CommonName <-- Order is the missing info
 		
-Download all site - bird observation and habitat to include complete categorical data.
-	Need to join all categorical data and download to be included in datasets
+Download all site - bird observations and habitat data
+Download all look-ups and leave the codes in the main datasets
 
 Import habitat data
 	Import individual habitat tables from existing T-SQL scripts
