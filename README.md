@@ -63,7 +63,7 @@ Created branch called 'itis'. Downloaded copy of itis. Need to install SQL Serve
 Continue working with EML_Creation_Script_HTLNBreedingBirds
 
 Create taxonomy 
-	Download and install ITIS database
+	x Download and install ITIS database
 	Join on TSNs and export Orders
 	Then join to create TSN, AOUCode, Kingdom, Phylum, Class, [Order], 
 		Family, Genus, Species, CommonName <-- Order is the missing info
@@ -76,7 +76,7 @@ Import habitat data
 	How to write metadata? What to include?
 
 Develop validation testing for the bird observation data and the habitat data.
-	Review JPs project
+	Review other projects
 	Start list of validation requirements
 
 
