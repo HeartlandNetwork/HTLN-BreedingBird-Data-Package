@@ -56,6 +56,13 @@ Need copy of ITIS to join Orders to TSNs
 
 Created branch called 'itis'. Downloaded copy of itis. Need to install SQL Server on new computer.
 
+20230227
+
+Installed SQL Server, loaded ITIS database. Created HTLN_Sandbox db. Ran join on TSN, ScientificName.
+TSNs and scientific names in HTLN_Landbirds agree with Itis.
+
+
+
 
 -----------------
 # Tasks
@@ -64,6 +71,10 @@ Continue working with EML_Creation_Script_HTLNBreedingBirds
 
 Create taxonomy 
 	x Download and install ITIS database
+  Verify the TSN's in HTLN_Landbirds 
+    common names, scientific names, family names
+    pull order names from ITIS table
+    
 	Join on TSNs and export Orders
 	Then join to create TSN, AOUCode, Kingdom, Phylum, Class, [Order], 
 		Family, Genus, Species, CommonName <-- Order is the missing info

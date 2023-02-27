@@ -1,11 +1,16 @@
 
 
 
-USE ITIS
+USE HTLN_Sandbox
 
 GO
 
-SELECT * FROM dbo.longnames;
+SELECT * FROM dbo.BirdSpecies;
+
+GO
+
+
+SELECT * FROM dbo.ItisLongNames
 
 GO
 
