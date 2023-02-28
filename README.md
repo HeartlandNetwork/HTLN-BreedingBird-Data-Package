@@ -71,13 +71,15 @@ Continue working with EML_Creation_Script_HTLNBreedingBirds
 
 Create taxonomy 
 	x Download and install ITIS database
-  Verify the TSN's in HTLN_Landbirds 
+  x Verify the TSN's in HTLN_Landbirds 
     common names, scientific names, family names
     pull order names from ITIS table
-
-Join on TSNs and export Orders
-	Then join to create TSN, AOUCode, Kingdom, Phylum, Class, [Order], 
-		Family, Genus, Species, CommonName <-- Order is the missing info
+    
+ ===>   see TSNs_Itis_Hierarchy_BreedingBird_Species.csv - begin parsing from top (left) to botom (right)
+           then join top levels to TSN long names....
+           only need to get to Order
+    
+    
 		
 Download all site - bird observations and habitat data
 Download all look-ups and leave the codes in the main datasets
