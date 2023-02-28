@@ -74,8 +74,8 @@ Create taxonomy
   Verify the TSN's in HTLN_Landbirds 
     common names, scientific names, family names
     pull order names from ITIS table
-    
-	Join on TSNs and export Orders
+
+Join on TSNs and export Orders
 	Then join to create TSN, AOUCode, Kingdom, Phylum, Class, [Order], 
 		Family, Genus, Species, CommonName <-- Order is the missing info
 		
