@@ -6,7 +6,7 @@
 
 library(tidyverse)
 
-birdobs <- read_csv("C:\\Users\\growell\\work\\HTLN-Data-Package-main\\src\\birdobservations.csv")
+birdobs <- read_csv("C:\\Users\\growell\\HTLN-BreedingBird-Data-Package\\src\\birdobservations.csv")
 
 spec(birdobs)
 
