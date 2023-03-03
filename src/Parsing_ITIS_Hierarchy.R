@@ -13,6 +13,9 @@ TSNhierarchy <- read_csv(
 TSNlongnames <- read_csv(
   "C:\\Users\\growell\\HTLN-BreedingBird-Data-Package\\src\\Itis_longnames.csv")
 
+glimpse(TSNhierarchy)
+
+glimpse(TSNlongnames)
 
 
 # select the hierarchy string column 
