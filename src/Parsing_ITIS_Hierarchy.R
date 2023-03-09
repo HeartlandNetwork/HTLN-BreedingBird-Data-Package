@@ -40,15 +40,18 @@ my_columns <- my_string |>
     too_many = "drop"
   )
 
+
 my_columns
 
-print(my_columns, n = 207)
+longnames
 
+# convert all character to char to numeric
+my_numbers <- my_columns %>% mutate_if(where(is.character), as.double)
 
-# Join my_columns to longnames
-# PK in longnames is tsn
+my_columns
 
-# Need to convert my_columns all to dbl
+my_numbers
+
 
 # Then set PK in longnames to be tsn
 
