@@ -61,7 +61,9 @@ Created branch called 'itis'. Downloaded copy of itis. Need to install SQL Serve
 Installed SQL Server, loaded ITIS database. Created HTLN_Sandbox db. Ran join on TSN, ScientificName.
 TSNs and scientific names in HTLN_Landbirds agree with Itis.
 
+20230310
 
+Removed Validate component of repo. Validation will be included in a separate repo.
 
 
 -----------------
@@ -72,25 +74,22 @@ Continue working with EML_Creation_Script_HTLNBreedingBirds
 Create taxonomy 
 	x Download and install ITIS database
   x Verify the TSN's in HTLN_Landbirds 
-    common names, scientific names, family names
-    pull order names from ITIS table
+  X  common names, scientific names, family names
+ X   pull order names from ITIS table
     
  ===>   see TSNs_Itis_Hierarchy_BreedingBird_Species.csv - begin parsing from top (left) to botom (right)
            then join top levels to TSN long names....
            only need to get to Order
     
     
-		
-Download all site - bird observations and habitat data
+Download all  conditions - bird observations and habitat data
 Download all look-ups and leave the codes in the main datasets
 
 Import habitat data
 	Import individual habitat tables from existing T-SQL scripts
 	How to write metadata? What to include?
 
-Develop validation testing for the bird observation data and the habitat data.
-	Review other projects
-	Start list of validation requirements
+
 
 
 
