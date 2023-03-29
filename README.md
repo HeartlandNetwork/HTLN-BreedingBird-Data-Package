@@ -1,6 +1,6 @@
 # HTLN-BreedingBird-Data-Package
 ----------------
-Contains files and scripts for creating NPS HTLN data package components. The main areas are metadata (EML) and validation scripts for the dataset (Validate). The working example is the HTLN breeding bird protocol and database. The 2022 breeding bird protocol revision is located in Documentation. The directory ./src is my file dumping ground. Files stored in other directories are functioning executable scripts. Thanks for reading!
+Contains files and scripts for creating NPS HTLN data package components. The working example is the HTLN breeding bird protocol and database. The 2022 breeding bird protocol revision is located in Documentation. The directory ./src is my file dumping ground. Files stored in other directories are functioning executable scripts. Thanks for reading!
 
 Addtional background info on HTLN breeding bird monitoring project is here:
 
