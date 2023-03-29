@@ -71,9 +71,7 @@ Import habitat data
 	Import individual habitat tables from existing T-SQL scripts
 	How to write metadata? What to include?
 
-Develop validation testing for the bird observation data and the habitat data.
-	Review JPs project
-	Start list of validation requirements
+
 
 
 
