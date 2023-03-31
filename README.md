@@ -1,8 +1,14 @@
 # HTLN-BreedingBird-Data-Package
 ----------------
+<<<<<<< HEAD
 Contains files and scripts for creating NPS HTLN data package components. The main areas are metadata (EML) and validation scripts for the dataset (Validate). The working example is the HTLN breeding bird protocol and database. The 2022 breeding bird protocol revision is located in Documentation. The directory ./src is my file dumping ground. Files stored in other directories are functioning executable scripts. Thanks for reading!
 
 Additional background info on HTLN breeding bird monitoring project is here:
+=======
+Contains files and scripts for creating NPS HTLN data package components. The working example is the HTLN breeding bird protocol and database. The 2022 breeding bird protocol revision is located in Documentation. The directory ./src is my file dumping ground. Files stored in other directories are functioning executable scripts. Thanks for reading!
+
+Addtional background info on HTLN breeding bird monitoring project is here:
+>>>>>>> 18b5ec6d9f724504a4be5c5eebcac0929b088a90
 
 https://www.nps.gov/im/htln/birds.htm
 
@@ -52,6 +58,7 @@ Created branch for taxonomy. Write T-SQL to create species list including TSN, F
 Created species list based on observation data. List includes TSN, Family, Genus, Species, AOUCode, CommonName. 
 Need copy of ITIS to join Orders to TSNs
 
+<<<<<<< HEAD
 20230213
 
 Created branch called 'itis'. Downloaded copy of itis. Need to install SQL Server on new computer.
@@ -65,6 +72,8 @@ TSNs and scientific names in HTLN_Landbirds agree with Itis.
 
 Removed Validate component of repo. Validation will be included in a separate repo.
 
+=======
+>>>>>>> 18b5ec6d9f724504a4be5c5eebcac0929b088a90
 
 -----------------
 # Tasks
@@ -72,6 +81,7 @@ Removed Validate component of repo. Validation will be included in a separate re
 Continue working with EML_Creation_Script_HTLNBreedingBirds
 
 Create taxonomy 
+<<<<<<< HEAD
 	x Download and install ITIS database
   x Verify the TSN's in HTLN_Landbirds 
   X  common names, scientific names, family names
@@ -84,6 +94,15 @@ Create taxonomy
     
 Download all  conditions - bird observations and habitat data
 Download all look-ups and leave the codes in the main datasets
+=======
+	Download and install ITIS database
+	Join on TSNs and export Orders
+	Then join to create TSN, AOUCode, Kingdom, Phylum, Class, [Order], 
+		Family, Genus, Species, CommonName
+		
+Download all site - bird observation and habitat to include complete categorical data.
+	Need to join all categorical data and download to be included in datasets
+>>>>>>> 18b5ec6d9f724504a4be5c5eebcac0929b088a90
 
 Import habitat data
 	Import individual habitat tables from existing T-SQL scripts
