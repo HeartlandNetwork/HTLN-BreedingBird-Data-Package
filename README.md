@@ -12,6 +12,22 @@ https://www.nps.gov/im/htln/birds.htm
 
 20230331
 
+Review these repos and docs
+
+https://github.com/nationalparkservice/NPS_EML_Script
+
+https://github.com/nationalparkservice/EMLeditor
+
+https://github.com/nationalparkservice/NPSdataverse
+
+
+Documentation for EML process at NPS
+
+https://nationalparkservice.github.io/NPS_EML_Script/
+
+
+Cleanup...
+
 Moved all EML dev files back to src. 
 Archived all of the itis work. 
 EMLAssembly should auto-generate ITIS higher taxonomy.
