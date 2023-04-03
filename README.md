@@ -9,6 +9,10 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230403
+
+Get site / bird observations in final form; habitat data in dataset flat file format from database.
+
 
 20230331
 
@@ -95,6 +99,8 @@ https://github.com/nationalparkservice/NPSdataverse
 
 -----------------
 # Tasks
+
+Create flat files for all site / bird and habitat data.
 
 Create simple list of Genus species
 
