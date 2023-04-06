@@ -9,6 +9,10 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230405
+
+Include cover class Code, Range and MidPoint value for each habitat table with coverclass
+
 20230403
 
 Get site / bird observations in final form; habitat data in dataset flat file format from database.
