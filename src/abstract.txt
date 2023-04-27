@@ -1,3 +1,0 @@
-﻿NPS HTLN Breeding Bird Database
-
-Abstract: The National Park Service (NPS) Heartland Inventory and Monitoring Network (HTLN) breeding bird database contains bird observations and habitat data from 12 NPS park units located in the lower Midwest United States. Bird and site observations follow a point count design with distance estimated continuously from 0 to 300 m. There is a published protocol specifically for this dataset titled "Get the title" which is available from (Datastore reference for the 2022 protocol). 

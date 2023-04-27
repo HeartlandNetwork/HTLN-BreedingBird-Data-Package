@@ -41,14 +41,16 @@ data_type <- "ongoing"
 #working_folder <- paste0(str_trim(getwd()),"C:\\Users\\GRowell\\work\\Projects\\DataPackage\\dataset","BirdObs.csv") 
 #working_folder <- paste0("C:\\Users\\GRowell\\work\\Projects\\DataPackage\\dataset","BirdObs.csv") 
 
-setwd("C:\\Users\\GRowell\\work\\Projects\\DataPackage\\EML_Creation_Script")
+#setwd("C:\\Users\\GRowell\\work\\Projects\\DataPackage\\EML_Creation_Script")
+
+getwd()
 
 working_folder <- getwd()
 
 working_folder
   
 # Vector of dataset filenames 
-data_files <- c("HtLNBreedingBirds_BirdObs.csv")
+data_files <- c("bird_obs.csv")
   
 # Vector of dataset names (brief name for each file)
 data_names <- c("bird_data")
@@ -74,7 +76,7 @@ data_urls <-c(rep(DSURL, length(data_files)))
 # Single file or Vector (list) of tables and fields with scientific names that can be used to fill the taxonomic coverage metadata. Add
 # additional items as necessary. Comment these out and do not run FUNCTION 5 (below) if your data package does not
 # contain species information.
-data_taxa_tables <- c("BirdSpecies.csv")
+data_taxa_tables <- c("bird_obs.csv")
 #alternatively, if you have multiple files with taxanomic info:
 # data_taxa_tables <-c("qry_Export_AA_VegetationDetails1.csv", "qry_Export_AA_VegetationDetails2.csv", "etc.csv")
 #data_taxa_fields <- c("Scientific_Name")
@@ -82,10 +84,10 @@ data_taxa_tables <- c("BirdSpecies.csv")
 # Table and fields that contain geographic coordinates and site names to fill the geographic coverage metadata
 # Comment these out and do not run FUNCTION 4 (below) if your data package does not contain geographic information.
 
-data_coordinates_table <- "Test_Location_LL2.csv"
-data_latitude <- "decimalLatitude"
-data_longitude <- "decimalLongitude"
-data_sitename <- "Point_ID"
+data_coordinates_table <- "HtlnTweetyCoorDD.csv"
+data_latitude <- "Lat_DD"
+data_longitude <- "Lon_DD"
+data_sitename <- "Location_ID"
     
 # Start date and end date. This should indicate the first and last data point in the data package (across all files) and
 # does not include any planning, pre- or post-processing time. The format should be one that complies with the

@@ -1,3 +1,0 @@
-keyword	keywordThesaurus
-bird	NA
-habitat	NA

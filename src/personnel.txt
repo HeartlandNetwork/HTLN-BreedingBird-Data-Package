@@ -1,2 +1,0 @@
-givenName	middleInitial	surName	organizationName	electronicMailAddress	userId	role	projectTitle	fundingAgency	fundingNumber
-David	G.	Peitz	Heartland I&M Network	david_peitz@nps.gov	1	coordinator	HTLN Breeding Bird Monitoring	NPS	1-111

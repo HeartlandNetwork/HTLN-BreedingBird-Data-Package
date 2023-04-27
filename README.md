@@ -9,8 +9,32 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230405
+
+Include cover class Code, Range and MidPoint value for each habitat table with coverclass
+
+20230403
+
+Get site / bird observations in final form; habitat data in dataset flat file format from database.
+
 
 20230331
+
+Review these repos and docs
+
+https://github.com/nationalparkservice/NPS_EML_Script
+
+https://github.com/nationalparkservice/EMLeditor
+
+https://github.com/nationalparkservice/NPSdataverse
+
+
+Documentation for EML process at NPS
+
+https://nationalparkservice.github.io/NPS_EML_Script/
+
+
+Cleanup...
 
 Moved all EML dev files back to src. 
 Archived all of the itis work. 
@@ -79,6 +103,8 @@ https://github.com/nationalparkservice/NPSdataverse
 
 -----------------
 # Tasks
+
+Create flat files for all site / bird and habitat data.
 
 Create simple list of Genus species
 
