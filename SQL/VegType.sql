@@ -16,9 +16,6 @@ FROM dbo.Plot AS L
   JOIN LU.PlotVegetationType AS T
   ON T.ID = V.PlotVegetationTypeID
 
-WHERE ((LEFT(L.LocationName,4) = 'EFMO') OR (LEFT(L.LocationName,4) = 'HEHO') 
-     OR (LEFT(L.LocationName,4) = 'HOME') OR (LEFT(L.LocationName,4) = 'PIPE')) 
-
---(E.EventDateTime > '20220101')
+WHERE (E.EventDateTime < '20230101')
 
 ORDER BY Plot, EventDate, VegType

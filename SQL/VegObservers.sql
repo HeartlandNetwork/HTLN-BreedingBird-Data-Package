@@ -12,8 +12,13 @@ FROM dbo.Plot AS L
   JOIN dbo.Contact AS C
   ON C.ID = O.ContactID
 
+
+/*
 WHERE ((LEFT(L.LocationName,4) = 'EFMO') OR (LEFT(L.LocationName,4) = 'HEHO') 
      OR (LEFT(L.LocationName,4) = 'HOME') OR (LEFT(L.LocationName,4) = 'PIPE')) 
+*/
+
+WHERE (E.EventDateTime < '20230101')
 
 
 -- (E.EventDateTime > '20220101')
