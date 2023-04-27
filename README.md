@@ -13,9 +13,17 @@ https://www.nps.gov/im/htln/birds.htm
 
 Finished csv exports from SQL Server
 Reviewed csv files
+  lookup tables still need to be addressed
+  join LUTs into data tables whereever possible
 
-lookup tables still needed:
-  cover class codes
+Lookup table - csv files affected
+  cover class codes: 
+    foliar-cover.csv
+    horiz-distance-profile.csv
+    horiz-vegetation-profile.csv
+    veg-type.csv
+
+Folowing all apply to site-birdobs.csv
   site conditions:
     wind codes
     rain codes
@@ -23,11 +31,9 @@ lookup tables still needed:
   bird observations:
     AOUCodes and species names
     Detection Type codes
-  vegetation codes:
-    Tree species codes
-  
-  
 
+Tree tally needs species as well as common name
+  
 
 20230403
 
@@ -117,16 +123,6 @@ Installed packages associated with NPSdataverse from here:
 https://github.com/nationalparkservice/NPSdataverse
 
 
------------------
-# Tasks
-
-Create flat files for all site / bird and habitat data.
-
-Create simple list of Genus species
-
-Does site obs / bird obs include CUVA. Need to leave that out
-
-Deal with habitat data. Do LUT joins and create a big flat file
 
 
 
