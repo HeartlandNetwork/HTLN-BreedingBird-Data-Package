@@ -1,5 +1,0 @@
-Plot,Event,Temperature_C,Wind,Precip,Percent_Cloud,Noise,ObservationNumber,Interval,AOUCode,TSN,Family,ScientificName,CommonName,Distance,DetectionType,Sex,Age,FlockSize,IsPreviousPlot,IsFlyover,Comments
-AGFO1,AGFOTweety2003Jun040757AM,16,0,0,80,0,1,0-3 min,WEME,179039,Icteridae,Sturnella neglecta,western meadowlark,97,4,Male,Adult,1,0,0,NULL
-AGFO1,AGFOTweety2003Jun040757AM,16,0,0,80,0,2,0-3 min,LASP,179371,Emberizidae,Chondestes grammacus,lark sparrow,67,2,Male,Adult,2,0,0,NULL
-AGFO1,AGFOTweety2003Jun040757AM,16,0,0,80,0,3,0-3 min,WEME,179039,Icteridae,Sturnella neglecta,western meadowlark,303,4,Male,Adult,1,0,0,On power line
-AGFO1,AGFOTweety2003Jun040757AM,16,0,0,80,0,4,>3-5 min,BHCO,179112,Icteridae,Molothrus ater,brown-headed cowbird,-9999,U,Unk,Unknown,1,0,1,NULL

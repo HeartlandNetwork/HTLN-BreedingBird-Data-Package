@@ -9,9 +9,25 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
-20230405
+20230427
 
-Include cover class Code, Range and MidPoint value for each habitat table with coverclass
+Finished csv exports from SQL Server
+Reviewed csv files
+
+lookup tables still needed:
+  cover class codes
+  site conditions:
+    wind codes
+    rain codes
+    noise codes
+  bird observations:
+    AOUCodes and species names
+    Detection Type codes
+  vegetation codes:
+    Tree species codes
+  
+  
+
 
 20230403
 
