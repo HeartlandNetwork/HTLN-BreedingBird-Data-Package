@@ -14,7 +14,7 @@ FROM dbo.Plot AS L
   ON E.ID = S.VegetationSamplingEventID
 
   
-WHERE (E.EventDateTime > CAST('20170101' AS datetime))
-
+WHERE (E.EventDateTime < '20230101')
+ 
 
 ORDER BY Plot, SubPlot, EventDate

@@ -9,9 +9,31 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
-20230405
+20230427
 
-Include cover class Code, Range and MidPoint value for each habitat table with coverclass
+Finished csv exports from SQL Server
+Reviewed csv files
+  lookup tables still need to be addressed
+  join LUTs into data tables whereever possible
+
+Lookup table - csv files affected
+  cover class codes: 
+    foliar-cover.csv
+    horiz-distance-profile.csv
+    horiz-vegetation-profile.csv
+    veg-type.csv
+
+Folowing all apply to site-birdobs.csv
+  site conditions:
+    wind codes
+    rain codes
+    noise codes
+  bird observations:
+    AOUCodes and species names
+    Detection Type codes
+
+Tree tally needs species as well as common name
+  
 
 20230403
 
@@ -101,16 +123,6 @@ Installed packages associated with NPSdataverse from here:
 https://github.com/nationalparkservice/NPSdataverse
 
 
------------------
-# Tasks
-
-Create flat files for all site / bird and habitat data.
-
-Create simple list of Genus species
-
-Does site obs / bird obs include CUVA. Need to leave that out
-
-Deal with habitat data. Do LUT joins and create a big flat file
 
 
 

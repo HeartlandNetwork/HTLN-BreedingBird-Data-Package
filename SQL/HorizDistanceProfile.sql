@@ -26,9 +26,15 @@ FROM dbo.Plot AS L
   JOIN LU.DensityBoardDistanceClass AS X
   ON X.ID = H.DensityBoardDistanceClassID
 
+
+  WHERE (E.EventDateTime < '20230101')
+
+  
+
+/*
 WHERE ((LEFT(L.LocationName,4) = 'EFMO') OR (LEFT(L.LocationName,4) = 'HEHO') 
      OR (LEFT(L.LocationName,4) = 'HOME') OR (LEFT(L.LocationName,4) = 'PIPE')) 
-
+*/
 --(E.EventDateTime > '20220101')
 
 ORDER BY Plot, SubPlot, EventDate, Height

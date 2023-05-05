@@ -19,5 +19,6 @@ FROM dbo.Plot AS L
   ON C.ID = H.DensityBoardCoverClassID
 
   
-WHERE (E.EventDateTime > '20220101')
+  WHERE (E.EventDateTime < '20230101')
+  
 ORDER BY Plot, SubPlot, EventDate, Height
