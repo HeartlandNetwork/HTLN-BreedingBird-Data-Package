@@ -9,6 +9,23 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230605
+
+
+1) Re LUTs for site conditions...
+  Wind - Beaufort scale - is too wordy to join into table
+  Publish tlu_WindCode or include in metadata
+  Same applies to wind and noise.
+  
+  
+2) Yes, to join cover class LUT to 
+    foliar-cover.csv
+    horiz-distance-profile.csv
+    horiz-vegetation-profile.csv
+    veg-type.csv
+    
+3) Review all .csv's for remaining LUT codes
+
 20230427
 
 Finished csv exports from SQL Server
