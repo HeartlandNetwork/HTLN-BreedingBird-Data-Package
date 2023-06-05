@@ -11,20 +11,11 @@ https://www.nps.gov/im/htln/birds.htm
 
 20230605
 
+Make a list of look-up-tables
+Create a csv file in Excel with the following:
+LUT_table_name, processing_step (join/download/describe), join_table_name(s)
 
-1) Re LUTs for site conditions...
-  Wind - Beaufort scale - is too wordy to join into table
-  Publish tlu_WindCode or include in metadata
-  Same applies to wind and noise.
-  
-  
-2) Yes, to join cover class LUT to 
-    foliar-cover.csv
-    horiz-distance-profile.csv
-    horiz-vegetation-profile.csv
-    veg-type.csv
-    
-3) Review all .csv's for remaining LUT codes
+
 
 20230427
 

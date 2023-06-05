@@ -1,0 +1,283 @@
+ID,TaxonCode,TSN,ScientificName,Family,CommonName,IsProvisional,IsValid,ValidTaxon,DateCreated,AOUCode
+1,ABDU,175068,Anas rubripes,Anatidae,american black duck,0,0,NULL,2015-06-08 16:32:58.8670000,NULL
+2,ACFL,178339,Empidonax virescens,Tyrannidae,acadian flycatcher,0,1,NULL,2015-06-08 16:32:58.8900000,NULL
+3,AGWT,175081,Anas crecca,Anatidae,green-winged teal,0,0,NULL,2015-06-08 16:32:58.9230000,NULL
+4,AMAV,176721,Recurvirostra americana,Recurvirostridae,american avocet,0,1,NULL,2015-06-08 16:32:58.9470000,NULL
+5,AMBI,174856,Botaurus lentiginosus,Ardeidae,american Bittern,0,1,NULL,2015-06-08 16:32:58.9730000,NULL
+6,AMCO,176292,Fulica americana,Rallidae,american Coot,0,1,NULL,2015-06-08 16:32:59.0030000,NULL
+7,AMCR,179731,Corvus brachyrhynchos,Corvidae,american crow,0,1,NULL,2015-06-08 16:32:59.0230000,NULL
+8,AMGO,179249,Spinus tristis,Fringillidae,american goldfinch,0,1,NULL,2015-06-08 16:32:59.0470000,NULL
+9,AMKE,175622,Falco sparverius,Falconidae,american kestrel,0,1,NULL,2015-06-08 16:32:59.0730000,NULL
+10,AMPI,554127,Anthus rubescens,Motacillidae,american pipit,0,0,NULL,2015-06-08 16:32:59.1200000,NULL
+11,AMRE,178979,Setophaga ruticilla,Parulidae,american redstart,0,1,NULL,2015-06-08 16:32:59.1470000,NULL
+12,AMRO,179759,Turdus migratorius,Turdidae,american robin,0,1,NULL,2015-06-08 16:32:59.1700000,NULL
+13,AMWO,176580,Scolopax minor,Scolopacidae,american woodcock,0,1,NULL,2015-06-08 16:32:59.1930000,NULL
+14,ANHI,174755,Anhinga anhinga,Anhingidae,anhinga,0,1,NULL,2015-06-08 16:32:59.2170000,NULL
+15,ATSP,997961,Spizelloides arborea,Emberizidae,american tree sparrow,0,0,NULL,2015-06-08 16:32:59.2430000,NULL
+16,BACS,997733,Peucaea aestivalis,Emberizidae,bachman's Sparrow,0,1,NULL,2015-06-08 16:32:59.2670000,NULL
+17,BAEA,175420,Haliaeetus leucocephalus,Accipitridae,bald eagle,0,0,NULL,2015-06-08 16:32:59.3000000,NULL
+18,BANS,178436,Riparia riparia,Hirundinidae,bank swallow,0,1,NULL,2015-06-08 16:32:59.3300000,NULL
+19,BAOR,179083,Icterus galbula,Icteridae,northern oriole,0,1,NULL,2015-06-08 16:32:59.3670000,NULL
+20,BARS,178448,Hirundo rustica,Hirundinidae,barn swallow,0,1,NULL,2015-06-08 16:32:59.3900000,NULL
+21,BAWW,178844,Mniotilta varia,Parulidae,black-and-white warbler,0,1,NULL,2015-06-08 16:32:59.4070000,NULL
+22,BBCU,177834,Coccyzus erythropthalmus,Cuculidae,black-billed cuckoo,0,1,NULL,2015-06-08 16:32:59.4270000,NULL
+23,BBMA,179720,Pica pica,Corvidae,black-billed magpie,0,1,NULL,2015-06-08 16:32:59.4430000,NULL
+24,BBSA,176684,Tryngites subruficollis,Scolopacidae,buff-breasted sandpiper,0,1,NULL,2015-06-08 16:32:59.4670000,NULL
+25,BBWA,950036,Setophaga castanea,Parulidae,bay-breasted warbler,0,0,NULL,2015-06-08 16:32:59.4830000,NULL
+26,BCCH,554382,Poecile atricapillus,Paridae,black-capped chickadee,0,1,NULL,2015-06-08 16:32:59.5000000,NULL
+27,BCNH,174832,Nycticorax nycticorax,Ardeidae,black-crowned night-heron,0,1,NULL,2015-06-08 16:32:59.5200000,NULL
+28,BADO,177921,Strix varia,Strigidae,barred owl,0,1,NULL,2015-06-08 16:32:59.5400000,BADO
+29,BEKI,178106,Megaceryle alcyon,Alcedinidae,belted kingfisher,0,1,NULL,2015-06-08 16:32:59.5600000,NULL
+30,BEVI,179003,Vireo bellii,Vireonidae,bell's vireo,0,1,NULL,2015-06-08 16:32:59.5830000,NULL
+31,BEWR,178562,Thryomanes bewickii,Troglodytidae,bewick's wren,0,1,NULL,2015-06-08 16:32:59.6130000,NULL
+32,BGGN,179853,Polioptila caerulea,Polioptilidae,blue-gray gnatcatcher,0,1,NULL,2015-06-08 16:32:59.6430000,NULL
+33,BHCO,179112,Molothrus ater,Icteridae,brown-headed cowbird,0,1,NULL,2015-06-08 16:32:59.6830000,NULL
+34,BHGR,179140,Pheucticus melanocephalus,Cardinalidae,black-headed grosbeak,0,1,NULL,2015-06-08 16:32:59.7200000,NULL
+35,BHNU,178785,Sitta pusilla,Sittidae,brown-headed nuthatch,0,0,NULL,2015-06-08 16:32:59.7600000,NULL
+36,BLBW,950037,Setophaga fusca,Parulidae,blackburnian warbler,0,0,NULL,2015-06-08 16:32:59.7930000,NULL
+37,BLGR,726198,Passerina caerulea,Cardinalidae,blue grosbeak,0,1,NULL,2015-06-08 16:32:59.8130000,NULL
+38,BLJA,179680,Cyanocitta cristata,Corvidae,blue jay,0,1,NULL,2015-06-08 16:32:59.8370000,NULL
+39,BLPW,950041,Setophaga striata,Parulidae,blackpoll warbler,0,0,NULL,2015-06-08 16:32:59.8630000,NULL
+40,BLTE,176959,Chlidonias niger,Laridae,black tern,0,1,NULL,2015-06-08 16:32:59.8800000,NULL
+41,BLVU,175272,Coragyps atratus,Cathartidae,black vulture,0,0,NULL,2015-06-08 16:32:59.9030000,NULL
+42,BANO,177851,Tyto alba,Tytonidae,barn owl,0,1,NULL,2015-06-08 16:32:59.9270000,NULL
+43,BOBO,179032,Dolichonyx oryzivorus,Icteridae,bobolink,0,1,NULL,2015-06-08 16:32:59.9500000,NULL
+44,BRBL,179094,Euphagus cyanocephalus,Icteridae,brewer's blackbird,0,1,NULL,2015-06-08 16:32:59.9830000,NULL
+45,BRCR,178803,Certhia americana,Certhiidae,brown creeper,0,0,NULL,2015-06-08 16:33:00.0100000,NULL
+46,BRTH,178627,Toxostoma rufum,Mimidae,brown thrasher,0,1,NULL,2015-06-08 16:33:00.0500000,NULL
+47,BTBW,950042,Setophaga caerulescens,Parulidae,black-throated blue warbler,1,0,NULL,2015-06-08 16:33:00.0770000,NULL
+48,BTNW,950061,Setophaga virens,Parulidae,black-throated green warbler,0,0,NULL,2015-06-08 16:33:00.1070000,NULL
+49,BUOW,177946,Athene cunicularia,Strigidae,burrowing owl,0,1,NULL,2015-06-08 16:33:00.1330000,NULL
+50,BWHA,175365,Buteo platypterus,Accipitridae,broad-winged hawk,0,0,NULL,2015-06-08 16:33:00.1700000,NULL
+51,BWTE,175086,Anas discors,Anatidae,blue-winged teal,0,1,NULL,2015-06-08 16:33:00.1900000,NULL
+52,BWWA,950011,Vermivora cyanoptera,Parulidae,blue-winged warbler,0,1,NULL,2015-06-08 16:33:00.2100000,NULL
+53,CACH,554383,Poecile carolinensis,Paridae,carolina chickadee,0,1,NULL,2015-06-08 16:33:00.2300000,NULL
+54,CAEG,174803,Bubulcus ibis,Ardeidae,cattle egret,0,1,NULL,2015-06-08 16:33:00.2600000,NULL
+55,CANG,174999,Branta canadensis,Anatidae,canada goose,0,1,NULL,2015-06-08 16:33:00.2800000,NULL
+56,CAKI,178288,Tyrannus vociferans,Tyrannidae,cassin's kingbird,0,1,NULL,2015-06-08 16:33:00.3070000,NULL
+57,CARW,178581,Thryothorus ludovicianus,Troglodytidae,carolina wren,0,1,NULL,2015-06-08 16:33:00.3300000,NULL
+58,CATE,176935,Hydroprogne caspia,Laridae,caspian tern,0,0,NULL,2015-06-08 16:33:00.3500000,NULL
+59,CAWA,950079,Cardellina canadensis,Parulidae,canada warbler,0,0,NULL,2015-06-08 16:33:00.3700000,NULL
+60,CCLO,179530,Calcarius ornatus,Calcariidae,chestnut-collared longspur,0,1,NULL,2015-06-08 16:33:00.3900000,NULL
+61,CCSP,179439,Spizella pallida,Emberizidae,clay-colored sparrow,0,1,NULL,2015-06-08 16:33:00.4170000,NULL
+62,CEDW,178532,Bombycilla cedrorum,Bombycillidae,cedar waxwing,0,1,NULL,2015-06-08 16:33:00.4430000,NULL
+63,CERW,950032,Setophaga cerulea,Parulidae,cerulean warbler,0,0,NULL,2015-06-08 16:33:00.4630000,NULL
+64,CHSP,179435,Spizella passerina,Emberizidae,chipping sparrow,0,1,NULL,2015-06-08 16:33:00.4830000,NULL
+65,CHSW,178001,Chaetura pelagica,Apodidae,chimney swift,0,1,NULL,2015-06-08 16:33:00.5000000,NULL
+66,CITE,175089,Anas cyanoptera,Anatidae,cinnamon teal,0,1,NULL,2015-06-08 16:33:00.5200000,NULL
+67,CLGR,554027,Aechmophorus clarkii,Podicipedidae,clark's grebe,0,0,NULL,2015-06-08 16:33:00.5430000,NULL
+68,CLSW,178455,Petrochelidon pyrrhonota,Hirundinidae,cliff swallow,0,1,NULL,2015-06-08 16:33:00.5700000,NULL
+69,CMWA,950031,Setophaga tigrina,Parulidae,cape may warbler,0,0,NULL,2015-06-08 16:33:00.5930000,NULL
+70,COGO,175141,Bucephala clangula,Anatidae,common goldeneye,0,0,NULL,2015-06-08 16:33:00.6170000,NULL
+71,COGR,179104,Quiscalus quiscula,Icteridae,common grackle,0,1,NULL,2015-06-08 16:33:00.6370000,NULL
+72,COHA,175309,Accipiter cooperii,Accipitridae,cooper's hawk,0,0,NULL,2015-06-08 16:33:00.6670000,NULL
+73,COME,175185,Mergus merganser,Anatidae,common merganser,0,0,NULL,2015-06-08 16:33:00.6870000,NULL
+74,COMO,176284,Gallinula chloropus,Rallidae,common moorhen,0,1,NULL,2015-06-08 16:33:00.7170000,NULL
+75,CONI,177979,Chordeiles minor,Caprimulgidae,common nighthawk,0,1,NULL,2015-06-08 16:33:00.7570000,NULL
+76,COSN,176700,Gallinago gallinago,Scolopacidae,common snipe,0,1,NULL,2015-06-08 16:33:00.7900000,NULL
+77,COYE,178944,Geothlypis trichas,Parulidae,common yellowthroat,0,1,NULL,2015-06-08 16:33:00.8130000,NULL
+78,CSWA,950040,Setophaga pensylvanica,Parulidae,chestnut-sided warbler,0,0,NULL,2015-06-08 16:33:00.8370000,NULL
+79,CWWI,1077350,Antrostomus carolinensis,Caprimulgidae,chuck-will's-widow,0,0,NULL,2015-06-08 16:33:00.8570000,NULL
+80,DCCO,174717,Phalacrocorax auritus,Phalacrocoracidae,double-crested cormorant,0,0,NULL,2015-06-08 16:33:00.8730000,NULL
+81,DICK,179165,Spiza americana,Cardinalidae,dickcissel,0,1,NULL,2015-06-08 16:33:00.9100000,NULL
+82,DOWO,1145276,Dryobates pubescens,Picidae,downy woodpecker,0,1,NULL,2015-06-08 16:33:00.9300000,NULL
+83,DUNL,176661,Calidris alpina,Scolopacidae,dunlin,0,0,NULL,2015-06-08 16:33:00.9500000,NULL
+84,EABL,179801,Sialia sialis,Turdidae,eastern bluebird,0,1,NULL,2015-06-08 16:33:00.9700000,NULL
+85,EAGR,174485,Podiceps nigricollis,Podicipedidae,eared grebe,0,0,NULL,2015-06-08 16:33:00.9930000,NULL
+86,EAKI,178279,Tyrannus tyrannus,Tyrannidae,eastern kingbird,0,1,NULL,2015-06-08 16:33:01.0100000,NULL
+87,EAME,179034,Sturnella magna,Icteridae,eastern meadowlark,0,1,NULL,2015-06-08 16:33:01.0300000,NULL
+88,EAPH,178329,Sayornis phoebe,Tyrannidae,eastern phoebe,0,1,NULL,2015-06-08 16:33:01.0500000,NULL
+89,EASO,686658,Megascops asio,Strigidae,eastern screech-owl,0,1,NULL,2015-06-08 16:33:01.0870000,NULL
+90,EATO,179276,Pipilo erythrophthalmus,Emberizidae,"rufous-sided towhee, eastern towhee",0,1,NULL,2015-06-08 16:33:01.1170000,NULL
+91,EAWP,178359,Contopus virens,Tyrannidae,eastern wood-pewee,0,1,NULL,2015-06-08 16:33:01.1400000,NULL
+92,EUCD,177139,Streptopelia decaocto,Columbidae,eurasian collared-dove,0,0,NULL,2015-06-08 16:33:01.1730000,NULL
+93,EUST,179637,Sturnus vulgaris,Sturnidae,european starling,0,1,NULL,2015-06-08 16:33:01.1970000,NULL
+94,FICR,179737,Corvus ossifragus,Corvidae,fish crow,0,0,NULL,2015-06-08 16:33:01.2200000,NULL
+95,FISP,179443,Spizella pusilla,Emberizidae,field sparrow,0,1,NULL,2015-06-08 16:33:01.2500000,NULL
+96,FOSP,179464,Passerella iliaca,Emberizidae,fox sparrow,0,0,NULL,2015-06-08 16:33:01.2730000,NULL
+97,FOTE,176887,Sterna forsteri,Laridae,forster's tern,0,0,NULL,2015-06-08 16:33:01.2970000,NULL
+98,GADW,175073,Anas strepera,Anatidae,gadwall,0,0,NULL,2015-06-08 16:33:01.3200000,NULL
+99,GBHE,174773,Ardea herodias,Ardeidae,great blue heron,0,1,NULL,2015-06-08 16:33:01.3400000,NULL
+100,GCFL,178309,Myiarchus crinitus,Tyrannidae,great crested flycatcher,0,1,NULL,2015-06-08 16:33:01.3630000,NULL
+101,GCKI,179865,Regulus satrapa,Regulidae,golden-crowned kinglet,0,0,NULL,2015-06-08 16:33:01.3800000,NULL
+102,GCTH,179793,Catharus minimus,Turdidae,gray-cheeked thrush,0,0,NULL,2015-06-08 16:33:01.4000000,NULL
+103,GHOW,177884,Bubo virginianus,Strigidae,great horned owl,0,1,NULL,2015-06-08 16:33:01.4200000,NULL
+104,GLIB,174924,Plegadis falcinellus,Threskiornithidae,glossy ibis,0,0,NULL,2015-06-08 16:33:01.4400000,NULL
+105,GOEA,175407,Aquila chrysaetos,Accipitridae,golden eagle,0,1,NULL,2015-06-08 16:33:01.4570000,NULL
+106,GRPC,175834,Tympanuchus cupido,Phasianidae,greater prairie-chicken,0,1,NULL,2015-06-08 16:33:01.4830000,NULL
+107,GRCA,178625,Dumetella carolinensis,Mimidae,gray catbird,0,1,NULL,2015-06-08 16:33:01.5070000,NULL
+108,GREG,554135,Ardea alba,Ardeidae,great egret,0,0,NULL,2015-06-08 16:33:01.5300000,NULL
+109,GRHE,174793,Butorides virescens,Ardeidae,green (green-backed) heron,0,0,NULL,2015-06-08 16:33:01.5500000,NULL
+110,GRAP,175915,Perdix perdix,Phasianidae,gray partridge,0,0,NULL,2015-06-08 16:33:01.5800000,NULL
+111,GRRO,177836,Geococcyx californianus,Cuculidae,greater roadrunner,0,0,NULL,2015-06-08 16:33:01.6070000,NULL
+112,GRSP,179333,Ammodramus savannarum,Emberizidae,grasshopper sparrow,0,1,NULL,2015-06-08 16:33:01.9070000,NULL
+113,GTGR,179109,Quiscalus mexicanus,Icteridae,great-tailed grackle,0,1,NULL,2015-06-08 16:33:01.9400000,NULL
+114,GWWA,178852,Vermivora chrysoptera,Parulidae,golden-winged warbler,0,0,NULL,2015-06-08 16:33:01.9600000,NULL
+115,HAWO,1145285,Leuconotopicus villosus,Picidae,hairy woodpecker,0,1,NULL,2015-06-08 16:33:01.9870000,NULL
+116,HESP,179340,Ammodramus henslowii,Emberizidae,henslow's sparrow,0,1,NULL,2015-06-08 16:33:02.0030000,NULL
+117,HETH,179779,Catharus guttatus,Turdidae,hermit thrush,0,0,NULL,2015-06-08 16:33:02.0230000,NULL
+118,HOFI,997805,Haemorhous mexicanus,Fringillidae,house finch,0,1,NULL,2015-06-08 16:33:02.0430000,NULL
+119,HOLA,554256,Eremophila alpestris,Alaudidae,horned lark,0,1,NULL,2015-06-08 16:33:02.0600000,NULL
+120,HOME,175183,Lophodytes cucullatus,Anatidae,hooded merganser,0,0,NULL,2015-06-08 16:33:02.0770000,NULL
+121,HOSP,179628,Passer domesticus,Passeridae,house sparrow,0,1,NULL,2015-06-08 16:33:02.1000000,NULL
+122,HOWA,950029,Setophaga citrina,Parulidae,hooded warbler,0,0,NULL,2015-06-08 16:33:02.1200000,NULL
+123,HOWR,178541,Troglodytes aedon,Troglodytidae,house wren,0,1,NULL,2015-06-08 16:33:02.1530000,NULL
+124,INBU,179150,Passerina cyanea,Cardinalidae,indigo bunting,0,1,NULL,2015-06-08 16:33:02.1730000,NULL
+125,KEWA,950025,Geothlypis formosa,Parulidae,kentucky warbler,0,1,NULL,2015-06-08 16:33:02.1930000,NULL
+126,KILL,176520,Charadrius vociferus,Charadriidae,killdeer,0,1,NULL,2015-06-08 16:33:02.2130000,NULL
+127,KIRA,176207,Rallus elegans,Rallidae,king rail,0,0,NULL,2015-06-08 16:33:02.2330000,NULL
+128,LALO,179526,Calcarius lapponicus,Calcariidae,lapland Longspur,0,0,NULL,2015-06-08 16:33:02.2530000,NULL
+129,LARB,179312,Calamospiza melanocorys,Emberizidae,lark bunting,0,1,NULL,2015-06-08 16:33:02.2730000,NULL
+130,LASP,179371,Chondestes grammacus,Emberizidae,lark sparrow,0,1,NULL,2015-06-08 16:33:02.2900000,NULL
+131,LAZB,179151,Passerina amoena,Cardinalidae,lazuli bunting,0,1,NULL,2015-06-08 16:33:02.3100000,NULL
+132,LBHE,174827,Egretta caerulea,Ardeidae,little blue heron,0,0,NULL,2015-06-08 16:33:02.3330000,NULL
+133,LEBI,174846,Ixobrychus exilis,Ardeidae,least bittern,0,0,NULL,2015-06-08 16:33:02.3630000,NULL
+134,LEFL,178344,Empidonax minimus,Tyrannidae,least flycatcher,0,0,NULL,2015-06-08 16:33:02.3830000,NULL
+135,LEOW,177932,Asio otus,Strigidae,long-eared owl,0,0,NULL,2015-06-08 16:33:02.4030000,NULL
+136,LESC,175134,Aythya affinis,Anatidae,lesser scaup,0,0,NULL,2015-06-08 16:33:02.4230000,NULL
+137,LETE,824127,Sternula antillarum,Laridae,least tern,0,0,NULL,2015-06-08 16:33:02.4400000,NULL
+138,LISP,179484,Melospiza lincolnii,Emberizidae,lincoln's sparrow,0,0,NULL,2015-06-08 16:33:02.4700000,NULL
+139,LOSH,178515,Lanius ludovicianus,Laniidae,loggerhead shrike,0,1,NULL,2015-06-08 16:33:02.4930000,NULL
+140,LOWA,950009,Parkesia motacilla,Parulidae,louisiana waterthrush,0,0,NULL,2015-06-08 16:33:02.5170000,NULL
+141,MALL,175063,Anas platyrhynchos,Anatidae,mallard,0,1,NULL,2015-06-08 16:33:02.5430000,NULL
+142,MAWA,950035,Setophaga magnolia,Parulidae,magnolia warbler,0,1,NULL,2015-06-08 16:33:02.5600000,NULL
+143,MAWR,178608,Cistothorus palustris,Troglodytidae,marsh wren,0,1,NULL,2015-06-08 16:33:02.5800000,NULL
+144,MIKI,554268,Ictinia mississippiensis,Accipitridae,mississippi kite,0,1,NULL,2015-06-08 16:33:02.6130000,NULL
+145,MOBL,179811,Sialia currucoides,Turdidae,mountain bluebird,0,1,NULL,2015-06-08 16:33:02.6330000,NULL
+146,MODO,177125,Zenaida macroura,Columbidae,mourning dove,0,1,NULL,2015-06-08 16:33:02.6530000,NULL
+148,NAWA,950018,Leiothlypis ruficapilla,Parulidae,nashville warbler,0,0,NULL,2015-06-08 16:33:02.6970000,NULL
+149,NOBO,175863,Colinus virginianus,Odontophoridae,northern bobwhite,0,1,NULL,2015-06-08 16:33:02.7200000,NULL
+150,NOCA,179124,Cardinalis cardinalis,Cardinalidae,northern cardinal,0,1,NULL,2015-06-08 16:33:02.7370000,NULL
+151,NOHA,175430,Circus cyaneus,Accipitridae,northern harrier,0,1,NULL,2015-06-08 16:33:03.0300000,NULL
+152,NOMO,178620,Mimus polyglottos,Mimidae,northern mockingbird,0,1,NULL,2015-06-08 16:33:03.0500000,NULL
+153,NOPA,950033,Setophaga americana,Parulidae,northern parula,0,1,NULL,2015-06-08 16:33:03.0730000,NULL
+154,NOPI,175074,Anas acuta,Anatidae,northern pintail,0,0,NULL,2015-06-08 16:33:03.0930000,NULL
+155,NOWA,950010,Parkesia noveboracensis,Parulidae,northern waterthrush,0,0,NULL,2015-06-08 16:33:03.1270000,NULL
+156,NRWS,178443,Stelgidopteryx serripennis,Hirundinidae,northern rough-winged swallow,0,1,NULL,2015-06-08 16:33:03.1570000,NULL
+157,NSHO,175096,Anas clypeata,Anatidae,northern shoveler,0,0,NULL,2015-06-08 16:33:03.2000000,NULL
+158,NSWO,177942,Aegolius acadicus,Strigidae,northern saw-whet owl,0,0,NULL,2015-06-08 16:33:03.2200000,NULL
+159,OROR,179064,Icterus spurius,Icteridae,orchard oriole,0,1,NULL,2015-06-08 16:33:03.2370000,NULL
+160,OSFL,554221,Contopus cooperi,Tyrannidae,olive-sided flycatcher,0,1,NULL,2015-06-08 16:33:03.2600000,NULL
+161,OSPR,175590,Pandion haliaetus,Pandionidae,osprey,0,0,NULL,2015-06-08 16:33:03.2800000,NULL
+162,OVEN,726205,Seiurus aurocapilla,Parulidae,ovenbird,0,1,NULL,2015-06-08 16:33:03.3030000,NULL
+163,PABU,179156,Passerina ciris,Cardinalidae,painted bunting,0,0,NULL,2015-06-08 16:33:03.3270000,NULL
+164,PAWA,950043,Setophaga palmarum,Parulidae,palm warbler,0,0,NULL,2015-06-08 16:33:03.3470000,NULL
+165,PBGR,174505,Podilymbus podiceps,Podicipedidae,pied-billed grebe,1,0,NULL,2015-06-08 16:33:03.3700000,NULL
+166,PEFA,175604,Falco peregrinus,Falconidae,peregrine falcon,0,1,NULL,2015-06-08 16:33:03.3970000,NULL
+167,PHVI,179022,Vireo philadelphicus,Vireonidae,philadelphia vireo,0,0,NULL,2015-06-08 16:33:03.4230000,NULL
+168,PIWA,950045,Setophaga pinus,Parulidae,pine warbler,0,0,NULL,2015-06-08 16:33:03.4730000,NULL
+169,PIWO,178166,Dryocopus pileatus,Picidae,pileated woodpecker,0,1,NULL,2015-06-08 16:33:03.4970000,NULL
+170,PRAW,950052,Setophaga discolor,Parulidae,prairie warbler,0,1,NULL,2015-06-08 16:33:03.5200000,NULL
+171,PRFA,175603,Falco mexicanus,Falconidae,prairie falcon,0,1,NULL,2015-06-08 16:33:03.5430000,NULL
+172,PROW,178846,Protonotaria citrea,Parulidae,prothonotary warbler,0,1,NULL,2015-06-08 16:33:03.5770000,NULL
+173,PUFI,997803,Haemorhous purpreus,Fringillidae,purple finch,0,0,NULL,2015-06-08 16:33:03.6000000,NULL
+174,PUGA,707815,Porphyrio martinica,Rallidae,purple gallinule,0,0,NULL,2015-06-08 16:33:03.6270000,NULL
+175,PUMA,178464,Progne subis,Hirundinidae,purple martin,0,0,NULL,2015-06-08 16:33:03.6600000,NULL
+176,RBGR,179139,Pheucticus ludovicianus,Cardinalidae,rose-breasted grosbeak,0,1,NULL,2015-06-08 16:33:03.6930000,NULL
+177,RBGU,176830,Larus delawarensis,Laridae,ring-billed gull,0,0,NULL,2015-06-08 16:33:03.7330000,NULL
+178,RBME,175187,Mergus serrator,Anatidae,red-breasted merganser,0,0,NULL,2015-06-08 16:33:03.7770000,NULL
+179,RBNU,178784,Sitta canadensis,Sittidae,red-breasted nuthatch,0,0,NULL,2015-06-08 16:33:03.7970000,NULL
+180,RBWO,178195,Melanerpes carolinus,Picidae,red-bellied woodpecker,0,1,NULL,2015-06-08 16:33:03.8170000,NULL
+181,RCKI,179870,Regulus calendula,Regulidae,ruby-crowned kinglet,0,0,NULL,2015-06-08 16:33:03.8370000,NULL
+182,REDH,175125,Aythya americana,Anatidae,redhead,0,0,NULL,2015-06-08 16:33:03.8630000,NULL
+183,REVI,179021,Vireo olivaceus,Vieonidae,red-eyed vireo,0,1,NULL,2015-06-08 16:33:03.9000000,NULL
+184,RHWO,178186,Melanerpes erythrocephalus,Picidae,red-headed woodpecker,0,1,NULL,2015-06-08 16:33:03.9300000,NULL
+185,RLHA,175373,Buteo lagopus,Accipitridae,rough-legged hawk,0,0,NULL,2015-06-08 16:33:03.9530000,NULL
+186,RNDU,175128,Aythya collaris,Anatidae,ring-necked duck,0,0,NULL,2015-06-08 16:33:03.9900000,NULL
+187,RNPH,176735,Phalaropus lobatus,Scolopacidae,red-necked phalarope,0,1,NULL,2015-06-08 16:33:04.0100000,NULL
+188,ROPI,177071,Columba livia,Columbidae,rock pigeon,0,1,NULL,2015-06-08 16:33:04.0300000,NULL
+189,ROWR,178614,Salpinctes obsoletus,Troglodytidae,rock wren,0,1,NULL,2015-06-08 16:33:04.0500000,NULL
+190,RNEP,175905,Phasianus colchicus,Phasianidae,ring-necked pheasant,0,1,NULL,2015-06-08 16:33:04.0730000,NULL
+191,RSHA,175359,Buteo lineatus,Accipitridae,red-shouldered hawk,0,1,NULL,2015-06-08 16:33:04.0930000,NULL
+192,RTHA,175350,Buteo jamaicensis,Accipitridae,red-tailed hawk,0,1,NULL,2015-06-08 16:33:04.1170000,NULL
+193,RTHU,178032,Archilochus colubris,Trochillidae,ruby-throated hummingbird,0,1,NULL,2015-06-08 16:33:04.1430000,NULL
+194,RUDU,175175,Oxyura jamaicensis,Anatidae,ruddy duck,0,0,NULL,2015-06-08 16:33:04.1670000,NULL
+195,RUGR,175790,Bonasa umbellus,phasianidae,ruffed grouse,0,0,NULL,2015-06-08 16:33:04.2000000,NULL
+196,RWBL,179045,Agelaius phoeniceus,Icteridae,red-winged blackbird,0,1,NULL,2015-06-08 16:33:04.2200000,NULL
+197,SAPH,178333,Sayornis saya,Tyrannidae,say's phoebe,0,1,NULL,2015-06-08 16:33:04.2700000,NULL
+198,SAVS,179314,Passerculus sandwichensis,Emberizidae,savannah sparrow,0,1,NULL,2015-06-08 16:33:04.2930000,NULL
+200,SCOR,179082,Icterus parisorum,Icteridae,scott's oriole,0,1,NULL,2015-06-08 16:33:04.3370000,NULL
+201,SCTA,179883,Piranga olivacea,Cardinalidae,scarlet tanager,0,1,NULL,2015-06-08 16:33:04.3600000,NULL
+202,SEOW,177935,Asio flammeus,Strigidae,short-eared owl,0,1,NULL,2015-06-08 16:33:04.3900000,NULL
+203,SESA,176667,Calidris pusilla,Scolopacidae,semipalmated sandpiper,1,0,NULL,2015-06-08 16:33:04.4100000,NULL
+204,SEWR,178605,Cistothorus platensis,Troglodytidae,sedge wren,0,1,NULL,2015-06-08 16:33:04.4370000,NULL
+205,SNEG,174813,Egretta thula,Ardeidae,snowy egret,0,0,NULL,2015-06-08 16:33:04.4600000,NULL
+206,SORA,176242,Porzana carolina,Rallidae,sora,0,1,NULL,2015-06-08 16:33:04.4830000,NULL
+207,SOSA,176615,Tringa solitaria,Scolopacidae,solitary sandpiper,0,0,NULL,2015-06-08 16:33:04.5200000,NULL
+208,SOSP,179492,Melospiza melodia,Emberizidae,song sparrow,0,1,NULL,2015-06-08 16:33:04.5470000,NULL
+209,SOVI,179010,Vireo solitarius,Vireonidae,solitary vireo,0,0,NULL,2015-06-08 16:33:04.5700000,NULL
+210,SPSA,726049,Actitis macularius,Scolopacidae,spotted sandpiper,0,0,NULL,2015-06-08 16:33:04.5970000,NULL
+211,SPTO,554380,Pipilo maculatus,Emberizidae,spotted (rufous-side) towhee,0,0,NULL,2015-06-08 16:33:04.6230000,NULL
+212,SSHA,175304,Accipiter striatus,Accipitridae,sharp-shinned hawk,0,1,NULL,2015-06-08 16:33:04.6430000,NULL
+213,STFL,178293,Tyrannus forficatus,Tyrannidae,scissor-tailed flycatcher,0,1,NULL,2015-06-08 16:33:04.6670000,NULL
+214,STGR,175841,Tympanuchus phasianellus,Phasianidae,sharp-tailed grouse,0,1,NULL,2015-06-08 16:33:04.6900000,NULL
+215,SUTA,179888,Piranga rubra,Cardinalidae,summer tanager,0,1,NULL,2015-06-08 16:33:04.7130000,NULL
+216,SWHA,175367,Buteo swainsoni,Accipitridae,swainson's hawk,0,1,NULL,2015-06-08 16:33:04.7370000,NULL
+217,SWSP,179488,Melospiza georgiana,Emberizidae,swamp sparrow,0,0,NULL,2015-06-08 16:33:04.7970000,NULL
+218,SWTH,179788,Catharus ustulatus,Turdidae,swainson's thrush,0,1,NULL,2015-06-08 16:33:04.8130000,NULL
+219,SWWA,178848,Limnothlypis swainsonii,Parulidae,swainson's warbler,0,0,NULL,2015-06-08 16:33:04.8330000,NULL
+220,TEWA,950014,Leiothlypis peregrina,Parulidae,tennessee warbler,0,1,NULL,2015-06-08 16:33:04.8530000,NULL
+221,TRES,178431,Tachycineta bicolor,Hirundinidae,tree swallow,0,1,NULL,2015-06-08 16:33:04.8770000,NULL
+222,ATTW,685725,Picoides dorsalis,Picidae,Amereican three-toed woodpecker,0,1,NULL,2015-06-08 16:33:04.9000000,NULL
+223,TUTI,554138,Baeolophus bicolor,Paridae,tufted titmouse,0,1,NULL,2015-06-08 16:33:05.2000000,NULL
+224,TUVU,175265,Cathartes aura,Cathartidae,turkey vulture,0,1,NULL,2015-06-08 16:33:05.2200000,NULL
+225,UNBI,NULL,Unidentified bird,NULL,Unidentified bird,0,0,NULL,2015-06-08 16:33:05.2570000,NULL
+226,UNFL,178277,Unidentified flycatcher,Tyrannidae,Unidentified flycatcher,0,0,NULL,2015-06-08 16:33:05.2870000,NULL
+227,UNME,179030,Unidentified meadowlark,Icteridae,Unidentified meadowlark,0,0,NULL,2015-06-08 16:33:05.3200000,NULL
+228,UNSP,178838,Unidentified sparrow,Emberizidae,Unidentified sparrow,0,0,NULL,2015-06-08 16:33:05.3470000,NULL
+229,UNSW,178423,Unidentified swallow,Hirundinidae,Unidentified swallow,0,0,NULL,2015-06-08 16:33:05.3630000,NULL
+230,UNVI,178988,Unidentified vireo,Vireonidae,Unidentified vireo,0,0,NULL,2015-06-08 16:33:05.3830000,NULL
+231,UNWA,178842,Unidentified warbler,Parulidae,Unidentified warbler,0,0,NULL,2015-06-08 16:33:05.4030000,NULL
+232,UNWO,178148,Unidentified woodpecker,Picidae,Unidentified woodpecker,0,0,NULL,2015-06-08 16:33:05.4230000,NULL
+233,UNWR,178539,Unidentified wren,Troglodytidae,Unidentified wren,0,0,NULL,2015-06-08 16:33:05.4470000,NULL
+234,UPSA,176610,Bartramia longicauda,Scolopacidae,upland sandpiper,0,1,NULL,2015-06-08 16:33:05.4730000,NULL
+235,VEER,179796,Catharus fuscescens,Turdidae,veery,0,0,NULL,2015-06-08 16:33:05.4930000,NULL
+236,VESP,179366,Pooecetes gramineus,Emberizidae,vesper sparrow,0,1,NULL,2015-06-08 16:33:05.5200000,NULL
+237,VGSW,178427,Tachycineta thalassina,Hirundinidae,violet-green swallow,0,1,NULL,2015-06-08 16:33:05.5400000,NULL
+238,VIRA,176221,Rallus limicola,Rallidae,virginia rail,0,1,NULL,2015-06-08 16:33:05.5600000,NULL
+239,WAVI,179023,Vireo gilvus,Vireonidae,warbling vireo,0,1,NULL,2015-06-08 16:33:05.6000000,NULL
+240,WBNU,178775,Sitta carolinensis,Sittidae,white-breasted nuthatch,0,1,NULL,2015-06-08 16:33:05.6230000,NULL
+241,WCSP,179455,Zonotrichia leucophrys,Emberizidae,white-crowned sparrow,0,0,NULL,2015-06-08 16:33:05.6470000,NULL
+242,WEBL,179806,Sialia mexicana,Turdidae,western bluebird,0,1,NULL,2015-06-08 16:33:05.6800000,NULL
+243,WEGR,174503,Aechmophorus occidentalis,Podicipedidae,western grebe,0,0,NULL,2015-06-08 16:33:05.7070000,NULL
+244,WEKI,178287,Tyrannus verticalis,Tyrannidae,western kingbird,0,1,NULL,2015-06-08 16:33:05.7330000,NULL
+245,WEME,179039,Sturnella neglecta,Icteridae,western meadowlark,0,1,NULL,2015-06-08 16:33:05.7730000,NULL
+246,WEVI,178991,Vireo griseus,Vireonidae,white-eyed vireo,0,1,NULL,2015-06-08 16:33:05.7930000,NULL
+247,WEWA,726195,Helmitheros vermivorum,Parulidae,worm-eating warbler,0,0,NULL,2015-06-08 16:33:05.8330000,NULL
+248,WEWP,178360,Contopus sordidulus,Tyrannidae,western wood-pewee,0,1,NULL,2015-06-08 16:33:05.8530000,NULL
+249,WFIB,174926,Plegadis chihi,Threskiornithidae,white-faced ibis,0,0,NULL,2015-06-08 16:33:05.8730000,NULL
+250,WHIB,174930,Eudocimus albus,Threskiornithidae,white ibis,0,0,NULL,2015-06-08 16:33:05.8970000,NULL
+251,WIFL,178341,Empidonax traillii,Tyrannidae,willow flycatcher,0,0,NULL,2015-06-08 16:33:05.9170000,NULL
+252,WIPH,176736,Phalaropus tricolor,Scolopacidae,wilson's phalarope,0,1,NULL,2015-06-08 16:33:05.9400000,NULL
+253,WITU,176136,Meleagris gallopavo,Phasianidae,wild turkey,0,1,NULL,2015-06-08 16:33:05.9700000,NULL
+254,WIWA,950080,Cardellina pusilla,Parulidae,wilson's warbler,0,0,NULL,2015-06-08 16:33:06.0030000,NULL
+255,WIWR,178547,Troglodytes troglodytes,Troglodytidae,winter wren,0,0,NULL,2015-06-08 16:33:06.0200000,NULL
+256,WODU,175122,Aix sponsa,Anatidae,wood duck,0,1,NULL,2015-06-08 16:33:06.0500000,NULL
+257,WOST,174897,Mycteria americana,Ciconiidae,wood stork,0,0,NULL,2015-06-08 16:33:06.0800000,NULL
+258,WOTH,179777,Hylocichla mustelina,Turdidae,wood thrush,0,1,NULL,2015-06-08 16:33:06.1300000,NULL
+259,EWPW,1077358,Antrostomus vociferus,Caprimulgidae,Eastern whip-poor-will,0,0,NULL,2015-06-08 16:33:06.1470000,NULL
+260,WTSP,179462,Zonotrichia albicollis,Emberizidae,white-throated sparrow,0,0,NULL,2015-06-08 16:33:06.1730000,NULL
+261,WTSW,178014,Aeronautes saxatalis,Apodidae,white-throated swift,0,1,NULL,2015-06-08 16:33:06.2000000,NULL
+262,WWDO,177121,Zenaida asiatica,Columbidae,white-winged dove,0,1,NULL,2015-06-08 16:33:06.2130000,NULL
+263,YBCH,178964,Icteria virens,Parulidae,yellow-breasted chat,0,1,NULL,2015-06-08 16:33:06.2400000,NULL
+264,YBCU,177831,Coccyzus americanus,Cuculidae,yellow-billed cuckoo,0,1,NULL,2015-06-08 16:33:06.2670000,NULL
+265,YBFL,178338,Empidonax flaviventris,Tyrannidae,yellow-bellied flycatcher,0,1,NULL,2015-06-08 16:33:06.2930000,NULL
+266,YBSA,178202,Sphyrapicus varius,Picidae,yellow-bellied sapsucker,0,0,NULL,2015-06-08 16:33:06.3230000,NULL
+267,YCNH,174838,Nyctanassa violacea,Ardeidae,yellow-crowned night-heron,0,0,NULL,2015-06-08 16:33:06.3500000,NULL
+268,YERA,176259,Coturnicops noveboracensis,Rallidae,yellow rail,0,0,NULL,2015-06-08 16:33:06.3770000,NULL
+269,YEWA,950039,Setophaga petechia,Parulidae,yellow warbler,0,1,NULL,2015-06-08 16:33:06.4070000,NULL
+270,YHBL,179043,Xanthocephalus xanthocephalus,Icteridae,yellow-headed blackbird,0,1,NULL,2015-06-08 16:33:06.4370000,NULL
+271,YRWA,950046,Setophaga coronata,Parulidae,yellow-rumped warbler,0,1,NULL,2015-06-08 16:33:06.4700000,NULL
+272,NOFL,178154,Colaptes auratus,Picidae,northern flicker,0,1,NULL,2015-06-08 16:33:06.5000000,NULL
+273,YTVI,179009,Vireo flavifrons,Vireonidae,yellow-throated vireo,0,1,NULL,2015-06-08 16:33:06.5300000,NULL
+274,YTWA,950049,Setophaga dominica,Parulidae,yellow-throated warbler,0,0,NULL,2015-06-08 16:33:06.5600000,NULL
+276,ALFL,178340,Empidonax alnorum,Tyrannidae,Alder Flycatchetr,NULL,1,NULL,2017-06-20 10:18:03.0000000,ALFL
+277,DEJU,179410,Junco hyemalis,Emberizidae,Darl-eyed Junco,NULL,1,NULL,2017-06-21 08:49:47.0000000,DEJU
+278,BHVI,179010,Vireo solitarius,Vireonidae,Blue-headed Vireo,NULL,1,NULL,2017-06-21 08:57:32.0000000,BHVI
+279,UPCH,178697,Unidentified chickadee,Paridae,Unidentified poecile chickadee,NULL,NULL,NULL,2017-06-28 06:51:33.0000000,UPCH
+280,HERG,176824,Larus argentatus,Laridae,Herring Gull,NULL,1,NULL,2017-10-13 10:55:55.0000000,HERG
+281,OCWA,950015,Leiothlypis celata,Parulidae,Orange-crowned Warbler,0,1,NULL,2021-07-22 14:38:49.0000000,OCWA
+282,RUBL,179091,Euphagus carolinus,Icteridae,rusty blackbird,NULL,1,NULL,2021-07-30 09:45:32.0000000,NULL
+283,UNOW,NULL,Unidentified owl,Strigidae/tytonidae,unidentified owl,NULL,NULL,NULL,2021-08-04 08:05:13.0000000,NULL
+284,WEFL,178348,Empidonax difficilis,Tyrannidae,Western Flycatcher,NULL,1,NULL,2021-08-04 10:10:47.0000000,WEFL
+285,MERL,175613,Falco columbarius,Falconidae,Merlin,0,1,NULL,0001-01-01 00:00:00.0000000,MERL
