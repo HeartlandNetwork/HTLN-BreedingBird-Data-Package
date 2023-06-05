@@ -23,7 +23,7 @@ Lookup table - csv files affected
     horiz-vegetation-profile.csv
     veg-type.csv
 
-Folowing all apply to site-birdobs.csv
+Following all apply to site-birdobs.csv
   site conditions:
     wind codes
     rain codes
