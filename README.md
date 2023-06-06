@@ -9,6 +9,10 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230606
+
+Listing fate of LUTs in spreadsheet "Lookup_tables.csv"
+
 20230605
 
 Make a list of look-up-tables
