@@ -1,4 +1,4 @@
-lut_table_name,processing_step,join_table_name,status
+lut_table_name,processing_step,join_table_name,exported
 LU.Age,join,dbo.BirdObservation,FALSE
 LU.AspectVariability,join,dbo.Plot,FALSE
 LU.BirdSpecies,join,dbo.BirdObservation,FALSE
@@ -10,3 +10,18 @@ LU.DensityBoardCoverClass,join,dbo.HorizonVegetationProfile,FALSE
 LU.DensityBoardDistanceClass,join,dbo.HorizonVegetationProfile,FALSE
 LU.DensityBoardHeightClass,join,dbo.HorizonVegetationProfile,FALSE
 LU.DetectionType,join,dbo.BirdObservation,FALSE
+LU.FoliarType,join,dbo.FoliarCover,FALSE
+LU.FoliarCoverClass,join,dbo.FoliarCover,FALSE
+LU.GroundCoverClass,join,dbo.GroundCover,FALSE
+LU.GroundCoverType,join,dbo.GroundCover,FALSE
+LU.HabitatType,join,dbo.Plot,FALSE
+LU.Interval,join,dbo.BirdObservation,FALSE
+LU.Noise,join,dbo.BirdSamplingEvent,FALSE
+LU.ParkUnit,join,dbo.Plot,FALSE
+LU.ParkUnit,join,dbo.SamplingPeriod,FALSE
+LU.PlotVegetationCoverClass,join,dbo.PlotVegetation,FALSE
+LU.PlotVegetationType,join,dbo.PlotVegetation,FALSE
+LU.Rain,join,dbo.BirdSamplingEvent,FALSE
+LU.Sex,join,dbo.BirdObservation,FALSE
+LU.SlopeVariability,join,dbo.Plot,FALSE
+LU.TopoPosition,join,dbo.Plot,FALSE
