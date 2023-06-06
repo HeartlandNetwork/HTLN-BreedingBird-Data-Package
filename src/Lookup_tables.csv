@@ -1,0 +1,12 @@
+lut_table_name,processing_step,join_table_name,status
+LU.Age,join,dbo.BirdObservation,FALSE
+LU.AspectVariability,join,dbo.Plot,FALSE
+LU.BirdSpecies,join,dbo.BirdObservation,FALSE
+LU.CanopyType,join,dbo.BasalArea,FALSE
+LU.CanopyType,join,dbo.CanopyCover,FALSE
+LU.CanopyType,join,dbo.CanopyHeight,FALSE
+LU.DBHClass,join,dbo.TreeTally,FALSE
+LU.DensityBoardCoverClass,join,dbo.HorizonVegetationProfile,FALSE
+LU.DensityBoardDistanceClass,join,dbo.HorizonVegetationProfile,FALSE
+LU.DensityBoardHeightClass,join,dbo.HorizonVegetationProfile,FALSE
+LU.DetectionType,join,dbo.BirdObservation,FALSE

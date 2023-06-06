@@ -9,6 +9,14 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230605
+
+Make a list of look-up-tables
+Create a csv file in Excel with the following:
+LUT_table_name, processing_step (join/download/describe), join_table_name(s)
+
+
+
 20230427
 
 Finished csv exports from SQL Server
