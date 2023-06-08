@@ -4,7 +4,7 @@
 
 USE HTLN_LandBirds;
 
-SELECT L.LocationName AS Plot, P.Code AS ParkCode, P.Name AS ParkName, H.Name AS HabitatType,
+SELECT P.Name AS ParkUnit, L.LocationName AS Plot,   H.Name AS HabitatType,
   L.Slope, S.Name AS SlopeVariability, L.Aspect, A.Name AS AspectVariability, L.InRiparianCorridor 
 
 /* 

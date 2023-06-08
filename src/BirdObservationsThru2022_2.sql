@@ -7,7 +7,7 @@ USE HTLN_LandBirds;
 SELECT U.Name AS ParkUnit, P.LocationName AS Plot, 
     CONCAT(SUBSTRING(E.EventName, 1,4), SUBSTRING(E.EventName, 11, 16)) AS EventID, 
     E.EventDateTime, E.Temperature_C,  W.Name AS WindSpeed, W.Summary AS WindDesc, 
-    R.Name AS Rain, E.Clouds_pct AS Percent_Cloud, N.Summary AS Noise, I.Name AS Interval, 
+    R.Name AS Rain, E.Clouds_pct AS PercentCloud, N.Name AS Noise, N.Summary AS NoiseSummary, I.Name AS Interval, 
     B.ObservationNumber, S.TaxonCode AS AOUCode, S.TSN, S.ScientificName, S.Family, S.CommonName,
     B.Distance, D.Name AS DetectionType, 
     X.Name AS Sex, A.Name AS Age, B.FlockSize, B.IsPreviousPlot, B.IsFlyover, B.Comments

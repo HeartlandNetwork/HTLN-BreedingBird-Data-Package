@@ -4,7 +4,7 @@
 
 USE HTLN_LandBirds;
 
-SELECT U.Name AS ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, 
+SELECT  U.Name AS ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, 
   Left(E.EventDateTime,11) AS EventDate, T.Name AS CanopyType, B.CanopyCount
 
 FROM dbo.Plot AS L 
@@ -22,5 +22,5 @@ FROM dbo.Plot AS L
 
 WHERE (E.EventDateTime < '20230101')
 
-ORDER BY U.Name, L.LocationName,  S.SubPlotNumber, Left(E.EventDateTime,11), T.Name
+ORDER BY  U.Name, L.LocationName,  S.SubPlotNumber, Left(E.EventDateTime,11), T.Name
 
