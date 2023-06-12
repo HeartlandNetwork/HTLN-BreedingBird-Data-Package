@@ -1,4 +1,8 @@
 
 
 
-USE HTLN_Landbirds
+USE HTLN_Landbirds;
+
+
+SELECT *
+FROM LU.PlotVegetationCoverClas
