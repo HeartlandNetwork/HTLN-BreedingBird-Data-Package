@@ -9,6 +9,11 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230613
+
+Need to complete QA/QC and DDR prior to completing data package. This is on-hold
+until HTLN-BreedingBird-DDR is done.
+
 20230606
 
 Listing fate of LUTs in spreadsheet "Lookup_tables.csv"
