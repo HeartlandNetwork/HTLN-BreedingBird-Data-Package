@@ -14,13 +14,15 @@ data type of each column
 Develop simple QA/QC tests for column values.
  
 1. Categorical data
-1.1. Unique list
+1.1. Unique list:wq
 1.2. Frequency plot 
 2. Numerical data
 2.1. Summarize with average, min, max
 2.2. Histogram of values
 3. String data
 3.1. Unique list
+4.0 Dates
+4.1. Learn something about lubridate....
 
 3) Name QAQC test scripts according to the .csv files they address
 
