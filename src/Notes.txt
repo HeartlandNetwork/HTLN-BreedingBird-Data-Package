@@ -1,0 +1,13 @@
+
+20230623
+
+Workflow 
+
+1) Visually inspect each .csv just to see how extensive the mess is...
+
+2) Make a spreadsheet of every csv file and every column in each one
+
+3) Name QAQC test scripts according to the .csv files they address
+
+4) Start with the hardest one - site observations and birds
+

@@ -9,9 +9,17 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230623
+
+Put DRR on hold. Need to develop QA/QC for all csvs. Something weird with .csv
+exports in Sites/BirdObservations. Develop R code to test *every* field. 
+Problems associated with flattening all the LUTs in site/birdobservations.
+Possible commas in LUT values that will create problems with exports.
+
+
 20230613
 
-Need to complete QA/QC and DDR prior to completing data package. This is on-hold
+Need to complete QA/QC and DRR prior to completing data package. This is on-hold
 until HTLN-BreedingBird-DDR is done.
 
 20230606
