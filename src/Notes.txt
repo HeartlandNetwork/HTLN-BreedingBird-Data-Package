@@ -4,8 +4,26 @@
 Workflow 
 
 1) Visually inspect each .csv just to see how extensive the mess is...
+Rerun BirdObservationsThru2022_2.sql
+Definitely commas in LUT values. How to handle them? Posted this
+question on the data science community-of-practice chat. 
 
-2) Make a spreadsheet of every csv file and every column in each one
+2) Make a spreadsheet listing every csv file, every column and the 
+data type of each column
+
+Develop simple QA/QC tests for column values.
+ 
+1. Categorical data
+1.1. Unique list
+1.2. Frequency plot 
+2. Numerical data
+2.1. Summarize with average, min, max
+2.2. Histogram of values
+3. String data
+3.1. Unique list
+
+
+      
 
 3) Name QAQC test scripts according to the .csv files they address
 
