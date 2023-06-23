@@ -22,10 +22,8 @@ Develop simple QA/QC tests for column values.
 3. String data
 3.1. Unique list
 
-
-      
-
 3) Name QAQC test scripts according to the .csv files they address
+
 
 4) Start with the hardest one - site observations and birds
 
