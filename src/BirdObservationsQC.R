@@ -53,6 +53,57 @@ birdobs |> distinct(ParkUnit, EventDateTime) |>
 
 
 
+# Variable: Temperature_C ------------------------------------------------------
+
+# test using histogram - PASS
+# values between 0 and 10 degrees C
+# at AGFO, EFMO and HOCU
+
+
+typeof(birdobs$Temperature_C)
+
+Temp <- birdobs |> filter(Temperature_C > -9999) |>
+          select(Temperature_C)
+
+# shows values less than 10 degrees.
+ggplot(Temp, aes(x = Temperature_C)) + 
+    geom_bar()
+
+# which parks had lower temps??
+
+low_temp_obs <- birdobs |> filter((Temperature_C > -9999 ) & (Temperature_C < 10))
+
+
+view(low_temp_obs)
+
+# low temps at AGFO, HOCU, and 
+
+# Variable: WindSpeed and WindDesc ---------------------------------------------
+# Run distinct on both variables - PASS
+
+birdobs |> distinct(WindSpeed, WindDesc) 
+birdobs |> group_by(WindSpeed) |> summarize(n = n())
+
+# Variable: Rain ---------------------------------------------------------------
+# Run distinct on Rain and counts -- PASS
+
+birdobs |> distinct(Rain) 
+
+birdobs |> group_by(Rain) |> summarize(n = n())
+
+
+# Variable: PercentCloud -------------------------------------------------------
+# Plot histogram - PASS
+
+Cloud <- birdobs |> filter(PercentCloud > -9999) |>
+  select(PercentCloud)
+
+ggplot(Cloud, aes(x = PercentCloud)) + 
+  geom_bar()
+
+
+# Variable: Noise and Noise Summary --------------------------------------------
+# Plot histogram - PASS
 
 
 
