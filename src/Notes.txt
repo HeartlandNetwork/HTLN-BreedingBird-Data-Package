@@ -14,7 +14,7 @@ data type of each column
 Develop simple QA/QC tests for column values.
  
 1. Categorical data
-1.1. Unique list:wq
+1.1. Unique list
 1.2. Frequency plot 
 2. Numerical data
 2.1. Summarize with average, min, max
