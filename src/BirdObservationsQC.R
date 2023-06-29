@@ -102,8 +102,105 @@ ggplot(Cloud, aes(x = PercentCloud)) +
   geom_bar()
 
 
-# Variable: Noise and Noise Summary --------------------------------------------
-# Plot histogram - PASS
+# Variables: Noise and Noise Summary --------------------------------------------
+# list distinct - PASS
+# plot frequencies - PASS
+
+glimpse(birdobs)
+
+birdobs |> distinct(Noise) 
+
+birdobs |> distinct(NoiseSummary)
+
+MyNoise <- birdobs |> select(Noise, NoiseSummary)
+
+ggplot(MyNoise, aes(x = Noise)) + 
+  geom_bar()
+
+ggplot(MyNoise, aes(x = NoiseSummary)) + 
+  geom_bar()
+
+# Variable: Interval --------------------------------------------
+# list distinct - PASS
+# plot frequencies - PASS
+
+glimpse(birdobs)
+
+birdobs |> distinct(Interval) 
+
+
+MyData <- birdobs |> select(Interval)
+
+ggplot(MyData, aes(x = Interval)) + 
+  geom_bar()
+
+# Variable: ObservationNumber --------------------------------------------
+# list distinct - PASS
+# plot frequencies - PASS
+
+birdobs |> distinct(ObservationNumber) |>
+  print(n = 38)
+
+MyData <- birdobs |> select(ObservationNumber)
+
+ggplot(MyData, aes(x = ObservationNumber)) + 
+  geom_bar()
+
+# Variables: AOUCode, TSN, ScientificName, Family, CommonName  -----------------
+# list distinct - PASS
+# sort desc - PASS
+
+MyData <- birdobs |> 
+  select(AOUCode, TSN, ScientificName, Family, CommonName)
+
+MyData |> distinct(AOUCode, TSN, ScientificName, Family, CommonName) |>
+  arrange(AOUCode) |> print(n = 223)
+
+MyData |> group_by(AOUCode) |> summarize(n = n()) |>
+  arrange(desc(n)) |> print(n = 223)
+
+glimpse(birdobs)
+
+# Variable: Distance  -----------------
+# plot hist with and without -9999 - PASS
+
+MyData <- birdobs |> select(Distance)
+
+MyData2 <- birdobs |> filter(Distance > -9999) |>
+  select(Distance)
+
+
+# Distribution of distance has unusual irregular high frequencies along curve
+# These are due to rounding distance to 100, 200, 300 etc.
+
+ggplot(MyData2, aes(x = Distance)) + 
+  geom_bar()
+
+birdobs |> count (Distance) |> arrange (Distance, (n)) |> print(n = 491)
+
+
+# Variable: DetectionType ----------------------------------
+# list distinct - PASS
+# plot frequencies - PASS
+
+birdobs |> distinct(DetectionType) 
+
+MyData <- birdobs |> select(DetectionType)
+
+ggplot(MyData, aes(x = DetectionType)) + 
+  geom_bar()
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
