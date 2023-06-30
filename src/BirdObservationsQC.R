@@ -31,7 +31,7 @@ birdobs |> distinct(Plot) |> print(n = 843)
 
 birdobs |> distinct(ParkUnit, EventID) |> print(n = 7066)
 
-# Get sample sizes by ParkUnit - PASS
+# Get sample Sizes by ParkUnit - PASS
 
 birdobs |> distinct(ParkUnit, EventID) |>  
   group_by(ParkUnit) |> summarize(n = n())
@@ -189,6 +189,86 @@ MyData <- birdobs |> select(DetectionType)
 
 ggplot(MyData, aes(x = DetectionType)) + 
   geom_bar()
+
+# Variable: DetectionType ----------------------------------
+# list distinct - PASS
+# plot frequencies - PASS
+
+birdobs |> distinct(Sex) 
+
+MyData <- birdobs |> select(Sex)
+
+ggplot(MyData, aes(x = Sex)) + 
+  geom_bar()
+
+# Variable: Age ----------------------------------
+# list distinct - PASS
+# plot frequencies - PASS
+
+birdobs |> distinct(Age) 
+
+MyData <- birdobs |> select(Age)
+
+ggplot(MyData, aes(x = Age)) + 
+  geom_bar()
+
+# Variable: FlockSize -------------------------------------------------------
+# Plot histogram - PASS
+# List by n desc - PASS
+
+MyData <- birdobs |> filter(FlockSize > -9999) |>
+  select(FlockSize)
+
+ggplot(MyData, aes(x = FlockSize)) + 
+  geom_bar()
+
+
+birdobs |> count (FlockSize) |> arrange (FlockSize, (n)) |>
+   print(n = 38)
+
+# Variable: IsPreviousPlot -------------------------------------------------------
+# Plot histogram - PASS
+# List by n desc - PASS
+
+MyData <- birdobs |> filter(IsPreviousPlot > -9999) |>
+  select(IsPreviousPlot)
+
+ggplot(MyData, aes(x = IsPreviousPlot)) + 
+  geom_bar()
+
+
+birdobs |> count (IsPreviousPlot) |> arrange (IsPreviousPlot, (n)) |>
+  print(n = 2)
+
+# Variable: IsFlyover -------------------------------------------------------
+# Plot histogram - PASS
+# List by n desc - PASS
+
+MyData <- birdobs |> filter(IsFlyover > -9999) |>
+  select(IsFlyover)
+
+ggplot(MyData, aes(x = IsFlyover)) + 
+  geom_bar()
+
+
+birdobs |> count (IsFlyover) |> arrange (IsFlyover, (n)) |>
+  print(n = 2)
+
+# Variable: Comments ----------------------------------
+# list distinct - PASS
+
+birdobs |> distinct(Comments) |>
+  print(n = 908)
+
+
+
+
+
+
+
+
+
+
 
 
 
