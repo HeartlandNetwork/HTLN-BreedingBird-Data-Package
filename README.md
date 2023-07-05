@@ -9,7 +9,23 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
-20230623
+20230705
+
+All subplot 0's edited to 1's. Webapp no longer allows 0's. Rerun all habitat
+SQL export scripts and resume R - QC scripts.
+
+20230703
+
+BirdobservationsThru2022_2.csv passed all the QC tests. See the file in
+./Package called BirdobservationsThru2022_2.csv. The QC tests are all in
+the script ./QCscripting called BirdObservationsQC.R
+
+Started on habitat-BasalArea and immediately found 0 values for SubPlot. 
+Fixing SubPlot values that were accidentally set to 0 back in 2017. They should
+all be 1's. Making database corrections using HTLN_Landbirds IRMA app. There
+are n = 152 records to fix. See the list under src/Subplot0s.csv
+
+20230627
 
 Put DRR on hold. Need to develop QA/QC for all csvs. Something weird with .csv
 exports in Sites/BirdObservations. Develop R code to test *every* field. 
