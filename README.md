@@ -9,6 +9,11 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230705
+
+All subplot 0's edited to 1's. Webapp no longer allows 0's. Rerun all habitat
+SQL export scripts and resume R - QC scripts.
+
 20230703
 
 BirdobservationsThru2022_2.csv passed all the QC tests. See the file in
