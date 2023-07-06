@@ -2,10 +2,13 @@
 
 
 
+
 USE HTLN_LandBirds;
 
 SELECT  U.Name AS ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, 
-  Left(E.EventDateTime,11) AS EventDate, T.Name AS CanopyType, B.CanopyCount
+  E.EventDateTime AS EventDate, T.Name AS CanopyType, B.CanopyCount
+
+  -- Left(E.EventDateTime,11) AS EventDate
 
 FROM dbo.Plot AS L 
 

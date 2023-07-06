@@ -7,7 +7,7 @@
 USE HTLN_LandBirds;
 
 SELECT P.Name AS ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, 
-  Left(E.EventDateTime,11) AS EventDate,T.TaxonCode, T.Family, T.CommonName, T.ScientificName, 
+ E.EventDateTime AS EventDate,T.TaxonCode, T.Family, T.CommonName, T.ScientificName, 
   D.Name AS DBHClass, C.TreeCount
 
 FROM dbo.Plot AS L 

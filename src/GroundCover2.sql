@@ -3,7 +3,7 @@
 USE HTLN_LandBirds;
 
 SELECT U.Name as ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, 
-Left(E.EventDateTime,11) AS EventDate, T.Name AS GroundCover, C.Code AS CoverClassCode,
+EventDateTime AS EventDate, T.Name AS GroundCover, C.Code AS CoverClassCode,
 C.MidpointValue AS CoverClassMidPoint, C.Range AS CoverClassRange
 FROM dbo.Plot AS L 
 
