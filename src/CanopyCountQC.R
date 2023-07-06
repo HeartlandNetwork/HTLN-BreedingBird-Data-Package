@@ -1,9 +1,50 @@
 
 library(tidyverse)
 
+canopycount <- read_csv("./src/BasalArea.csv")
 
 
-basalarea <- read_csv("./src/BasalArea.csv")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 glimpse(basalarea)
 

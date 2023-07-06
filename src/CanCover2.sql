@@ -5,7 +5,7 @@
 USE HTLN_LandBirds;
 
 
-SELECT U.Name AS ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, Left(E.EventDateTime,11) AS EventDate, T.Name AS CanopyType, C.ReadingNumber, C.DotScore 
+SELECT U.Name AS ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, E.EventDateTime AS EventDate, T.Name AS CanopyType, C.ReadingNumber, C.DotScore 
 
 FROM dbo.Plot AS L 
 
