@@ -2,47 +2,107 @@
 library(tidyverse)
 
 
-canopycount <- read_csv("./src/Basal.csv")
+canopycover <- read_csv("./src/CanopyCover.csv")
+
+glimpse(canopycover)
+
+# Variable: ParkUnit --------------------------------------------------------------
+# Unique list - PASS
+# Plot frequencies - PASS
+
+canopycover |> distinct(ParkUnit)
+
+canopycover |> distinct(ParkUnit) |> 
+  group_by(ParkUnit) |> summarize(n = n())
+
+
+# Variable: Plot --------------------------------------------------------------
+# Unique list - PASS
+# Plot frequencies - PASS
+
+canopycover |> distinct(Plot) |>
+  print(n = 501)
+
+MyData <- canopycover |> select(ParkUnit, Plot)
+
+ggplot(MyData, aes(x = ParkUnit)) + 
+  geom_bar()
+
+
+# Variable: SubPlot --------------------------------------------------------------
+# Unique list - PASS
+# SubPlot frequencies - PASS
+
+
+canopycover |> distinct(SubPlot) |>
+  print(n = 5)
+
+
+canopycover |> 
+  select(ParkUnit, SubPlot) |> 
+  group_by(ParkUnit, SubPlot) |> summarize(n = n()) |>
+  print(n = 19)
+
+# Variable: EventDate --------------------------------------------------------------
+# Unique list - PASS
+# EventDate frequencies - PASS
+
+canopycover |> distinct(EventDate) |>
+  arrange(EventDate) |> print(n = 162)
+
+
+canopycover |> distinct(Plot, EventDate) |> 
+  group_by(Plot) |> summarize(n = n()) |>
+  print(n = 504)
+
+
+# Variable: CanopyType --------------------------------------------------------------
+# Unique list - PASS
+# CanopyType frequencies - PASS
+
+
+canopycover |> distinct(CanopyType)
+
+
+canopycover |> 
+  select(Plot, CanopyType) |> 
+  group_by(Plot, CanopyType) |> 
+  arrange(Plot) |> summarize(n = n()) |>
+  print(n = 1040)
+
+
+# Variable: ReadingNumber --------------------------------------------------------------
+# Unique list - PASS
+# ReadingNumber frequencies - PASS
+
+
+canopycover|> distinct(ReadingNumber) |>
+  print(n = 5)
+
+
+MyData <- canopycover |> select(ParkUnit, ReadingNumber)
+
+ggplot(MyData, aes(x = ParkUnit)) + 
+  geom_bar()
+
+
+# Variable: DotScore --------------------------------------------------------------
+# Unique list - PASS
+# DotScore frequency histogram - PASS
+
+
+canopycover|> distinct(DotScore) |>
+  print(n = 98)
+
+
+MyData <- canopycover |> select(DotScore)
+
+ggplot(MyData, aes(x = DotScore)) + 
+  geom_bar()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+glimpse(canopycover)
 
 
 
@@ -121,19 +181,19 @@ basalarea |>
   print(n = 913)
 
 
-# Variable: CanopyCount --------------------------------------------------------------
+# Variable: canopycover --------------------------------------------------------------
 # Histogram of count - PASS
-# CanopyCount frequencies - PASS
+# canopycover frequencies - PASS
 
 view(basalarea)
 
-basalarea |> filter(CanopyCount == 0) |>
+basalarea |> filter(canopycover == 0) |>
    print(n = 350)
 
-ggplot(basalarea, aes(x = CanopyCount)) + 
+ggplot(basalarea, aes(x = canopycover)) + 
   geom_bar()
 
-basalarea |> count (CanopyCount) |> arrange (CanopyCount, (n))
+basalarea |> count (canopycover) |> arrange (canopycover, (n))
 
 
 
@@ -141,6 +201,28 @@ basalarea |> count (CanopyCount) |> arrange (CanopyCount, (n))
 
 
 
+# Variable: Temperature_C ------------------------------------------------------
+
+# test using histogram - PASS
+# values between 0 and 10 degrees C
+# at AGFO, EFMO and HOCU
+
+
+typeof(birdobs$Temperature_C)
+
+Temp <- birdobs |> filter(Temperature_C > -9999) |>
+  select(Temperature_C)
+
+# shows values less than 10 degrees.
+ggplot(Temp, aes(x = Temperature_C)) + 
+  geom_bar()
+
+# which parks had lower temps??
+
+low_temp_obs <- birdobs |> filter((Temperature_C > -9999 ) & (Temperature_C < 10))
+
+
+view(low_temp_obs)
 
 
 
