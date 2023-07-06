@@ -4,7 +4,7 @@
 USE HTLN_LandBirds;
 
 SELECT U.Name as ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, 
-Left(E.EventDateTime,11) AS EventDate, X.Name AS Distance, D.Name AS Height, 
+E.EventDateTime AS EventDate, X.Name AS Distance, D.Name AS Height, 
 C.Code AS CoverClassCode, C.MidpointValue AS CoverClassMidPoint, C.Range AS CoverClassRange
 
 FROM dbo.Plot AS L 

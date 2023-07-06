@@ -1,7 +1,8 @@
 
 library(tidyverse)
 
-canopycount <- read_csv("./src/BasalArea.csv")
+
+canopycount <- read_csv("./src/Basal.csv")
 
 
 
