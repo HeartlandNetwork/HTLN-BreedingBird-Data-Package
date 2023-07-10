@@ -9,6 +9,10 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230710
+
+Habitat QC completed.
+
 20230705
 
 All subplot 0's edited to 1's. Webapp no longer allows 0's. Rerun all habitat
