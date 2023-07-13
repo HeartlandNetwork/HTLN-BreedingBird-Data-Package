@@ -9,6 +9,11 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230713
+
+Updated NPSdataverse libraries. EML script work is in the Package directory
+because all .csv's are located there.
+
 20230710
 
 Habitat QC completed.
