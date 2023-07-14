@@ -29,11 +29,10 @@ birdobs |> distinct(Plot) |> print
 
 glimpse(birdobs)
 
-birdobs |> select(birdobs$Plot, birdobs$EventID)
+birdobs |> 
+  distinct(ParkUnit, Plot, EventID) |>
+  filter(ParkUnit == "Herbert Hoover", Plot == "HEHO35")
 
-
-|>
-  filter((Plot = "HEHO30") OR (Plot = "HEHO35"))
 
 
 # Variable: EventID ------------------------------------------------------------
