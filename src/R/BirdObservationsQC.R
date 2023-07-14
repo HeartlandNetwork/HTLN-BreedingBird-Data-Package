@@ -2,7 +2,7 @@
 library(tidyverse)
 # library(data.table)
 
-birdobs <- read_csv("src/BirdObservationsThru2022_2.csv")
+birdobs <- read_csv("src/BirdObservationsThru2022_3.csv")
 
 glimpse(birdobs)
 
@@ -23,7 +23,17 @@ ggplot(birdobs, aes(x = ParkUnit_factor)) +
 
 # Unique list - PASS
 
-birdobs |> distinct(Plot) |> print(n = 843)
+birdobs |> distinct(Plot) |> print
+
+# Test for HEHO30 and HEHO35 for 2010
+
+glimpse(birdobs)
+
+birdobs |> 
+  distinct(ParkUnit, Plot, EventID) |>
+  filter(ParkUnit == "Herbert Hoover", Plot == "HEHO35")
+
+
 
 # Variable: EventID ------------------------------------------------------------
 
