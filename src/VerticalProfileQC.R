@@ -48,7 +48,6 @@ mydata |>
   print(n = 24)
 
 glimpse(mydata)
-
 # Variable: EventDate --------------------------------------------------------------
 # Unique list - PASS
 # EventDate frequencies - PASS
@@ -58,7 +57,8 @@ mydata |> distinct(EventDate) |>
 
 mydata |> distinct(Plot, EventDate) |> 
   group_by(Plot) |> summarize(n = n()) |>
-  print(n = 325)
+  print(n = 806)
+
 
 glimpse(mydata)
 
@@ -90,7 +90,7 @@ ggplot(mydata1, aes(x = ParkUnit)) +
 
 
 # Variable: Count --------------------------------------------------------------
-# Summarise
+# Summarize
 # Histogram of all values
 # Histograms by park
 

@@ -9,6 +9,7 @@ glimpse(mydata)
 
 
 
+
 # Variable: ParkUnit -----------------------------------------------------------
 # Unique list - PASS
 # Plot frequencies - PASS
@@ -101,10 +102,14 @@ ggplot(mydata1, aes(x = ParkUnit)) +
   geom_bar()
 
 
+
+?geom_histogram
 # Variable: TreeCount --------------------------------------------------------------
 # Summarise
 # Histogram of all values
 # Histograms by park
+
+print(mydata$TreeCount)
 
 summary(mydata$TreeCount)
 
@@ -115,10 +120,9 @@ ggplot(mydata, aes(TreeCount)) +
   geom_histogram(binwidth = 1) + 
   facet_grid(ParkUnit ~ .)
 
-?geom_histogram
 
-
-
+mydata |> filter(TreeCount > 130) |>
+  print(n = 1)
 
 
 

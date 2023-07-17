@@ -1,4 +1,4 @@
-ParkUnit,Plot,SubPlot,EventDateTime,Height,Vegetation,Count
+ParkUnit,Plot,SubPlot,EventDate,Height,Vegetation,Count
 Agate Fossil Beds,AGFO1,1,2001-05-07,0 - 1 m,Herbaceous,2
 Agate Fossil Beds,AGFO1,1,2003-06-04,0 - 1 m,Herbaceous,4
 Agate Fossil Beds,AGFO1,1,2004-06-08,0 - 1 m,Herbaceous,3

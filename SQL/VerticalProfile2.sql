@@ -3,7 +3,7 @@
 
 USE HTLN_LandBirds;
 
-SELECT U.Name AS ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, E.EventDateTime,
+SELECT U.Name AS ParkUnit, L.LocationName AS Plot,  S.SubPlotNumber AS SubPlot, E.EventDateTime AS EventDate,
 H.Name AS Height, P.Name AS Vegetation, V.VerticalProfileCount AS Count 
 
 FROM dbo.Plot AS L 

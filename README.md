@@ -9,6 +9,10 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230717
+
+Fixes to date and time format.
+
 20230713
 
 Updated NPSdataverse libraries. EML script work is in the Package directory

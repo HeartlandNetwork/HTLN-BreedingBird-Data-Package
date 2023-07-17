@@ -2,7 +2,7 @@
 library(tidyverse)
 # library(data.table)
 
-birdobs <- read_csv("src/BirdObservationsThru2022_2.csv")
+birdobs <- read_csv("src/BirdObservationsThru2022_3.csv")
 
 glimpse(birdobs)
 
@@ -42,7 +42,7 @@ birdobs |> distinct(ParkUnit, EventID) |>
 # can only see last 1000 records
 
 birdobs |> distinct(EventDateTime) |>
-  arrange(EventDateTime) |> print(n = 6974)
+  arrange(EventDateTime) |> print(n = 6976)
 
 # Count date-time values by park - these counts should be
 # identical to the EvendIDs - PASS
@@ -258,11 +258,7 @@ birdobs |> count (IsFlyover) |> arrange (IsFlyover, (n)) |>
 # list distinct - PASS
 
 birdobs |> distinct(Comments) |>
-  print(n = 908)
-
-
-
-
+  print(n = 909)
 
 
 
