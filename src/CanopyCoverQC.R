@@ -1,7 +1,6 @@
 
 library(tidyverse)
 
-
 canopycover <- read_csv("./src/CanopyCover.csv")
 
 glimpse(canopycover)
@@ -21,7 +20,7 @@ canopycover |> distinct(ParkUnit) |>
 # Plot frequencies - PASS
 
 canopycover |> distinct(Plot) |>
-  print(n = 501)
+  print(n = 504)
 
 MyData <- canopycover |> select(ParkUnit, Plot)
 

@@ -2,7 +2,7 @@
 library(tidyverse)
 
 
-mydata <- read_csv("./src/TreeTally.csv")
+mydata <- read_csv("./src/PlotVegCover.csv")
 
 glimpse(mydata)
 
@@ -56,6 +56,8 @@ mydata |> distinct(VegType) |>
 
 
 mydata1 <- mydata |> select(ParkUnit, VegType)
+
+mydata1
 
 ggplot(mydata1, aes(x = ParkUnit)) + 
   geom_bar()
