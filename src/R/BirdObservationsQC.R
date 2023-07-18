@@ -23,17 +23,7 @@ ggplot(birdobs, aes(x = ParkUnit_factor)) +
 
 # Unique list - PASS
 
-birdobs |> distinct(Plot) |> print
-
-# Test for HEHO30 and HEHO35 for 2010
-
-glimpse(birdobs)
-
-birdobs |> 
-  distinct(ParkUnit, Plot, EventID) |>
-  filter(ParkUnit == "Herbert Hoover", Plot == "HEHO35")
-
-
+birdobs |> distinct(Plot) |> print(n = 843)
 
 # Variable: EventID ------------------------------------------------------------
 
@@ -52,7 +42,7 @@ birdobs |> distinct(ParkUnit, EventID) |>
 # can only see last 1000 records
 
 birdobs |> distinct(EventDateTime) |>
-  arrange(EventDateTime) |> print(n = 6974)
+  arrange(EventDateTime) |> print(n = 6976)
 
 # Count date-time values by park - these counts should be
 # identical to the EvendIDs - PASS
@@ -268,11 +258,7 @@ birdobs |> count (IsFlyover) |> arrange (IsFlyover, (n)) |>
 # list distinct - PASS
 
 birdobs |> distinct(Comments) |>
-  print(n = 908)
-
-
-
-
+  print(n = 909)
 
 
 
