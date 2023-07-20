@@ -75,7 +75,7 @@ data_type <- "ongoing"
 # set the working_folder to `getwd()`. If they are in a different directory you will 
 # need to specify that directory.
 
-working_folder <- getwd()
+working_folder <- setwd("./Package")
 
 # or:
 # working_folder <- setwd("C:/users/<yourusername>/Documents/my_data_package_folder)
@@ -83,10 +83,21 @@ working_folder <- getwd()
 #### List data files
 # Tell R what your data files are called. 
 
-## LEFT OFF EDITING HERE (haven't run anything) <<<<<<<<<<<<<<<<
 
-data_files <- c("qry_Export_AA_points.csv",
-                "qry_Export_AA_VegetationDetails.csv")
+data_files <- c("BasalArea.csv",
+                "BirdObservationsThru2022_3.csv",
+                "CanopyCover.csv",
+                "CanopyHeight.csv",
+                "FoliarCover.csv",
+                "GroundCover.csv",
+                "HorizDistanceProfile.csv",
+                "PlotCoordinatesDD.csv",
+                "PlotPhysicalFeatures.csv",
+                "PlotVegCover.csv",
+                "TreeTally.csv",
+                "VerticalProfile.csv")
+                
+                
 
 # alternatively if the data files are in your working directory:
 # data_files <- list.files(pattern = "*.csv")
@@ -95,15 +106,44 @@ data_files <- c("qry_Export_AA_points.csv",
 # These should be relatively short, but perhaps more informative than the actual file names. 
 # Make sure that they are in the same order as the files in data_files.
 
-data_names <- c("TEST_AA Point Location Data",
-                "TEST_AA Vegetation Coverage Data")
+data_names <- c("Habitat - BasalArea Data",
+                "Bird Observations - Site Conditions Data",
+                "Habitat - Canopy Cover Data",
+                "Habitat - Canopy Height Data",
+                "Habitat - Foliar Cover Data",
+                "Habitat - Ground Cover Data",
+                "Habitat - Horizontal Distance Profile Data",
+                "Sampling Plot Coordinates",
+                "Habitat - Plot Physical Features Data",
+                "Habitat - Plot Vegetation Cover Data",
+                "Habitat - Tree Tally Data",
+                "Habitat - Vertical Profile Data")
+                
+                
+                
+                
+                
 
 
-#### Describe each data file. Data file descriptions should be unique and about 10 words long. Descriptions will be used in auto-generated tables within the ReadMe and DRR. If you need to use more than 10 words, consider putting that information into the abstract, methods, or additional information sections. Again, make sure these are in the same order as the files they are describing.
+#### Describe each data file. Data file descriptions should be unique and about 10 words long. 
+# Descriptions will be used in auto-generated tables within the ReadMe and DRR. 
+# If you need to use more than 10 words, consider putting that information into the abstract, 
+# methods, or additional information sections. Again, make sure these are in the same order as 
+# the files they are describing.
 
-data_descriptions <- c("TEST_Everglades Vegetation Map Accuracy Assessment point data",
-                       "TEST_Everglades Vegetation Map Accuracy Assessment vegetation data")
 
+data_descriptions <- c("Basal area of hardwood and conifer species estimated using a 10-factor English cruz-all",
+                "Bird observations taken using variable circular plots using continuous distance",
+                "Canopy cover estimated with densiometer at four cardinal directions (N, E, S, W)",
+                "Canopy heights of the tallest hardwood and coniferous trees estimated with clinometer",
+                "Percent foliar cover estimated under 1.5 high grouped into plant guilds",
+                "Percent ground cover estimated for conifer, deciduous, grass litter, rock and other classes",
+                "Horizontal vegetation profile readings taken using profile board at 15 m.",
+                "Sampling Plot Coordinates in latitude - longitude decimal degrees",
+                "Plot physical attributes including slope, aspect, and topographic description",
+                "Plot cover types estimated by percent cover classes",
+                "Tree tally data for tree species > 1.5 m based on diameter size-classes",
+                "Vertical profile of vegetion measured with 7.5 m rod")
 
 #### Placeholder URL for data files
 # EMLassemblyline needs to know where the data files will be (a URL). However, because you 
@@ -115,9 +155,13 @@ data_urls <- c(rep("temporary URL", length(data_files)))
 
 
 #### Taxonomic information
-Specify where you taxonomic information is. this can be a single file or a list of files and fields (columns) with scientific names that will be used to automatically generate the taxonomic coverage metadata. We suggest using [DarwinCore](https://dwc.tdwg.org/terms) for column names, such as "scientificName". If your data package does not have taxonomic data, skip this step.
-```{r taxonomic_info}
+# Specify where you taxonomic information is. this can be a single file or a list of 
+# files and fields (columns) with scientific names that will be used to automatically 
+# generate the taxonomic coverage metadata. We suggest using [DarwinCore](https://dwc.tdwg.org/terms) 
+# for column names, such as "scientificName". If your data package does not have 
+# taxonomic data, skip this step.```{r taxonomic_info}
 # the file(s) where scientific names are located:
+
 data_taxa_tables <- "qry_Export_AA_VegetationDetails.csv"
 
 # the column where your scientific names are within the data files.
