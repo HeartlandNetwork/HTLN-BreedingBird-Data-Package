@@ -77,7 +77,7 @@ data_type <- "ongoing"
 # set the working_folder to `getwd()`. If they are in a different directory you will 
 # need to specify that directory.
 
-working_folder <- setwd("./Package")
+working_folder <- setwd("./src")
 
 # or:
 # working_folder <- setwd("C:/users/<yourusername>/Documents/my_data_package_folder)
