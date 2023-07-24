@@ -9,6 +9,10 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230724
+
+Bird and tree species names into EML script
+
 20230720
 
 Set up EML and Package. Initial EML script edited. Need taxonomy.

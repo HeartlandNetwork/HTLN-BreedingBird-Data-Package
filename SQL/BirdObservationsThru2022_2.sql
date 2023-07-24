@@ -41,4 +41,5 @@ WHERE (E.EventDateTime < '20230101')  AND
      --((LEFT(P.LocationName,4) = 'HEHO') OR (LEFT(P.LocationName,4) = 'PIPE'))*/ 
     NOT (LEFT(P.LocationName,4) = 'CUVA')
 
-ORDER BY P.LocationName,  E.EventName,  B.ObservationNumber;
+-- ORDER BY P.LocationName,  E.EventName,  B.ObservationNumber;
+ORDER BY E.EventDateTime

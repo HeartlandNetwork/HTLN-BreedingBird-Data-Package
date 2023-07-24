@@ -44,6 +44,8 @@
 library(NPSdataverse)
 library(tidyverse)
 
+############################################
+# OBJECT ASSIGNMENT
 
 # Set the overall package details
 # All of the following items should be reviewed and updated to fit the package you 
@@ -162,41 +164,78 @@ data_urls <- c(rep("temporary URL", length(data_files)))
 # taxonomic data, skip this step.```{r taxonomic_info}
 # the file(s) where scientific names are located:
 
-data_taxa_tables <- "qry_Export_AA_VegetationDetails.csv"
+data_taxa_tables <- c("BirdSpeciesNames.csv","TreeSpeciesNames")
 
 # the column where your scientific names are within the data files.
-data_taxa_fields <- "scientific_Name"
-```
+data_taxa_fields <- c("scientificName","scientificName")
 
 #### Geographic information
-Specify the tables and fields that contain geographic coordinates and site names. This information will be used to fill out the geographic coverage elements of the metadata. If your data package does not have geographic information skip this step. If the only geographic information you are supplying is the park units (and their bounding boxes) you can also skip this step; Park Units and the corresponding GPS coordinates for their bounding boxes will be added at a later step. If your coordinates are in UTMs and not GPS, try the [`convert_utm_to_ll()`](https://nationalparkservice.github.io/QCkit/reference/convert_utm_to_ll.html) function in the [QCkit package](https://nationalparkservice.github.io/QCkit/)
-```{r geo_info}
-data_coordinates_table <- "qry_Export_AA_points.csv"
+# Specify the tables and fields that contain geographic coordinates 
+# and site names. This information will be used to fill out the 
+# geographic coverage elements of the metadata. If your data package 
+# does not have geographic information skip this step. If the only geographic 
+# information you are supplying is the park units (and their bounding boxes) 
+# you can also skip this step; Park Units and the corresponding GPS 
+# coordinates for their bounding boxes will be added at a later step. 
+# If your coordinates are in UTMs and not GPS, try the [`convert_utm_to_ll()`]
+# (https://nationalparkservice.github.io/QCkit/reference/convert_utm_to_ll.html) 
+# function in the [QCkit package](https://nationalparkservice.github.io/QCkit/)
+
+data_coordinates_table <- "PlotCoodinatesDD.csv"
 data_latitutde <- "decimalLatitude"
 data_longitude <- "decimalLongitude"
-data_sitename <- "Point_ID"
-```
+data_sitename <- "PlotID"
 
 #### Temporal information
-This should indicate collection date of the first and last data point in the data package (across all files) and does not include any planning, pre- or post-processing time. The format should be one that complies with the International Standards Organization's standard 8601. The recommended format for EML is: YYYY-MM-DD, where Y is the four digit year, M is the two digit month code (01 - 12 for example, January = 01), and D is the two digit day of the month (01 - 31). Using an alternate format or setting the date to the future will cause errors down the road!
-```{r temp_info}
-startdate <- ymd("2010-01-26")
-enddate <- ymd("2013-01-04")
-```
+# This should indicate collection date of the first and last data point in the 
+# data package (across all files) and does not include any planning, pre- or 
+# post-processing time. The format should be one that complies with the 
+# International Standards Organization's standard 8601. The recommended format for 
+# EML is: YYYY-MM-DD, where Y is the four digit year, M is the two digit month 
+# code (01 - 12 for example, January = 01), and D is the two digit day of the 
+# month (01 - 31). Using an alternate format or setting the date to the future 
+# will cause errors down the road!
+
+startdate <- ymd("2001-05-07")
+enddate <- ymd("2022-06-15")
+
+######################################################################################
 
 ## EMLassemblyline Functions
-The next set of functions are meant to be considered one by one and only run if applicable to a particular data package. The first year will typically see all of these run, but if the data format and protocol stay constant over time it may be possible to skip some in future years. Additionally some datasets may not have geographic or taxonomic component.
+
+# The next set of functions are meant to be considered one by one and only run if 
+# applicable to a particular data package. The first year will typically see all of 
+# these run, but if the data format and protocol stay constant over time it may be 
+# possible to skip some in future years. Additionally some datasets may not have 
+# geographic or taxonomic component.
 
 #### FUNCTION 1 - Core Metadata Information
-This function creates blank .txt template files for the abstract, additional information, custom units, intellectual rights, keywords, methods, and personnel. Be sure the edit the personnel text file in Excel as it has columns. Remember that the role "creator" is required! EMLassemblyline will also warn you if you do not  include a "PI" role, but you can ignore the warning; this role is not required. Typically these files can be reused between years.
 
-We encourage you to craft your abstract in a text editor, NOT Word. Your abstract will be forwarded to data.gov, DataCite, google dataset search, etc. so it is worth some time to carefully consider what is relevant and important information for an abstract. Abstracts must be greater than 20 words. Good abstracts tend to be 250 words or less. You may consider including the following information: The premise for the data collection (why was it done?), why is it important, a brief overview of relevant methods, and a brief explanation of what data are included such as the period of time, location(s), and type of data collected. Keep in mind that if you have lengthy descriptions of methods, provenance, data QA/QC, etc it may be better to expand upon these topics in a Data Release Report or similar document uploaded separately to DataStore.
+# This function creates blank .txt template files for the abstract, additional information, 
+# custom units, intellectual rights, keywords, methods, and personnel. Be sure the edit the 
+# personnel text file in Excel as it has columns. Remember that the role "creator" is required! 
+# EMLassemblyline will also warn you if you do not include a "PI" role, but you can 
+# ignore the warning; this role is not required. Typically these files can be reused between years.
 
-Currently this function inserts a Creative Common 0 license. The CC0 license will need to be updated. However, to ensure that the licence meets NPS specifications and properly coincides with CUI designations, the best way to update the license information is during a later step using `EMLeditor::set_int_rights()`. There is no need to edit this .txt file.
-```{r core}
+# We encourage you to craft your abstract in a text editor, NOT Word. Your abstract will be 
+# forwarded to data.gov, DataCite, google dataset search, etc. so it is worth some time to 
+# carefully consider what is relevant and important information for an abstract. Abstracts 
+# must be greater than 20 words. Good abstracts tend to be 250 words or less. You may consider 
+# including the following information: The premise for the data collection (why was it done?), 
+# why is it important, a brief overview of relevant methods, and a brief explanation of what 
+# data are included such as the period of time, location(s), and type of data collected. Keep 
+# in mind that if you have lengthy descriptions of methods, provenance, data QA/QC, etc it 
+# may be better to expand upon these topics in a Data Release Report or similar document uploaded 
+# separately to DataStore.
+
+# Currently this function inserts a Creative Common 0 license. The CC0 license will need to be 
+# updated. However, to ensure that the licence meets NPS specifications and properly 
+# coincides with CUI designations, the best way to update the license information is during a 
+# later step using `EMLeditor::set_int_rights()`. There is no need to edit this .txt file.
+
 template_core_metadata(path = working_folder, 
                        license = "CC0") # that '0' is a zero!
-```
+
 
 #### FUNCTION 2 - Data Table Attributes
 This function creates an "attributes_datafilename.txt" file for each data file. This can be opened in Excel (we recommend against trying to update these in a text editor) and fill in/adjust the columns for attributeDefinition, class, unit, etc. refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
