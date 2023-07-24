@@ -1,4 +1,4 @@
-Location_ID,Lon_DD,Lat_DD
+PlotID,decimalLongitude,decimalLatitude
 HOCU1,-83.007052,39.373643
 HOCU2,-83.007155,39.377238
 HOCU4,-83.002664,39.377315
