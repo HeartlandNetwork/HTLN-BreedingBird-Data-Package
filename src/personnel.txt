@@ -1,1 +1,3 @@
 givenName	middleInitial	surName	organizationName	electronicMailAddress	userId	role	projectTitle	fundingAgency	fundingNumber
+David G. Peitz National-Park-Service david_peitz@npg.gov dpeitz principle-investigator Heartland-Network-Breeding-Bird-Monitoring-Program National-Park-Service <NA>
+Gareth A. Rowell National-Park-Service gareth_rowell@npg.gov growell creator National-Park-Service <NA>
