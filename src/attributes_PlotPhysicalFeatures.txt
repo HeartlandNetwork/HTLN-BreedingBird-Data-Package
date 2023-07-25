@@ -1,0 +1,9 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+ParkUnit		categorical				
+Plot		character				
+HabitatType		categorical				
+Slope		categorical				
+SlopeVariability		categorical				
+Aspect		character				
+AspectVariability		categorical				
+InRiparianCorridor		numeric	!Add units here!			

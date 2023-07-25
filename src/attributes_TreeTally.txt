@@ -1,0 +1,11 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+ParkUnit		categorical				
+Plot		character				
+SubPlot		numeric	!Add units here!			
+EventDate		Date		!Add datetime specifier here!		
+TaxonCode		categorical				
+Family		categorical				
+CommonName		categorical				
+ScientificName		categorical				
+DBHClass		categorical				
+TreeCount		numeric	!Add units here!			
