@@ -1,7 +1,7 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
-ParkUnit		categorical				
-Plot		character				
-SubPlot		numeric	!Add units here!			
-EventDate		Date		!Add datetime specifier here!		
-CanopyType		categorical				
-CanopyCount		numeric	!Add units here!			
+ParkUnit	park name	categorical				
+Plot	plot code	character				
+SubPlot	subplot number	numeric				
+EventDate		Date		yyyy-mm-dd		
+CanopyType	conifer hardwood or total	categorical				
+CanopyCount	count	numeric				
