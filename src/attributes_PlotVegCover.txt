@@ -1,8 +1,8 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
-ParkUnit		categorical				
-Plot		character				
-EventDate		Date		!Add datetime specifier here!		
-VegType		categorical				
-CovClass		numeric	!Add units here!			
-MidpointValue		numeric	!Add units here!			
-Range		categorical				
+ParkUnit	park name	categorical				
+Plot	plot id	character				
+EventDate	event date	Date		yyyy-mm-dd		
+VegType	habitat type	categorical				
+CovClass	cover class code	numeric				
+MidpointValue	midpoint	numeric	percentage			
+Range	range category	categorical				

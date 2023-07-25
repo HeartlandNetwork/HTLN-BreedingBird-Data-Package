@@ -1,10 +1,10 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
-ParkUnit		categorical				
-Plot		character				
-SubPlot		numeric	!Add units here!			
-EventDate		Date		!Add datetime specifier here!		
-Distance		categorical				
-Height		categorical				
-CoverClassCode		numeric	!Add units here!			
-CoverClassMidPoint		numeric	!Add units here!			
-CoverClassRange		categorical				
+ParkUnit	park name	categorical				
+Plot	plot ID	character				
+SubPlot	subplot number	numeric				
+EventDate	event date	Date		yyyy-mm-dd		
+Distance	distance category	categorical				
+Height	height category	categorical				
+CoverClassCode	cover class code	numeric				
+CoverClassMidPoint	cover class mid point	numeric	percent			
+CoverClassRange	range category	categorical				

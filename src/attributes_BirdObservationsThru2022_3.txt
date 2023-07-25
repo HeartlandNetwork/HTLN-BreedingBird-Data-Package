@@ -7,17 +7,17 @@ Temperature_C	air temperature	numeric	Celcius
 WindSpeed	estimated speed	categorical				
 WindDesc	wind speed description	categorical				
 Rain	description	categorical				
-PercentCloud	percent cloud	numeric				
+PercentCloud	percent cloud	numeric	percent			
 Noise	description	categorical				
 NoiseSummary	effects on observations	categorical				
-Interval	"0 - 3 min, > 3 - 5 min, > 5 min"	categorical				
+Interval	interval category	categorical				
 ObservationNumber	integer sequence	numeric				
 AOUCode	taxon code	categorical				
 TSN	ITIS taxonomic number	categorical				
 ScientificName	scientific name	categorical				
 Family	family name	categorical				
 CommonName	common name	categorical				
-Distance	estimated distance	numeric	meters			
+Distance	estimated distance	numeric	meters		-9999	no distance measure
 DetectionType	detection description	categorical				
 Sex	male female unknown	categorical				
 Age	immature adult unknown	categorical				
