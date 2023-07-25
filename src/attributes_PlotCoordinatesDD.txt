@@ -1,4 +1,4 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
-PlotID		character				
-decimalLongitude		numeric	!Add units here!			
-decimalLatitude		numeric	!Add units here!			
+PlotID	plot id	character				
+decimalLongitude	longitude dd	numeric	degrees			
+decimalLatitude	latitude dd	numeric	degrees			
