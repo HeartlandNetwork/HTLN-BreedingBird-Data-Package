@@ -1,0 +1,8 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+ParkUnit		categorical				
+Plot		character				
+SubPlot		numeric	!Add units here!			
+EventDate		Date		!Add datetime specifier here!		
+CanopyType		categorical				
+ReadingNumber		numeric	!Add units here!			
+DotScore		numeric	!Add units here!			

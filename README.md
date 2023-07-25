@@ -11,6 +11,8 @@ https://www.nps.gov/im/htln/birds.htm
 
 20230724
 
+Run EML functions
+Move EML assemblyline back to src
 Bird and tree species names into EML script
 
 20230720

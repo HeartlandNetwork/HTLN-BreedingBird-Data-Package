@@ -77,7 +77,7 @@ data_type <- "ongoing"
 # set the working_folder to `getwd()`. If they are in a different directory you will 
 # need to specify that directory.
 
-working_folder <- setwd("./Package")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
 
 # or:
 # working_folder <- setwd("C:/users/<yourusername>/Documents/my_data_package_folder)
@@ -167,7 +167,7 @@ data_urls <- c(rep("temporary URL", length(data_files)))
 data_taxa_tables <- c("BirdSpeciesNames.csv","TreeSpeciesNames")
 
 # the column where your scientific names are within the data files.
-data_taxa_fields <- c("scientificName","scientificName")
+data_taxa_fields <- c("ScientificName")
 
 #### Geographic information
 # Specify the tables and fields that contain geographic coordinates 
@@ -238,12 +238,15 @@ template_core_metadata(path = working_folder,
 
 
 #### FUNCTION 2 - Data Table Attributes
-This function creates an "attributes_datafilename.txt" file for each data file. This can be opened in Excel (we recommend against trying to update these in a text editor) and fill in/adjust the columns for attributeDefinition, class, unit, etc. refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
-```{r attributes}
+# This function creates an "attributes_datafilename.txt" file for each data file. This can be opened
+# in Excel (we recommend against trying to update these in a text editor) and fill in/adjust the 
+# columns for attributeDefinition, class, unit, etc. 
+# refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
+
 template_table_attributes(path = working_folder, 
                           data.table = data_files, 
                           write.file = TRUE)
-```
+
 
 #### FUNCTION 3 - Data Table Categorical Variable
 This function Creates a "catvars_datafilename.txt" file for each data file that has columns with a class = categorical. These .txt files will include each unique 'code' and allow input of the corresponding 'definition'.NOTE that since the list of codes is harvested from the data itself, it's possible that additional codes may have been relevant/possible but they are not automatically included here. Consider your lookup lists carefully to see if additional options should be included (e.g if your dataset DPL values are all set to "Accepted" this  function will not include "Raw" or "Provisional" in the resulting file and you may want to add those manually). NOTE that if these files already exist from a previous run, they are not overwritten.

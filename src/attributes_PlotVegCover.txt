@@ -1,0 +1,8 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+ParkUnit		categorical				
+Plot		character				
+EventDate		Date		!Add datetime specifier here!		
+VegType		categorical				
+CovClass		numeric	!Add units here!			
+MidpointValue		numeric	!Add units here!			
+Range		categorical				
