@@ -165,10 +165,10 @@ data_urls <- c(rep("temporary URL", length(data_files)))
 # taxonomic data, skip this step.```{r taxonomic_info}
 # the file(s) where scientific names are located:
 
-data_taxa_tables <- c("BirdSpeciesNames.csv","TreeSpeciesNames")
+data_taxa_tables <- c("BirdSpeciesNames.csv","TreeSpeciesNames.csv")
 
 # the column where your scientific names are within the data files.
-data_taxa_fields <- c("ScientificName")
+data_taxa_fields <- c("ScientificName","ScientificName")
 
 #### Geographic information
 # Specify the tables and fields that contain geographic coordinates 
@@ -234,8 +234,8 @@ enddate <- ymd("2022-06-15")
 # coincides with CUI designations, the best way to update the license information is during a 
 # later step using `EMLeditor::set_int_rights()`. There is no need to edit this .txt file.
 
-template_core_metadata(path = working_folder, 
-                       license = "CC0") # that '0' is a zero!
+#template_core_metadata(path = working_folder, 
+#                       license = "CC0") # that '0' is a zero!
 
 
 #### FUNCTION 2 - Data Table Attributes
@@ -244,9 +244,9 @@ template_core_metadata(path = working_folder,
 # columns for attributeDefinition, class, unit, etc. 
 # refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
 
-template_table_attributes(path = working_folder, 
-                          data.table = data_files, 
-                          write.file = TRUE)
+#template_table_attributes(path = working_folder, 
+#                          data.table = data_files, 
+#                          write.file = TRUE)
 
 
 #### FUNCTION 3 - Data Table Categorical Variable
@@ -261,9 +261,9 @@ template_table_attributes(path = working_folder,
 # manually). NOTE that if these files already exist from a previous run, they 
 # are not overwritten.
 
-template_categorical_variables(path = working_folder, 
-                               data.path = working_folder, 
-                               write.file = TRUE)
+#template_categorical_variables(path = working_folder, 
+#                               data.path = working_folder, 
+#                               write.file = TRUE)
 
 
 
@@ -287,20 +287,32 @@ template_categorical_variables(path = working_folder,
 
 
 #### FUNCTION 5 - Taxonomic Coverage
-This function creates a taxonomic_coverage.txt file if you have taxonomic data. Currently supported authorities are 3 = ITIS, 9 = WORMS, and 11 = GBIF. In the example below, the function will first try to find the scientific name at ITIS and if it fails will then look at GBIF. If you have lots of taxa, this could take some time to complete.
-```{r tax_cov}
-template_taxonomic_coverage(path = working_folder, 
-                            data.path = working_folder, 
-                            taxa.table = data_taxa_tables,
-                            taxa.col = data_taxa_fields, 
-                            taxa.authority = c(3,11),
-                            taxa.name.type = 'scientific', 
-                            write.file = TRUE)
-```
+# This function creates a taxonomic_coverage.txt file if you have taxonomic data. 
+# Currently supported authorities are 3 = ITIS, 9 = WORMS, and 11 = GBIF. 
+# In the example below, the function will first try to find the scientific name 
+# at ITIS and if it fails will then look at GBIF. If you have lots of taxa, 
+# this could take some time to 
 
-## Create an EML File
-Run this (it may take a little while) and see if it validates (you should see 'Validation passed'). It will generate an R object called "my_metadata". The function could alert you of some issues to review as. Run the function `issues()` at the end of the process to get feedback on items that might be missing or need attention. Fix these issues and then re-run the `make_eml()` function.
-```{r make_eml}
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+
+#template_taxonomic_coverage(path = working_folder, 
+#                            data.path = working_folder, 
+#                            taxa.table = data_taxa_tables,
+#                            taxa.col = data_taxa_fields, 
+#                            taxa.authority = c(3,11),
+#                            taxa.name.type = 'scientific', 
+#                            write.file = TRUE)
+
+
+
+## Create an EML File - ##############################################################
+
+# Run this (it may take a little while) and see if it validates (you should see 
+# 'Validation passed'). It will generate an R object called "my_metadata". The 
+# function could alert you of some issues to review as. Run the function `issues()` 
+# at the end of the process to get feedback on items that might be missing or need 
+# attention. Fix these issues and then re-run the `make_eml()` function.
+
 my_metadata <- make_eml(path = working_folder,
                dataset.title = package_title,
                data.table = data_files,
@@ -312,7 +324,7 @@ my_metadata <- make_eml(path = working_folder,
                package.id = metadata_id,
                return.obj = TRUE, 
                write.file = FALSE)
-```
+
 
 ## Check for EML validity 
 This is a good point to pause and test whether your EML is valid. 
