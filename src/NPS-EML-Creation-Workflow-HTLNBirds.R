@@ -21,7 +21,8 @@
 # [EMLassemblyline](https://ediorg.github.io/EMLassemblyline/)
 # [EMLeditor](https://nationalparkservice.github.io/EMLeditor/index.html)
 # [NPS EML Script](https://nationalparkservice.github.io/NPS_EML_Script/)
-# [EVER Veg Map AA dataset](https://github.com/nationalparkservice/NPS_EML_Script/tree/main/Example_files) (for testing purposes)
+# [EVER Veg Map AA dataset](https://github.com/nationalparkservice/NPS_EML_Script/tree/main/Example_files) 
+# (for testing purposes)
 
 # Install and Load R Packages 
 # Install packages. If you have not recently installed packages, please re-install them. 
@@ -249,29 +250,41 @@ template_table_attributes(path = working_folder,
 
 
 #### FUNCTION 3 - Data Table Categorical Variable
-This function Creates a "catvars_datafilename.txt" file for each data file that has columns with a class = categorical. These .txt files will include each unique 'code' and allow input of the corresponding 'definition'.NOTE that since the list of codes is harvested from the data itself, it's possible that additional codes may have been relevant/possible but they are not automatically included here. Consider your lookup lists carefully to see if additional options should be included (e.g if your dataset DPL values are all set to "Accepted" this  function will not include "Raw" or "Provisional" in the resulting file and you may want to add those manually). NOTE that if these files already exist from a previous run, they are not overwritten.
-```{r cat_vars}
+# This function Creates a "catvars_datafilename.txt" file for each data file that 
+# has columns with a class = categorical. These .txt files will include each unique 
+# 'code' and allow input of the corresponding 'definition'.NOTE that since the list 
+# of codes is harvested from the data itself, it's possible that additional codes 
+# may have been relevant/possible but they are not automatically included here. 
+# Consider your lookup lists carefully to see if additional options should be included 
+# (e.g if your dataset DPL values are all set to "Accepted" this  function will not 
+# include "Raw" or "Provisional" in the resulting file and you may want to add those 
+# manually). NOTE that if these files already exist from a previous run, they 
+# are not overwritten.
+
 template_categorical_variables(path = working_folder, 
                                data.path = working_folder, 
                                write.file = TRUE)
-```
+
+
+
 
 #### FUNCTION 4 - Geographic Coverage
-If the only geographic coverage information you plan on using are park boundaries, you can skip this step. You can add park unit connections using EMLeditor, which will automatically generate properly formatted GPS coordinates for the park bounding boxes.
+# If the only geographic coverage information you plan on using are park boundaries, 
+# you can skip this step. You can add park unit connections using EMLeditor, which will automatically generate properly formatted GPS coordinates for the park bounding boxes.
 
-If you would like to add additional GPS coordinates (such as for specific site 
-locations, survey plots, or bounding boxes for locations within a park, etc) please do. 
+# If you would like to add additional GPS coordinates (such as for specific site 
+# locations, survey plots, or bounding boxes for locations within a park, etc) please do. 
 
-This function creates a geographic_coverage.txt file that lists your sites as points as long as your coordinates are in lat/long. If your coordinates are in UTM it is probably easiest to convert them first or create the geographic_coverage.txt file another way (see [QCkit](https://nationalparkservice.github.io/QCkit/) for R functions that will convert UTM to lat/long).
-```{r geo_cov}
-template_geographic_coverage(path = working_folder, 
-                             data.path = working_folder,
-                             data.table = data_coordinates_table, 
-                             lat.col = data_latitude, 
-                             lon.col = data_longitude,
-                             site.col = data_sitename, 
-                             write.file = TRUE)
-```
+# This function creates a geographic_coverage.txt file that lists your sites as points as long as your coordinates are in lat/long. If your coordinates are in UTM it is probably easiest to convert them first or create the geographic_coverage.txt file another way (see [QCkit](https://nationalparkservice.github.io/QCkit/) for R functions that will convert UTM to lat/long).
+
+#template_geographic_coverage(path = working_folder, 
+#                             data.path = working_folder,
+#                             data.table = data_coordinates_table, 
+#                             lat.col = data_latitude, 
+#                             lon.col = data_longitude,
+#                             site.col = data_sitename, 
+#                             write.file = TRUE)
+
 
 #### FUNCTION 5 - Taxonomic Coverage
 This function creates a taxonomic_coverage.txt file if you have taxonomic data. Currently supported authorities are 3 = ITIS, 9 = WORMS, and 11 = GBIF. In the example below, the function will first try to find the scientific name at ITIS and if it fails will then look at GBIF. If you have lots of taxa, this could take some time to complete.
