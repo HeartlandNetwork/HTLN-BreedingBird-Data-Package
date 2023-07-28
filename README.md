@@ -9,6 +9,10 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230728
+
+Completed last EML function - taxonomic covereage. Start generating EML.
+
 20230724
 
 Run EML functions
