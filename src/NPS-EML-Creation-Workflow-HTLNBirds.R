@@ -168,7 +168,7 @@ data_urls <- c(rep("temporary URL", length(data_files)))
 data_taxa_tables <- c("BirdSpeciesNames.csv","TreeSpeciesNames.csv")
 
 # the column where your scientific names are within the data files.
-data_taxa_fields <- c("ScientificName")
+data_taxa_fields <- c("ScientificName","ScientificName")
 
 #### Geographic information
 # Specify the tables and fields that contain geographic coordinates 
@@ -293,15 +293,15 @@ enddate <- ymd("2022-06-15")
 # at ITIS and if it fails will then look at GBIF. If you have lots of taxa, 
 # this could take some time to 
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
 
-template_taxonomic_coverage(path = working_folder, 
-                            data.path = working_folder, 
-                            taxa.table = data_taxa_tables,
-                            taxa.col = data_taxa_fields, 
-                            taxa.authority = c(3,11),
-                            taxa.name.type = 'scientific', 
-                            write.file = TRUE)
+#template_taxonomic_coverage(path = working_folder, 
+#                            data.path = working_folder, 
+#                            taxa.table = data_taxa_tables,
+#                            taxa.col = data_taxa_fields, 
+#                            taxa.authority = c(3,11),
+#                            taxa.name.type = 'scientific', 
+#                            write.file = TRUE)
 
 
 
