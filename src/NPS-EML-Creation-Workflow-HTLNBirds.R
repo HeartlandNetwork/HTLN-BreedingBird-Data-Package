@@ -315,7 +315,7 @@ enddate <- ymd("2022-06-15")
 
 working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
 
-my_metadata <- make_eml(path = working_folder,
+my_metadata <- make_eml(path = working_folder,  ## <<<<<<<<<<<<<< CRASHING HERE
                dataset.title = package_title,
                data.table = data_files,
                data.table.name = data_names,
@@ -444,76 +444,98 @@ my_metadata <- set_drr(my_metadata, 7654321, "DRR Title")
 my_metadata <- set_language(my_metadata, "English")
 
 #### Add content unit links 
-These are the park units where data were collected from, for instance ROMO, not ROMN. If the data package includes data from more than one park, they can all be listed. For instance, if data were collected from all park units within a network, each unit should be listed separately rather than the network. This is because the geographic coordinates corresponding to bounding boxes for each park unit listed will automatically be generated and inserted into the metadata. Individual park units will be more informative than the bounding box for the entire network.
-```{r content_units}
+#These are the park units where data were collected from, for instance ROMO, not ROMN. 
+# If the data package includes data from more than one park, they can all be listed. For instance, 
+# if data were collected from all park units within a network, each unit should be listed separately 
+# rather than the network. This is because the geographic coordinates corresponding to bounding boxes 
+# for each park unit listed will automatically be generated and inserted into the metadata. Individual 
+# park units will be more informative than the bounding box for the entire network.
+
 park_units <- c("ROMO", "GRSD", "YELL")
 my_metadata <- set_content_units(my_metadata, park_units)
-```
 
 #### Add the Producing Unit(s)
-This is the unit(s) responsible for generating the data package. It may be a single park (ROMO) or a network (ROMN). It may be identical to the units listed in the previous step, overlapping, or entirely different.
-```{r prod_units}
+
+# This is the unit(s) responsible for generating the data package. It may be a single park 
+# (ROMO) or a network (ROMN). It may be identical to the units listed in the previous step, 
+# overlapping, or entirely different.
+
 # a single producing unit:
 my_metadata <- set_producing_units(my_metadata, "ROMN")
 # alternatively, a list of producing units:
 my_metadata <- set_producing_units(my_metadata, c("ROMN", "GRYN"))
-```
 
 ## Validate your EML 
-Almost done! This is another great time to validate your EML and make sure
-Everything is schema valid. Run:
-```{r val_eml}
+# Almost done! This is another great time to validate your EML and make sure
+# Everything is schema valid. Run:
+
 eml_validate(my_metadata)
-```
-if your EML is valid you should see the following (admittedly crypitic):
+
+# if your EML is valid you should see the following (admittedly crypitic):
 # [1] TRUE
 # attr(,"errors")
 # character(0)
 
-if your EML is not schema valid, the function will notify you of specific problems you need to address. We HIGHLY recommend that you use the EMLassemblyline and/or EMLeditor functions to fix your EML and do not attempt to edit it by hand.
+# if your EML is not schema valid, the function will notify you of specific problems 
+# you need to address. We HIGHLY recommend that you use the EMLassemblyline and/or 
+# EMLeditor functions to fix your EML and do not attempt to edit it by hand.
 
-You can also try generating a *mock* README.txt file. This file should have properly formatted titles, DOIs, citation, abstract, a table with your data package files in it, etc. **DO NOT** upload this file to DataStore. This is for your information only. Sometime seeing your metadata in this format may help you spot errors or inconsistancies you would otherwise miss. XML was never really designed to be human readable, and it shows.
-```{r write_readme}
+# You can also try generating a *mock* README.txt file. This file should have properly 
+# formatted titles, DOIs, citation, abstract, a table with your data package files in it, etc. 
+# **DO NOT** upload this file to DataStore. This is for your information only. 
+# Sometime seeing your metadata in this format may help you spot errors or inconsistancies 
+# you would otherwise miss. XML was never really designed to be human readable, and it shows.
+
 write_readme(my_metadata)
-```
 
 ## Write your EML to an xml file 
-Now it's time to convert your R object to an .xml file and save it. Keep in mind that the file name should end with "_metadata.xml".
-```{r write_eml}
+# Now it's time to convert your R object to an .xml file and save it. Keep in mind 
+
 write_eml(my_metadata, "mymetadatafilename_metadata.xml")
-```
 
 ## Check your .xml file  
-You're EML metadata file should be ready for upload. You can run some additional tests on your .xml metadata file using `check_eml()`. This function assumes there is only one .xml file in the directory:
-```{r check_eml}
+# You're EML metadata file should be ready for upload. You can run some additional 
+# tests on your .xml metadata file using `check_eml()`. This function assumes there 
+# is only one .xml file in the directory:
+
 # This assumes that you have written your metadata to an .xml file and that the .xml file is in the current working directory.
 check_eml()
 
 # If you .xml file with metadata is in a different directory, you will have to specify that:
 #check_eml("C:/Users/<yourusername>/Documents/your_data_package")
-```
 
 ## Check your data package 
-If your data package is now complete, you can run some test prior to upload to make sure that the package fits some minimal set of requirements and that the data and metadata are properly specified and coincide. This assumes that your data package is in the root of your R project. 
-```{r congruence_tests}
+# If your data package is now complete, you can run some test prior to upload to make 
+# sure that the package fits some minimal set of requirements and that the data and 
+# metadata are properly specified and coincide. This assumes that your data package 
+# is in the root of your R project. 
+
 # this assumes that the data package is the working directory
 run_congruence_checks()
 
 # if your data package is somewhere else, specify that:
 # run_congruence_checks("C:/Users/<yourusername>/Documents/my_data_package")
-```
+
 
 
 ## Upload your data package 
-If everything checked out, you should be ready to upload your data package! We recommend using `upload_data_package()` to accomplish this. The function automatically checks your DOI and uploads to the correct reference on DataStore. All of your files for the data package need to be in the same folder, there can be only one .xml file (ending in "_metadata.xml") and all the other files should be data files in .csv format. Each individual file should be < 32Mb.  If you have files > 32Mb, you will need to upload them manually using the web interface on DataStore. 
-```{r upload}
+# If everything checked out, you should be ready to upload your data package! 
+# We recommend using `upload_data_package()` to accomplish this. The function 
+# automatically checks your DOI and uploads to the correct reference on DataStore. 
+# All of your files for the data package need to be in the same folder, there can 
+# be only one .xml file (ending in "_metadata.xml") and all the other files should 
+# be data files in .csv format. Each individual file should be < 32Mb.  If you have 
+# files > 32Mb, you will need to upload them manually using the web interface on DataStore. 
+
 # this assumes your data package is in the current working directory
 upload_data_package()
 
 # If your data package is somewhere else, specify that:
-#upload_data_package("C:/Users/<yourusername>/Documents/my_data_package)
-```
+# upload_data_package("C:/Users/<yourusername>/Documents/my_data_package)
 
-From within DataStore you should be able to extract all the information from the metadata file to populate the relevant DataStore fields.
 
-Please don't activate your reference just yet! Data package references need to be reviewed prior to activation. We are still working on what that review process will look like.
+# From within DataStore you should be able to extract all the information 
+# from the metadata file to populate the relevant DataStore fields.
+
+# Please don't activate your reference just yet! Data package references need 
+# to be reviewed prior to activation. We are still working on what that review process will look like.
