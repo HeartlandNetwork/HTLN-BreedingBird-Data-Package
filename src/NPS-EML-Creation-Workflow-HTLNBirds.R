@@ -313,6 +313,8 @@ enddate <- ymd("2022-06-15")
 # at the end of the process to get feedback on items that might be missing or need 
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+
 my_metadata <- make_eml(path = working_folder,
                dataset.title = package_title,
                data.table = data_files,
@@ -327,83 +329,120 @@ my_metadata <- make_eml(path = working_folder,
 
 
 ## Check for EML validity 
-This is a good point to pause and test whether your EML is valid. 
-```{r validate}
-eml_validate(my_metadata)
-```
+#This is a good point to pause and test whether your EML is valid. 
 
-if your EML is valid you should see the following (admittedly cryptic) result:
-```
+eml_validate(my_metadata)
+
+
+# if your EML is valid you should see the following (admittedly cryptic) result:
+
 # [1] TRUE
 # attr(,"errors")
 # character(0)
-```
 
-if your EML is not schema valid, the function will notify you of specific problems you need to address. We HIGHLY recommend that you use the EMLassemblyline and/or EMLeditor functions to fix your EML and do not attempt to edit it by hand.
+
+# if your EML is not schema valid, the function will notify you of 
+# specific problems you need to address. We HIGHLY recommend that you use the 
+# EMLassemblyline and/or EMLeditor functions to fix your EML and do not attempt to edit 
+# it by hand.
 
 ## Add NPS specific fields to EML 
-Now that you have valid EML metadata, you need to add NPS-specific elements and fields. For instance, unit connections, DOIs, referencing a DRR, etc. More information about these functions can be found at: [https://nationalparkservice.github.io/EMLeditor/](https://nationalparkservice.github.io/EMLeditor/).
+# Now that you have valid EML metadata, you need to add NPS-specific 
+# elements and fields. For instance, unit connections, DOIs, referencing a DRR, etc. 
+# More information about these functions can be found at: 
+# [https://nationalparkservice.github.io/EMLeditor/](https://nationalparkservice.github.io/EMLeditor/).
 
 #### Add Controlled Unclassified Information (CUI) codes
-This is a required step. It is important to indicate not only that your data 
-package contains CUI, but also to inform users if your data package does NOT
-contain CUI because empty fields can be ambiguous (does it not contain CUI or
-did the creators just miss that step?). You can choose from one of five CUI
-dissemination codes. Watch out for the spaces! These are:
-  * PUBLIC - Does NOT contain CUI.
-  * FED ONLY - Contains CUI. Only federal employees should have access (similar to "internal only" in DataStore).
-  * FEDCON - Contains CUI. Only federal employees and federal contractors should have access (also very much like current "internal only" setting in DataStore).
-  * DL ONLY - Contains CUI. Should only be available to a named list of individuals (where and how to list those individuals TBD)
-  * NOCON - Contains CUI. Federal, state, local, or tribal employees may have access, but contractors cannot.
-More information about these codes can be found at: [https://www.archives.gov/cui/registry/limited-dissemination](https://www.archives.gov/cui/registry/limited-dissemination)
+# This is a required step. It is important to indicate not only that your data 
+# package contains CUI, but also to inform users if your data package does NOT
+# contain CUI because empty fields can be ambiguous (does it not contain CUI or
+# did the creators just miss that step?). You can choose from one of five CUI
+# dissemination codes. Watch out for the spaces! These are:
+#  * PUBLIC - Does NOT contain CUI.
+#  * FED ONLY - Contains CUI. Only federal employees should have access (similar to "internal only" in DataStore).
+#  * FEDCON - Contains CUI. Only federal employees and federal contractors should have access (also very much like 
+#    current "internal only" setting in DataStore).
+#  * DL ONLY - Contains CUI. Should only be available to a named list of individuals (where and how to list those individuals TBD)
+#  * NOCON - Contains CUI. Federal, state, local, or tribal employees may have access, but contractors cannot.
+# More information about these codes can be found at: 
+# [https://www.archives.gov/cui/registry/limited-dissemination](https://www.archives.gov/cui/registry/limited-dissemination)
 
-```{r cui_dissemination}
 my_metadata <- set_cui(my_metadata, "PUBLIC")
+
 # note that in this case I have added the CUI code to the original R object, 
 # "my_metadata" but by giving it a new name, i.e. "my_meta2" I could have
 # created a new R object. Sometimes creating a new R object is preferable 
 # because if you make a mistake you don't need to start over again.
-```
 
 ## Intellectual Rights
-EMLassemblyine and ezEML provide some attractive looking boilerplate for setting the intellectual rights. It looks reasonable and so is easy to just keep. However, NPS has some specific regulations about what can and cannot be in the intellectualRights tag. Use `set_int_rights()` to replace the text with NPS-approved text. Note: You must first add the CUI dissemination code using `set_cui()` as the dissemination code and license must agree. That is, you cannot give a data package with a PUBLIC dissemination code a "restricted" license (and vise versa: a restricted data package that contains CUI cannot have a public domain or CC0 license). You can choose from one of three options:
-  * "restricted": If the data contains Controlled Unclassified Information (CUI), the intellectual rights must read: **"This product has been determined to contain Controlled Unclassified Information (CUI) by the National Park Service, and is intended for internal use only. It is not published under an open license. Unauthorized access, use, and distribution are prohibited."**
 
-  * "public": If the data do not contain CUI, the default is the public domain. The intellectual rights must read: **"This work is in the public domain. There is no copyright or license."**
+# EMLassemblyine and ezEML provide some attractive looking boilerplate for setting the intellectual rights. 
+# It looks reasonable and so is easy to just keep. However, NPS has some specific regulations about what 
+# can and cannot be in the intellectualRights tag. Use `set_int_rights()` to replace the text with NPS-approved text. 
+# Note: You must first add the CUI dissemination code using `set_cui()` as the dissemination code and license 
+# must agree. That is, you cannot give a data package with a PUBLIC dissemination code a "restricted" license 
+# (and vise versa: a restricted data package that contains CUI cannot have a public domain or CC0 license). 
+# You can choose from one of three options:
+#   * "restricted": If the data contains Controlled Unclassified Information (CUI), the intellectual rights 
+#      must read: **"This product has been determined to contain Controlled Unclassified Information (CUI) by 
+#      the National Park Service, and is intended for internal use only. It is not published under an open 
+#      license. Unauthorized access, use, and distribution are prohibited."**
 
-  * "CC0": If you need a license, for instance if you are working with a partner organization that requires a license, use CC0: **"The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."**
+# * "public": If the data do not contain CUI, the default is the public domain. The intellectual rights must 
+#   # read: **"This work is in the public domain. There is no copyright or license."**
 
-The `set_int_rights()` function will also put the name of your license in a field in EML for DataStore harvesting.
+#   * "CC0": If you need a license, for instance if you are working with a partner organization that 
+#   requires a license, use CC0: **"The person who associated a work with this deed has dedicated the work 
+#   to the public domain by waiving all of his or her rights to the work worldwide under copyright law, 
+#   including all related and neighboring rights, to the extent allowed by law. You can copy, modify, 
+#   distribute and perform the work, even for commercial purposes, all without asking permission."**
 
-```{r int_rights}
+# The `set_int_rights()` function will also put the name of your license in a field in EML for DataStore harvesting.
+
 # choose from "restricted", "public" or "CC0" (zero), see above:
+
 my_metadata <- set_int_rights(my_metadata, "public")
-```
+
 
 #### Add a data package DOI 
-Add your data package's Digital Object Identifier (DOI) to the metadata. The `set_datastore_doi()` function requires that you are logged on to the VPN. It initiates a draft data package reference on DataStore, and populates the reference with a title pulled from your metadata, “[DRAFT] : <your data package title>”. This temporary title is purely for your tracking purposes and can easily be updated later. The `set_datastore_doi()` function will then insert the corresponding DOI for your data package into your metadata. Now that a draft reference has been initiated on DataStore, it is possible to fill in the online URL for each data file. `set_datastore_doi()` automatically does that for you too. There are a few things to keep in mind:
-  1) Your DOI and the data package reference are not yet active and are not publicly accessible until after review and activation/publication.
-  2) We suggest you NOT manually upload files. If you manually upload your files, be sure to upload your data package to the correct draft reference! It is easy to create several draft references with the same draft title but different DataStore reference IDs and DOIs. So check the reference ID number carefully
-  3) There is no need to fill in additional fields in DataStore at this point - many of them will be auto-populated based on the metadata you upload. Any fields you do populate will be over-written by the content in your metadata.
-```{r DS_doi}
+# Add your data package's Digital Object Identifier (DOI) to the metadata. The `set_datastore_doi()` function 
+# requires that you are logged on to the VPN. It initiates a draft data package reference on DataStore, and 
+# populates the reference with a title pulled from your metadata, “[DRAFT] : <your data package title>”. 
+# This temporary title is purely for your tracking purposes and can easily be updated later. The `set_datastore_doi()` 
+# function will then insert the corresponding DOI for your data package into your metadata. Now that a draft reference 
+# has been initiated on DataStore, it is possible to fill in the online URL for each data file. `set_datastore_doi()` 
+# automatically does that for you too. There are a few things to keep in mind:
+#  1) Your DOI and the data package reference are not yet active and are not publicly accessible until after review 
+#   and activation/publication.
+#  2) We suggest you NOT manually upload files. If you manually upload your files, be sure to upload your data package 
+#    to the correct draft reference! It is easy to create several draft references with the same draft title 
+#    but different DataStore reference IDs and DOIs. So check the reference ID number carefully
+#  3) There is no need to fill in additional fields in DataStore at this point - many of them will be 
+#   auto-populated based on the metadata you upload. Any fields you do populate will be over-written 
+#   by the content in your metadata.
+
 my_metadata <- set_datastore_doi(my_metadata)
-```
 
 #### Add information about a DRR (optional) 
-If you are producing (or plan to produce) a DRR, add links to the DRR describing the data package.
+# If you are producing (or plan to produce) a DRR, add links to the DRR describing the data package.
 
-You will need the DOI for the DRR you are drafting as well as the DRR's Title. Go to DataStore and initiate a draft DRR, including a title. For the purposes of the data package, there is no need to populate any other fields. At this point, you do not need to activate the DRR reference and, while a DOI has been reserved for your DRR,
-it will not be activated until after publication so that you have plenty of 
-time to construct the DRR.
-```{r DRR_links}
+# You will need the DOI for the DRR you are drafting as well as the DRR's Title. Go to DataStore and initiate 
+# a draft DRR, including a title. For the purposes of the data package, there is no need to populate any other 
+# fields. At this point, you do not need to activate the DRR reference and, while a DOI has been reserved for your DRR,
+# it will not be activated until after publication so that you have plenty of time to construct the DRR.
+
 my_metadata <- set_drr(my_metadata, 7654321, "DRR Title")
-```
+
 
 #### Set the language 
-This is the human language (as opposed to computer language) that the data package and metadata are constructed in. Examples include English, Spanish, Navajo, etc. A full list of available languages is available from the Libraryof Congress. Please use the "English Name of Language" as an input. The function will then convert your input to the appropriate 3-character ISO 639-2 code.Available languages: [https://www.loc.gov/standards/iso639-2/php/code_list.php](https://www.loc.gov/standards/iso639-2/php/code_list.php)
-```{r language}
+# This is the human language (as opposed to computer language) that the data package and metadata are constructed in. 
+# Examples include English, Spanish, Navajo, etc. A full list of available languages is available from the Library of Congress. 
+# Please use the "English Name of Language" as an input. The function will then convert your input to the appropriate 
+# 3-character ISO 639-2 code.Available languages: 
+# [https://www.loc.gov/standards/iso639-2/php/code_list.php](https://www.loc.gov/standards/iso639-2/php/code_list.php)
+
 my_metadata <- set_language(my_metadata, "English")
-```
+
 #### Add content unit links 
 These are the park units where data were collected from, for instance ROMO, not ROMN. If the data package includes data from more than one park, they can all be listed. For instance, if data were collected from all park units within a network, each unit should be listed separately rather than the network. This is because the geographic coordinates corresponding to bounding boxes for each park unit listed will automatically be generated and inserted into the metadata. Individual park units will be more informative than the bounding box for the entire network.
 ```{r content_units}
