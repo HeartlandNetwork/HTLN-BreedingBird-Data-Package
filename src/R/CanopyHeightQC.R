@@ -5,7 +5,7 @@ library(readxl)
 
 
 
-canopyheight <- read_csv("./src/CanopyHeight.csv")
+canopyheight <- read_csv("./CanopyHeight.csv")
 
 glimpse(canopyheight)
 
@@ -99,9 +99,17 @@ canopyheight0s <- canopyheight |>
   filter(CanopyHeight == 0) |>
   print(n = 348) 
 
+canopyheight35s <- canopyheight |>
+  filter(CanopyHeight >34) 
+
+ggplot(canopyheight35s, aes(x = CanopyHeight)) + 
+  geom_bar()
+
+
 glimpse(canopyheight0s)
 
-write_xlsx(canopyheight0s, "canopyheight0s.xlsx")
+
+write_xlsx(canopyheight35s, "canopyheight35s.xlsx")
 
 
 

@@ -78,7 +78,7 @@ data_type <- "ongoing"
 # set the working_folder to `getwd()`. If they are in a different directory you will 
 # need to specify that directory.
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 # or:
 # working_folder <- setwd("C:/users/<yourusername>/Documents/my_data_package_folder)
@@ -313,7 +313,7 @@ enddate <- ymd("2022-06-15")
 # at the end of the process to get feedback on items that might be missing or need 
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 my_metadata <- make_eml(path = working_folder,  ## <<<<<<<<<<<<<< CRASHING HERE
                dataset.title = package_title,
