@@ -229,8 +229,6 @@ Age	MisVal
 Age	Unknown	
 Comments	
 	
-Comments		
-Comments	 4 males and one female	
 Comments	""squeezy"" call	
 Comments	""sue-sue-soup!"" probably Parula ?	
 Comments	# 9 and 10 were responding to each other	
@@ -240,10 +238,10 @@ Comments	0-3 interval, no birds in open field
 Comments	0-3 interval, no birds seen	
 Comments	0-3 time interval, no birds seen	
 Comments	06/03/11	
-Comments	06/03/11; Interpoint between 12 & 13	
-Comments	06/03/11; Interpoint between 13 & 14	
-Comments	06/03/11; Interpoint between 30 & 36	
-Comments	06/03/11; Interpoint between 7 & 14	
+Comments	06/03/11; Interpoint between 12 and 13	
+Comments	06/03/11; Interpoint between 13 and 14	
+Comments	06/03/11; Interpoint between 30 and 36	
+Comments	06/03/11; Interpoint between 7 and 14	
 Comments	1 + Male	
 Comments	1 F	
 Comments	1 F (enter as observation #15)	
@@ -253,7 +251,7 @@ Comments	100+
 Comments	150m just after 5 min	
 Comments	1st year male	
 Comments	2 Canada Geese flew over after survey was over.	
-Comments	2 MODO flying btw 155 & 253	
+Comments	2 MODO flying btw 155 and 253	
 Comments	2 adult males together	
 Comments	2 female	
 Comments	2 females	
@@ -264,11 +262,12 @@ Comments	2 mature
 Comments	2 of them	
 Comments	2 pair	
 Comments	2 sp. fast trill - Wilson's Warbler	
-Comments	3 & 2 not sure on song	
+Comments	3 and 2 not sure on song	
 Comments	3 females	
 Comments	3 singing males, 2 second song, clear, med to high pitched ""so so so so see .e .e .e. e "" near quarry	
 Comments	3min - plane flyover	
 Comments	4 males	
+Comments	4 males and one female	
 Comments	4 of them together	
 Comments	4 sounding from diferent directions	
 Comments	400+	
@@ -281,7 +280,6 @@ Comments	? Sounded a little off
 Comments	? Unsure	
 Comments	? tit tit tit till	
 Comments	??	
-Comments	@ watershed pond bald eagle	
 Comments	A long way off	
 Comments	A long way off / Behind ranch house	
 Comments	A long way off.	
@@ -289,7 +287,7 @@ Comments	A. crow outside of plot.
 Comments	AMGO - between this site and site 166	
 Comments	AOUCode was NOOR	
 Comments	Acadian I think	
-Comments	All 6 in different locations, but ~100 meters	
+Comments	All 6 in different locations, but ca.100 meters	
 Comments	Along Fox Creek	
 Comments	Along road corridor in thicket.	
 Comments	Along way off.	
@@ -300,7 +298,7 @@ Comments	At a distance east of plot
 Comments	At a distance in tree grove	
 Comments	At a distance.	
 Comments	Attacking GHOW	
-Comments	B & W Warbler	
+Comments	B and W Warbler	
 Comments	BC chickadee heard leaving	
 Comments	BHCO - heard and seeen coming to site	
 Comments	Bald Eagle	
@@ -317,7 +315,7 @@ Comments	Blackpoll
 Comments	Blackpoll Warbler	
 Comments	Blue-winged Warbler	
 Comments	Bluebird between 174/175	
-Comments	Bobwhite calling ~200m away in ravine.	
+Comments	Bobwhite calling ca.200m away in ravine.	
 Comments	Bobwhite in the distance.	
 Comments	Bobwhite quail in distance.	
 Comments	Booming	
@@ -327,8 +325,8 @@ Comments	By visitor center; mowed lawn.
 Comments	CALLING ON LEK	
 Comments	CHATTER CALL ONLY	
 Comments	Call	
-Comments	Call & Visual ID	
 Comments	Call Note only	
+Comments	Call and Visual ID	
 Comments	Call note only	
 Comments	Called once	
 Comments	Called only once	
@@ -409,8 +407,8 @@ Comments	Flight call
 Comments	Flock size >1, plot 173	
 Comments	Flushed	
 Comments	Flushed 2 quail leaving site	
-Comments	Flushed @ site	
 Comments	Flushed GB Heron from pond approaching plot.	
+Comments	Flushed at site	
 Comments	Flushed coming to site	
 Comments	Flushed from circle on approach	
 Comments	Flushed from lek area	
@@ -498,8 +496,8 @@ Comments	Long way off
 Comments	Long ways off	
 Comments	Louisiana or northern waterthrush flew in to site after count	
 Comments	Low flight	
-Comments	Low flight @ 101 m	
-Comments	M & F	
+Comments	Low flight at 101 m	
+Comments	M and F	
 Comments	M/F ?	
 Comments	MODO heard before count	
 Comments	Making crazy calls... coot like	
@@ -524,6 +522,7 @@ Comments	N. Bobwhite in distance.
 Comments	N. Parula	
 Comments	N. cardinal heard after count	
 Comments	NOCA all heard/seen in different directions, indicating multiple birds	
+Comments	NULL	
 Comments	Nashville warbler, yellow belly, white eye stripe, grey	
 Comments	Near Bayou	
 Comments	Near Cook's Ranch House.	
@@ -591,12 +590,10 @@ Comments	Point Tweety 219 closest point
 Comments	Point Tweety 67 closest point	
 Comments	Possible nest in large Liriodendron	
 Comments	Possible pair	
-Comments	Possible pair	
 Comments	Possible pair with obs. #4	
 Comments	Possible pair with obs. #5	
-Comments	Possibly M & F in unknown numbers	
+Comments	Possibly M and F in unknown numbers	
 Comments	Probable pair	
-Comments	Probable pair	
 Comments	Probable pair with obs. #5	
 Comments	Probable pair with obs. #6	
 Comments	Probably both adults and juveniles	
@@ -631,12 +628,12 @@ Comments	Saw walking to the point
 Comments	Seem to be in family groups	
 Comments	Seem to be in family groups, at least 4	
 Comments	Seen	
-Comments	Seen & heard after	
 Comments	Seen - Harassing the cowbird	
 Comments	Seen - harassing the cowbird	
 Comments	Seen after	
 Comments	Seen after count	
 Comments	Seen and heard	
+Comments	Seen and heard after	
 Comments	Seen between plots	
 Comments	Seen coming to the site	
 Comments	Seen on top of tree	
@@ -690,7 +687,7 @@ Comments	Worm in mouth
 Comments	Yellow-bellied Flycatcher verified via recording and spectograph	
 Comments	a little late?	
 Comments	across road	
-Comments	adult male still had some plummage 	
+Comments	adult male still had some plummage	
 Comments	after count	
 Comments	after count time	
 Comments	alder flycatcher	
@@ -709,6 +706,7 @@ Comments	at least one bearded
 Comments	at nest	
 Comments	at nest cavity	
 Comments	at pond	
+Comments	at watershed pond bald eagle	
 Comments	bank swallow	
 Comments	battling the wind	
 Comments	bay breasted	
@@ -735,7 +733,7 @@ Comments	booming on molvane
 Comments	both were calling	
 Comments	breeding	
 Comments	brewer's black bird	
-Comments	btw site & corrals	
+Comments	btw site and corrals	
 Comments	buff-breasted sandpiper	
 Comments	building nest	
 Comments	burned	
@@ -758,7 +756,7 @@ Comments	chech count for species
 Comments	checked waypoints in GPS, ok. Bill Schreier 6-2-10	
 Comments	chickadee	
 Comments	coming to site	
-Comments	common nighthawk flushed on trail ~200 m NW of site	
+Comments	common nighthawk flushed on trail ca.200 m NW of site	
 Comments	consistently flying around site, dived on me and top of hill	
 Comments	coordinates and waypoints checked in GIS, correct.
 Bill Schreier 6-2-10	
@@ -789,7 +787,7 @@ Comments	family of titmice
 Comments	family unit: obs15-17?	
 Comments	family unit: obs2-4	
 Comments	feeding young	
-Comments	female Indigo bunting flushed @ site	
+Comments	female Indigo bunting flushed at site	
 Comments	fighting	
 Comments	flew in after the count	
 Comments	flew in same general direction but out of view. potential pair with obs1	
@@ -799,12 +797,12 @@ Comments	flock on roost (added with obs.#9= 20 individuals)
 Comments	flushed	
 Comments	flushed 2 Bewick's wren while walking past site 167	
 Comments	flushed 4	
-Comments	flushed 4 chickens (flew from ~100m NE of site - lek)	
-Comments	flushed @ site before survey	
-Comments	flushed CONI leaving site ~200 m N.	
+Comments	flushed 4 chickens (flew from ca.100m NE of site - lek)	
+Comments	flushed CONI leaving site ca.200 m N.	
 Comments	flushed a female summer tanager leaving site	
 Comments	flushed a long draw to the west	
 Comments	flushed a rock ledge to the west	
+Comments	flushed at site before survey	
 Comments	flushed barred owl leaving site	
 Comments	flushed chipping sparrow while walking past site 167	
 Comments	flushed coming to site	
@@ -831,15 +829,15 @@ Comments	greater than 100m
 Comments	greater than 500m	
 Comments	hanging at pits	
 Comments	heard	
-Comments	heard & seen	
 Comments	heard + seen	
 Comments	heard - saw	
-Comments	heard @ site after count	
 Comments	heard after	
 Comments	heard after count	
 Comments	heard and saw Carolina wren coming to site (w/in 10 m of site)	
+Comments	heard and seen	
+Comments	heard at site after count	
 Comments	heard before	
-Comments	heard before count @ site	
+Comments	heard before count at site	
 Comments	heard before, heard and seen after	
 Comments	heard btw sites (160 - 159)	
 Comments	heard distance	
@@ -902,7 +900,7 @@ Comments	mowers/tractor
 Comments	much of the woody vegetation has been removed form this area since 2009	
 Comments	multiple steers in proximity being quite loud	
 Comments	mystery bird, fairly similar to Oriole, whistled: vig a ree (up) vig a row (down), we do (up), ding-a-burr-buzz-yay, something else (down), series lasted 6-7 seconds. Mostly consistent in phrasing up on NE slope above PERI 46	
-Comments	mystery bird, watched (~70m) and listened to for ~5min. Have heard @ 3 different locations. Same as @ PERI 42	
+Comments	mystery bird, watched (ca.70m) and listened to for ca.5min. Have heard at 3 different locations. Same as at PERI 42	
 Comments	near	
 Comments	near Fox creek	
 Comments	near VC	
@@ -942,7 +940,7 @@ Comments	other birds heard (treetops) but not seen
 Comments	over a hill	
 Comments	overhead	
 Comments	owl pursued by crows?	
-Comments	p.o.ed crow @ site. I am guessing by its' actions it has a nest nearby, heard second crow as leaving	
+Comments	p.o.ed crow at site. I am guessing by its' actions it has a nest nearby, heard second crow as leaving	
 Comments	pair	
 Comments	pair of green herons spotted out side of time when walking back to cart	
 Comments	pair together	
@@ -996,7 +994,6 @@ Comments	previous plot 69
 Comments	previous plot 83	
 Comments	probable nest very close	
 Comments	probable nesting pair	
-Comments	probable nesting pair	
 Comments	probable pair	
 Comments	probably family group	
 Comments	probably flushed from nest site	
@@ -1007,7 +1004,6 @@ Comments	probably on nest
 Comments	probably pair	
 Comments	range-tree	
 Comments	recorded	
-Comments	recorded	
 Comments	recorded after	
 Comments	recorded and later identified the call inside the 0-3 minutes	
 Comments	recorded and verified, heard before 3 min mark	
@@ -1039,16 +1035,16 @@ Comments	seen + heard
 Comments	seen - nest in white pines s. of point	
 Comments	seen - rough-winged swallow	
 Comments	seen - swallow rough-winged	
-Comments	seen @ site after count	
 Comments	seen Rough-winged swallow	
 Comments	seen after count	
-Comments	seen after count @ site	
+Comments	seen after count at site	
 Comments	seen after time	
-Comments	seen and heard @ creek crossing b/w 45 and 39	
+Comments	seen and heard at creek crossing b/w 45 and 39	
 Comments	seen and heard coming to site	
 Comments	seen and heard leaving site or northern? (waterthrush)	
+Comments	seen at site after count	
 Comments	seen between sights	
-Comments	seen coming into sight, heard @ site	
+Comments	seen coming into sight, heard at site	
 Comments	seen coming to site	
 Comments	seen comming into site	
 Comments	seen flyover	
@@ -1063,8 +1059,8 @@ Comments	seen on road near 17
 Comments	seen overhead	
 Comments	seen perched near site as going to site - heard at end of count	
 Comments	seen regularly at this location	
-Comments	seen shortly after count @ site	
-Comments	semipalmated sandpiper. small shore bird 	
+Comments	seen shortly after count at site	
+Comments	semipalmated sandpiper. small shore bird	
 Comments	several HESP en route to this site (after 10 min), 1 year post burn	
 Comments	several calling (3-4)	
 Comments	singing	
@@ -1140,9 +1136,10 @@ Comments	wood ducks flew into creek as leaving
 Comments	wren?	
 Comments	yelloe-throat	
 Comments	yellow belly black mask	
-Comments	yellow chest & back black head & back almost grosbeak sized beak	
+Comments	yellow chest and back black head and back almost grosbeak sized beak	
 Comments	yellow eye bar yellow breast	
 Comments	yellowish-little flycatcher chebeck chiche beck	
+Comments	NA	
 CommonName	Alder Flycatchetr	
 CommonName	Blue-headed Vireo	
 CommonName	Darl-eyed Junco	
@@ -1430,11 +1427,11 @@ Noise	high noise
 Noise	low noise	
 Noise	medium noise	
 Noise	quiet	
-NoiseSummary	  detection radius is probably substantially reduced	
-NoiseSummary	  might be missing some high-pitched songs/calls of distant birds	
-NoiseSummary	  probably detecting only the loudest/closest birds	
-NoiseSummary	 normal background noises; no interference	
 NoiseSummary	Unknown	
+NoiseSummary	detection radius is probably substantially reduced	
+NoiseSummary	might be missing some high-pitched songs/calls of distant birds	
+NoiseSummary	normal background noises; no interference	
+NoiseSummary	probably detecting only the loudest/closest birds	
 ParkUnit	Agate Fossil Beds	
 ParkUnit	Arkansas Post	
 ParkUnit	Effigy Mounds	
@@ -1681,228 +1678,6 @@ Sex	Female
 Sex	Male	
 Sex	NoVal	
 Sex	Unk	
-TSN	1077350	
-TSN	1077358	
-TSN	1145276	
-TSN	1145285	
-TSN	174505	
-TSN	174717	
-TSN	174755	
-TSN	174773	
-TSN	174793	
-TSN	174803	
-TSN	174813	
-TSN	174827	
-TSN	174832	
-TSN	174846	
-TSN	174856	
-TSN	174926	
-TSN	174930	
-TSN	174999	
-TSN	175063	
-TSN	175086	
-TSN	175089	
-TSN	175096	
-TSN	175122	
-TSN	175125	
-TSN	175183	
-TSN	175265	
-TSN	175272	
-TSN	175304	
-TSN	175309	
-TSN	175350	
-TSN	175359	
-TSN	175365	
-TSN	175367	
-TSN	175420	
-TSN	175430	
-TSN	175604	
-TSN	175622	
-TSN	175834	
-TSN	175841	
-TSN	175863	
-TSN	175905	
-TSN	176136	
-TSN	176207	
-TSN	176242	
-TSN	176284	
-TSN	176292	
-TSN	176520	
-TSN	176580	
-TSN	176610	
-TSN	176615	
-TSN	176667	
-TSN	176684	
-TSN	176700	
-TSN	176830	
-TSN	176959	
-TSN	177071	
-TSN	177121	
-TSN	177125	
-TSN	177139	
-TSN	177831	
-TSN	177834	
-TSN	177884	
-TSN	177921	
-TSN	177946	
-TSN	177979	
-TSN	178001	
-TSN	178032	
-TSN	178106	
-TSN	178148	
-TSN	178154	
-TSN	178166	
-TSN	178186	
-TSN	178195	
-TSN	178202	
-TSN	178277	
-TSN	178279	
-TSN	178287	
-TSN	178293	
-TSN	178309	
-TSN	178329	
-TSN	178333	
-TSN	178338	
-TSN	178339	
-TSN	178340	
-TSN	178341	
-TSN	178344	
-TSN	178348	
-TSN	178359	
-TSN	178423	
-TSN	178431	
-TSN	178436	
-TSN	178443	
-TSN	178448	
-TSN	178455	
-TSN	178464	
-TSN	178515	
-TSN	178532	
-TSN	178539	
-TSN	178541	
-TSN	178562	
-TSN	178581	
-TSN	178605	
-TSN	178608	
-TSN	178614	
-TSN	178620	
-TSN	178625	
-TSN	178627	
-TSN	178697	
-TSN	178775	
-TSN	178803	
-TSN	178838	
-TSN	178842	
-TSN	178844	
-TSN	178846	
-TSN	178852	
-TSN	178944	
-TSN	178964	
-TSN	178979	
-TSN	178988	
-TSN	178991	
-TSN	179003	
-TSN	179009	
-TSN	179010	
-TSN	179021	
-TSN	179022	
-TSN	179023	
-TSN	179030	
-TSN	179032	
-TSN	179034	
-TSN	179039	
-TSN	179043	
-TSN	179045	
-TSN	179064	
-TSN	179083	
-TSN	179091	
-TSN	179094	
-TSN	179104	
-TSN	179109	
-TSN	179112	
-TSN	179124	
-TSN	179139	
-TSN	179150	
-TSN	179156	
-TSN	179165	
-TSN	179249	
-TSN	179276	
-TSN	179312	
-TSN	179314	
-TSN	179333	
-TSN	179340	
-TSN	179366	
-TSN	179371	
-TSN	179410	
-TSN	179435	
-TSN	179439	
-TSN	179443	
-TSN	179455	
-TSN	179462	
-TSN	179484	
-TSN	179488	
-TSN	179492	
-TSN	179526	
-TSN	179628	
-TSN	179637	
-TSN	179680	
-TSN	179731	
-TSN	179737	
-TSN	179759	
-TSN	179777	
-TSN	179779	
-TSN	179788	
-TSN	179796	
-TSN	179801	
-TSN	179853	
-TSN	179865	
-TSN	179870	
-TSN	179883	
-TSN	179888	
-TSN	554135	
-TSN	554138	
-TSN	554221	
-TSN	554256	
-TSN	554268	
-TSN	554380	
-TSN	554382	
-TSN	554383	
-TSN	707815	
-TSN	726049	
-TSN	726195	
-TSN	726198	
-TSN	726205	
-TSN	824127	
-TSN	950009	
-TSN	950010	
-TSN	950011	
-TSN	950014	
-TSN	950015	
-TSN	950018	
-TSN	950025	
-TSN	950029	
-TSN	950032	
-TSN	950033	
-TSN	950035	
-TSN	950036	
-TSN	950037	
-TSN	950039	
-TSN	950040	
-TSN	950041	
-TSN	950042	
-TSN	950043	
-TSN	950045	
-TSN	950046	
-TSN	950049	
-TSN	950052	
-TSN	950061	
-TSN	950079	
-TSN	950080	
-TSN	997733	
-TSN	997803	
-TSN	997805	
-TSN	997961	
-TSN	NULL	
 WindDesc	Unknown	
 WindDesc	calm, smoke rises vertically	
 WindDesc	fresh breeze, small trees sway	

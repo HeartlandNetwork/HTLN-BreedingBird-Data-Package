@@ -1,11 +1,11 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
-ParkUnit	park name	categorical				
-Plot	plot id	character				
-SubPlot	subplot number	numeric				
-EventDate	event date	Date		yyyy-mm-dd		
-TaxonCode	tree taxon code	categorical				
-Family	tree family	categorical				
-CommonName	common name	categorical				
-ScientificName	scientific name	categorical				
-DBHClass	dbhclass	categorical				
-TreeCount	count	numeric				
+ParkUnit		categorical				
+Plot		character				
+SubPlot		numeric	!Add units here!			
+EventDate		Date		!Add datetime specifier here!		
+TaxonCode		categorical				
+Family		categorical				
+CommonName		categorical				
+ScientificName		categorical				
+DBHClass		categorical				
+TreeCount		numeric	!Add units here!			

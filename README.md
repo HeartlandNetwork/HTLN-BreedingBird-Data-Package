@@ -9,6 +9,11 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230801
+
+make_eml() crashing due to special characters in "Comments" of bird/site data.
+date and time column needs 'T' delimiter.
+
 20230728
 
 Completed last EML function - taxonomic covereage. Start generating EML.

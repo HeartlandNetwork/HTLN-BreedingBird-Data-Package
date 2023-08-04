@@ -3,6 +3,8 @@
 
 USE HTLN_LandBirds;
 
+-- run without comments
+
 
 SELECT U.Name AS ParkUnit, P.LocationName AS Plot, 
     CONCAT(SUBSTRING(E.EventName, 1,4), SUBSTRING(E.EventName, 11, 16)) AS EventID, 
@@ -38,7 +40,7 @@ FROM dbo.BirdSamplingEvent AS E
     ON B.AgeID = A.ID
 
 WHERE (E.EventDateTime < '20230101')  AND 
-     --((LEFT(P.LocationName,4) = 'HEHO') OR (LEFT(P.LocationName,4) = 'PIPE'))*/ 
+     -- (LEFT(P.LocationName,4) = 'HEHO') AND
     NOT (LEFT(P.LocationName,4) = 'CUVA')
 
 -- ORDER BY P.LocationName,  E.EventName,  B.ObservationNumber;
