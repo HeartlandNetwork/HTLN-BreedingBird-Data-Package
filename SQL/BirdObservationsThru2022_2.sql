@@ -12,8 +12,7 @@ SELECT U.Name AS ParkUnit, P.LocationName AS Plot,
     R.Name AS Rain, E.Clouds_pct AS PercentCloud, N.Name AS Noise, N.Summary AS NoiseSummary, I.Name AS Interval, 
     B.ObservationNumber, S.TaxonCode AS AOUCode, S.TSN, S.ScientificName, S.Family, S.CommonName,
     B.Distance, D.Name AS DetectionType, 
-    X.Name AS Sex, A.Name AS Age, B.FlockSize, B.IsPreviousPlot, B.IsFlyover
-    -- B.Comments
+    X.Name AS Sex, A.Name AS Age, B.FlockSize, B.IsPreviousPlot, B.IsFlyover, B.Comments
 
 
 FROM dbo.BirdSamplingEvent AS E
@@ -41,7 +40,7 @@ FROM dbo.BirdSamplingEvent AS E
     ON B.AgeID = A.ID
 
 WHERE (E.EventDateTime < '20230101')  AND 
-     --((LEFT(P.LocationName,4) = 'HEHO') OR (LEFT(P.LocationName,4) = 'PIPE'))*/ 
+     -- (LEFT(P.LocationName,4) = 'HEHO') AND
     NOT (LEFT(P.LocationName,4) = 'CUVA')
 
 -- ORDER BY P.LocationName,  E.EventName,  B.ObservationNumber;
