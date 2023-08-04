@@ -3,6 +3,8 @@
 
 USE HTLN_LandBirds;
 
+-- run without comments
+
 
 SELECT U.Name AS ParkUnit, P.LocationName AS Plot, 
     CONCAT(SUBSTRING(E.EventName, 1,4), SUBSTRING(E.EventName, 11, 16)) AS EventID, 
@@ -10,7 +12,8 @@ SELECT U.Name AS ParkUnit, P.LocationName AS Plot,
     R.Name AS Rain, E.Clouds_pct AS PercentCloud, N.Name AS Noise, N.Summary AS NoiseSummary, I.Name AS Interval, 
     B.ObservationNumber, S.TaxonCode AS AOUCode, S.TSN, S.ScientificName, S.Family, S.CommonName,
     B.Distance, D.Name AS DetectionType, 
-    X.Name AS Sex, A.Name AS Age, B.FlockSize, B.IsPreviousPlot, B.IsFlyover, B.Comments
+    X.Name AS Sex, A.Name AS Age, B.FlockSize, B.IsPreviousPlot, B.IsFlyover
+    -- B.Comments
 
 
 FROM dbo.BirdSamplingEvent AS E
