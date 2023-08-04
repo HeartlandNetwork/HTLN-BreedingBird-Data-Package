@@ -1,16 +1,11 @@
 attributeName	code	definition
-ParkUnit	Agate Fossil Beds	
-ParkUnit	Arkansas Post	
-ParkUnit	Effigy Mounds	
-ParkUnit	George Washington Carver	
-ParkUnit	Herbert Hoover	
-ParkUnit	Homestead	
-ParkUnit	Hopewell Culture	
-ParkUnit	Lincoln Boyhood	
-ParkUnit	Pea Ridge	
-ParkUnit	Pipestone	
-ParkUnit	Tallgrass Prairie	
-ParkUnit	Wilson's Creek	
+CovClass	1	
+CovClass	2	
+CovClass	3	
+CovClass	4	
+CovClass	5	
+CovClass	6	
+CovClass	7	
 Range	1 - 5%	
 Range	25 - 50%	
 Range	5 - 25%	
