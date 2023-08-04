@@ -11,8 +11,7 @@ https://www.nps.gov/im/htln/birds.htm
 
 20230801
 
-make_eml() crashing due to special characters in "Comments" of bird/site data.
-date and time column needs 'T' delimiter.
+make_eml() crashing. Still need date and time column needs 'T' delimiter.
 
 20230728
 
