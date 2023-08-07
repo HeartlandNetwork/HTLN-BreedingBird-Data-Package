@@ -1,7 +1,7 @@
 
 library(tidyverse)
 
-birdobs <- read_csv("BirdObservationsThru2022_3.csv")
+birdobs <- read_csv("src/BirdObservationsThru2022_3.csv")
 
 glimpse(birdobs)
 
@@ -85,7 +85,7 @@ birdobs |>
   print(n = 909)
 
 
-write_csv(birdobs, "BirdObservationsThru2022_3b.csv")
+write_csv(birdobs, "src/BirdObservationsThru2022_3b.csv")
 
 
 

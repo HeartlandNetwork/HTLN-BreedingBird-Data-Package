@@ -1,27 +1,27 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
-ParkUnit		categorical				
-Plot		character				
-EventID		character				
-EventDateTime		Date		!Add datetime specifier here!		
-Temperature_C		numeric	!Add units here!			
-WindSpeed		categorical				
-WindDesc		categorical				
-Rain		categorical				
-PercentCloud		numeric	!Add units here!			
-Noise		categorical				
-NoiseSummary		categorical				
-Interval		categorical				
-ObservationNumber		numeric	!Add units here!			
-AOUCode		categorical				
-TSN		numeric	!Add units here!			
-ScientificName		categorical				
-Family		categorical				
-CommonName		categorical				
-Distance		numeric	!Add units here!			
-DetectionType		categorical				
-Sex		categorical				
-Age		categorical				
-FlockSize		numeric	!Add units here!			
-IsPreviousPlot		numeric	!Add units here!			
-IsFlyover		numeric	!Add units here!			
-Comments		categorical				
+ParkUnit	park name	character				
+Plot	plot id	character				
+EventID	event code	character				
+EventDateTime	event data and time	Date		yyyy-mm-dd hh:mm		
+Temperature_C	air temperature	numeric	Celcius			
+WindSpeed	estimated speed	categorical				
+WindDesc	wind speed description	categorical				
+Rain	description	categorical				
+PercentCloud	percent cloud	numeric	percent			
+Noise	description	categorical				
+NoiseSummary	effects on observations	categorical				
+Interval	interval category	categorical				
+ObservationNumber	integer sequence	numeric				
+AOUCode	taxon code	character				
+TSN	ITIS taxonomic number	character				
+ScientificName	scientific name	character				
+Family	family name	character				
+CommonName	common name	character				
+Distance	estimated distance	numeric	meters		-9999	no distance measure
+DetectionType	detection description	categorical				
+Sex	male female unknown	categorical				
+Age	immature adult unknown	categorical				
+FlockSize	count	numeric				
+IsPreviousPlot	1 is true 0 is false	numeric				
+IsFlyover	1 is true 0 is false	numeric				
+Comments	notes	character			NULL	no comments

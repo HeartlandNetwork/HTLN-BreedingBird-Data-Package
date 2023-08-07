@@ -265,8 +265,8 @@ enddate <- ymd("2022-06-15")
 # are not overwritten.
 
 #template_categorical_variables(path = working_folder, 
-#                               data.path = working_folder, 
-#                               write.file = TRUE)
+                               #data.path = working_folder, 
+                               #write.file = TRUE)
 
 
 
@@ -296,15 +296,15 @@ enddate <- ymd("2022-06-15")
 # at ITIS and if it fails will then look at GBIF. If you have lots of taxa, 
 # this could take some time to 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
 
-#template_taxonomic_coverage(path = working_folder, 
-#                            data.path = working_folder, 
-#                            taxa.table = data_taxa_tables,
-#                            taxa.col = data_taxa_fields, 
-#                            taxa.authority = c(3,11),
-#                            taxa.name.type = 'scientific', 
-#                            write.file = TRUE)
+template_taxonomic_coverage(path = working_folder, 
+                            data.path = working_folder, 
+                            taxa.table = data_taxa_tables,
+                            taxa.col = data_taxa_fields, 
+                            taxa.authority = c(3,11),
+                            taxa.name.type = 'scientific', 
+                            write.file = TRUE)
 
 
 
