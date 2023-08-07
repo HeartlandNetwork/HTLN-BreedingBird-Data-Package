@@ -78,7 +78,7 @@ data_type <- "ongoing"
 # set the working_folder to `getwd()`. If they are in a different directory you will 
 # need to specify that directory.
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
 
 # or:
 # working_folder <- setwd("C:/users/<yourusername>/Documents/my_data_package_folder)
@@ -244,6 +244,9 @@ enddate <- ymd("2022-06-15")
 # columns for attributeDefinition, class, unit, etc. 
 # refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
 
+
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+
 #template_table_attributes(path = working_folder, 
 #                          data.table = data_files, 
 #                          write.file = TRUE)
@@ -313,9 +316,9 @@ enddate <- ymd("2022-06-15")
 # at the end of the process to get feedback on items that might be missing or need 
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
 
-my_metadata <- make_eml(path = working_folder,  ## <<<<<<<<<<<<<< CRASHING HERE
+my_metadata <- make_eml(path = working_folder,  
                dataset.title = package_title,
                data.table = data_files,
                data.table.name = data_names,

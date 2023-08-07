@@ -223,12 +223,12 @@ Aesculus glabra	scientific	Aesculus glabra	ITIS	28718
 Aesculus pavia	scientific	Aesculus pavia	ITIS	28723
 Ailanthus altissima	scientific	Ailanthus altissima	ITIS	28827
 Amelanchier arborea	scientific	Amelanchier arborea	ITIS	25110
-Amorpha fruticosa	scientific	Amorpha fruticosa	ITIS	25368
-Asimina triloba	scientific	Asimina triloba	ITIS	18117
-Betula papyrifera	scientific	Betula papyrifera	ITIS	19489
-Callicarpa americana	scientific	Callicarpa americana	ITIS	32144
-Carpinus caroliniana	scientific	Carpinus caroliniana	ITIS	19504
-Carya alba	scientific	Carya alba	ITIS	501306
+Amorpha fruticosa	scientific	NA	NA	NA
+Asimina triloba	scientific	Asimina triloba	GBIF Backbone Taxonomy	3158040
+Betula papyrifera	scientific	Betula papyrifera	GBIF Backbone Taxonomy	5332120
+Callicarpa americana	scientific	Callicarpa americana	GBIF Backbone Taxonomy	5341129
+Carpinus caroliniana	scientific	NA	NA	NA
+Carya alba	scientific	NA	NA	NA
 Carya cordiformis	scientific	Carya cordiformis	ITIS	19227
 Carya glabra	scientific	Carya glabra	ITIS	19231
 Carya illinoinensis	scientific	Carya illinoinensis	ITIS	19234

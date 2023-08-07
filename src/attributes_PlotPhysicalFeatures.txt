@@ -1,5 +1,5 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
-ParkUnit	park name	categorical				
+ParkUnit	park name	character				
 Plot	plot id	character				
 HabitatType	prairie / riparian	categorical				
 Slope	clinometer	numeric	degrees			

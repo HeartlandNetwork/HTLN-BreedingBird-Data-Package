@@ -1,4 +1,12 @@
 attributeName	code	definition
+CoverClassCode	0	
+CoverClassCode	1	
+CoverClassCode	2	
+CoverClassCode	3	
+CoverClassCode	4	
+CoverClassCode	5	
+CoverClassCode	6	
+CoverClassCode	7	
 CoverClassRange	1 - 5%	
 CoverClassRange	25 - 50%	
 CoverClassRange	5 - 25%	
@@ -18,15 +26,3 @@ Height	1.25 m
 Height	1.50 m	
 Height	1.75 m	
 Height	2.0 m	
-ParkUnit	Agate Fossil Beds	
-ParkUnit	Arkansas Post	
-ParkUnit	Effigy Mounds	
-ParkUnit	George Washington Carver	
-ParkUnit	Herbert Hoover	
-ParkUnit	Homestead	
-ParkUnit	Hopewell Culture	
-ParkUnit	Lincoln Boyhood	
-ParkUnit	Pea Ridge	
-ParkUnit	Pipestone	
-ParkUnit	Tallgrass Prairie	
-ParkUnit	Wilson's Creek	

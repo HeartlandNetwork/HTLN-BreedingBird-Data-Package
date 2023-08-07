@@ -1,5 +1,5 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
-ParkUnit	park name	categorical				
+ParkUnit	park name	character				
 Plot	plot id	character				
 SubPlot	subplot number	numeric				
 EventDate	event date	Date		yyyy-mm-dd		

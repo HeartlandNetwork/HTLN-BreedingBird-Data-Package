@@ -1,5 +1,5 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
-ParkUnit	park name	categorical				
+ParkUnit	park name	character				
 Plot	plot id	character				
 EventID	event code	character				
 EventDateTime	event data and time	Date		yyyy-mm-dd hh:mm		
@@ -12,11 +12,11 @@ Noise	description	categorical
 NoiseSummary	effects on observations	categorical				
 Interval	interval category	categorical				
 ObservationNumber	integer sequence	numeric				
-AOUCode	taxon code	categorical				
-TSN	ITIS taxonomic number	categorical				
-ScientificName	scientific name	categorical				
-Family	family name	categorical				
-CommonName	common name	categorical				
+AOUCode	taxon code	character				
+TSN	ITIS taxonomic number	character				
+ScientificName	scientific name	character				
+Family	family name	character				
+CommonName	common name	character				
 Distance	estimated distance	numeric	meters		-9999	no distance measure
 DetectionType	detection description	categorical				
 Sex	male female unknown	categorical				
@@ -24,4 +24,4 @@ Age	immature adult unknown	categorical
 FlockSize	count	numeric				
 IsPreviousPlot	1 is true 0 is false	numeric				
 IsFlyover	1 is true 0 is false	numeric				
-Comments	notes	categorical			NULL	no comments
+Comments	notes	character			NULL	no comments
