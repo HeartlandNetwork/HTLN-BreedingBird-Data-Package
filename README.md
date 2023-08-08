@@ -9,6 +9,11 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230807 
+
+make_eml() running, cleaned comments, corrected categorical attribs,
+date and time with "T" delimiter
+
 20230801
 
 make_eml() crashing. Still need date and time column needs 'T' delimiter.
