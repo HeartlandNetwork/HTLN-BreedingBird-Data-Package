@@ -2,7 +2,7 @@ attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCo
 ParkUnit	park name	character				
 Plot	plot id	character				
 EventID	event code	character				
-EventDateTime	event data and time	Date		yyyy-mm-dd hh:mm		
+EventDateTime	event data and time	Date		yyyy-mm-ddThh:mm		
 Temperature_C	air temperature	numeric	Celcius			
 WindSpeed	estimated speed	categorical				
 WindDesc	wind speed description	categorical				

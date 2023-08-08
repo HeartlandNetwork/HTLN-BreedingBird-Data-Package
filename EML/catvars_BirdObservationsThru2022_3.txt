@@ -36,13 +36,13 @@ Sex	Male
 Sex	NoVal	
 Sex	Unk	
 WindDesc	Unknown	
-WindDesc	"calm, smoke rises vertically"	
-WindDesc	"fresh breeze, small trees sway"	
+WindDesc	calm, smoke rises vertically	
+WindDesc	fresh breeze, small trees sway	
 WindDesc	leaves and twigs in constant motion	
-WindDesc	"light breeze felt on face, leaves rustle"	
-WindDesc	"small branches move, raises loose paper, dust rises"	
+WindDesc	light breeze felt on face, leaves rustle	
+WindDesc	small branches move, raises loose paper, dust rises	
 WindDesc	smoke drifts	
-WindDesc	"strong breeze, large branches moving, wind whistling"	
+WindDesc	strong breeze, large branches moving, wind whistling	
 WindSpeed	(13-19 km/h)	
 WindSpeed	(2-5 km/h)	
 WindSpeed	(20-29 km/h)	

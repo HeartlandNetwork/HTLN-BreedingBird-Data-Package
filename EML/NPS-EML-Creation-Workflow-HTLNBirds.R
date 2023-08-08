@@ -78,7 +78,7 @@ data_type <- "ongoing"
 # set the working_folder to `getwd()`. If they are in a different directory you will 
 # need to specify that directory.
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 # or:
 # working_folder <- setwd("C:/users/<yourusername>/Documents/my_data_package_folder)
@@ -265,8 +265,8 @@ enddate <- ymd("2022-06-15")
 # are not overwritten.
 
 #template_categorical_variables(path = working_folder, 
-#                               data.path = working_folder, 
-#                               write.file = TRUE)
+                               #data.path = working_folder, 
+                               #write.file = TRUE)
 
 
 
@@ -296,9 +296,9 @@ enddate <- ymd("2022-06-15")
 # at ITIS and if it fails will then look at GBIF. If you have lots of taxa, 
 # this could take some time to 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+# working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
 
-#template_taxonomic_coverage(path = working_folder, 
+# template_taxonomic_coverage(path = working_folder, 
 #                            data.path = working_folder, 
 #                            taxa.table = data_taxa_tables,
 #                            taxa.col = data_taxa_fields, 
@@ -316,7 +316,8 @@ enddate <- ymd("2022-06-15")
 # at the end of the process to get feedback on items that might be missing or need 
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+
 
 my_metadata <- make_eml(path = working_folder,  
                dataset.title = package_title,
@@ -334,7 +335,7 @@ my_metadata <- make_eml(path = working_folder,
 ## Check for EML validity 
 #This is a good point to pause and test whether your EML is valid. 
 
-eml_validate(my_metadata)
+eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< See error messages
 
 
 # if your EML is valid you should see the following (admittedly cryptic) result:
@@ -432,7 +433,7 @@ my_metadata <- set_datastore_doi(my_metadata)
 # You will need the DOI for the DRR you are drafting as well as the DRR's Title. Go to DataStore and initiate 
 # a draft DRR, including a title. For the purposes of the data package, there is no need to populate any other 
 # fields. At this point, you do not need to activate the DRR reference and, while a DOI has been reserved for your DRR,
-# it will not be activated until after publication so that you have plenty of time to construct the DRR.
+# it will Inot be activated until after publication so that you have plenty of time to construct the DRR.
 
 my_metadata <- set_drr(my_metadata, 7654321, "DRR Title")
 
