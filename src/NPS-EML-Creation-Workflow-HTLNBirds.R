@@ -318,8 +318,6 @@ enddate <- ymd("2022-06-15")
 
 working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
 
-# Missing element for publication date. Check original script <<<<<<<<<<<<<<<
-# There is nothing to specify pub. date in this script
 
 my_metadata <- make_eml(path = working_folder,  
                dataset.title = package_title,
