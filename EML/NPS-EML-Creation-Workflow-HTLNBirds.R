@@ -45,6 +45,7 @@
 library(NPSdataverse)
 library(tidyverse)
 
+
 ############################################
 # OBJECT ASSIGNMENT
 
@@ -316,6 +317,8 @@ enddate <- ymd("2022-06-15")
 # at the end of the process to get feedback on items that might be missing or need 
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
+# library(EML)
+
 working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 
@@ -331,6 +334,7 @@ my_metadata <- make_eml(path = working_folder,
                return.obj = TRUE, 
                write.file = FALSE)
 
+EML::write_eml(my_metadata, “my_metadata.xml”)
 
 ## Check for EML validity 
 #This is a good point to pause and test whether your EML is valid. 
