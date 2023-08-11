@@ -334,7 +334,9 @@ my_metadata <- make_eml(path = working_folder,
                return.obj = TRUE, 
                write.file = FALSE)
 
-EML::write_eml(my_metadata, “my_metadata.xml”)
+#EML::write_eml(my_metadata, “my_metadata.xml”)
+
+EML::write_eml(my_metadata, "my_metadata.xml")
 
 ## Check for EML validity 
 #This is a good point to pause and test whether your EML is valid. 
