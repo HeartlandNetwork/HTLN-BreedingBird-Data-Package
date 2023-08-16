@@ -3,25 +3,25 @@ ParkUnit	park name	character
 Plot	plot id	character				
 EventID	event code	character				
 EventDateTime	event data and time	Date		yyyy-mm-ddThh:mm		
-Temperature_C	air temperature	numeric	Celcius			
+Temperature_C	air temperature	numeric	degree			
 WindSpeed	estimated speed	character				
 WindDesc	wind speed description	character				
 Rain	description	character				
-PercentCloud	percent cloud	numeric	percent			
+PercentCloud	percent cloud	numeric	dimensionless			
 Noise	description	character				
 NoiseSummary	effects on observations	character				
 Interval	interval category	character				
-ObservationNumber	integer sequence	numeric	sequence			
+ObservationNumber	integer sequence	numeric	dimensionless			
 AOUCode	taxon code	character				
 TSN	ITIS taxonomic number	character				
 ScientificName	scientific name	character				
 Family	family name	character				
 CommonName	common name	character				
-Distance	estimated distance	numeric	meters		-9999	no distance measure
+Distance	estimated distance	numeric	meter		-9999	no distance measure
 DetectionType	detection description	character				
 Sex	male female unknown	character				
 Age	immature adult unknown	character				
-FlockSize	count	numeric	count			
-IsPreviousPlot	1 is true 0 is false	numeric	true-false			
-IsFlyover	1 is true 0 is false	numeric	true-false			
+FlockSize	count	numeric	dimensionless			
+IsPreviousPlot	1 is true 0 is false	numeric	dimensionless			
+IsFlyover	1 is true 0 is false	numeric	dimensionless			
 Comments	notes	character			NULL	no comments
