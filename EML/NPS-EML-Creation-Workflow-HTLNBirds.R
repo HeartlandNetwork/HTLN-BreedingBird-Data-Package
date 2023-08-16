@@ -1,6 +1,5 @@
 
 # NPS-EML-Creation-Workflow.R
-i
 # Summary
 # This script acts as a template file for end-to-end creation of EML metadata in R for DataStore. 
 # The metadata generated will be of sufficient quality for the Data Package Reference 

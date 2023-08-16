@@ -8,4 +8,4 @@ Family	tree family	character
 CommonName	common name	character				
 ScientificName	scientific name	character				
 DBHClass	dbhclass	character				
-TreeCount	count	numeric				
+TreeCount	count	numeric	dimensionless			

@@ -4,4 +4,4 @@ Plot	plot id	character
 SubPlot	subplot number	character				
 EventDate	event date	Date		yyyy-mm-dd		
 CanopyType	conifer hardwood or total	character				
-CanopyCount	count	numeric	count			
+CanopyCount	count	numeric	dimensionless			

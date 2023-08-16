@@ -5,4 +5,4 @@ SubPlot	subplot number	character
 EventDate	event date	Date		yyyy-mm-dd		
 Height	height category	character				
 Vegetation	herbaceous deciduous coniferous	character				
-Count	count	numeric	count			
+Count	count	numeric	dimensionless			

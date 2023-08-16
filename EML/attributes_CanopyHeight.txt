@@ -4,4 +4,4 @@ Plot	plot id	character
 SubPlot	subplot number	character				
 EventDate	event date	Date		yyyy-mm-dd		
 CanopyType	conifer hardwood	character				
-CanopyHeight	clinometer	numeric	meters			
+CanopyHeight	clinometer	numeric	meter			
