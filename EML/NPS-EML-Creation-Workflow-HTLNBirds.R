@@ -44,6 +44,7 @@
 
 library(NPSdataverse)
 library(tidyverse)
+library(EML)
 
 
 ############################################
@@ -65,7 +66,7 @@ metadata_id <- "HTLN-BreedingBird-Metadata"
 # Give the data package a title. FAIR principles suggest titles of between 7 and 20 words. 
 # Be sure to make your title informative and consider how a naive user would interpret it.
 
-package_title <- "Heartland I&M Network Breeding Bird Data Package"
+package_title <- "Heartland Inventory and Monitoring Network Breeding Land Bird Data Package"
 
 
 #### Data collection status
@@ -123,11 +124,7 @@ data_names <- c("Habitat - BasalArea Data",
                 "Habitat - Tree Tally Data",
                 "Habitat - Vertical Profile Data")
                 
-                
-                
-                
-                
-
+          
 
 #### Describe each data file. Data file descriptions should be unique and about 10 words long. 
 # Descriptions will be used in auto-generated tables within the ReadMe and DRR. 
@@ -246,7 +243,7 @@ enddate <- ymd("2022-06-15")
 # refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 #template_table_attributes(path = working_folder, 
 #                          data.table = data_files, 
@@ -297,7 +294,7 @@ enddate <- ymd("2022-06-15")
 # at ITIS and if it fails will then look at GBIF. If you have lots of taxa, 
 # this could take some time to 
 
-# working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/src")
+# working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 # template_taxonomic_coverage(path = working_folder, 
 #                            data.path = working_folder, 
@@ -317,7 +314,6 @@ enddate <- ymd("2022-06-15")
 # at the end of the process to get feedback on items that might be missing or need 
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
-# library(EML)
 
 working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
@@ -333,8 +329,6 @@ my_metadata <- make_eml(path = working_folder,
                package.id = metadata_id,
                return.obj = TRUE, 
                write.file = FALSE)
-
-#EML::write_eml(my_metadata, “my_metadata.xml”)
 
 EML::write_eml(my_metadata, "my_metadata.xml")
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="HTLN-BreedingBird-Metadata" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="unknown">
   <dataset>
-    <title>Heartland I&amp;M Network Breeding Bird Data Package</title>
+    <title>Heartland Inventory and Monitoring Network Breeding Land Bird Data Package</title>
     <pubDate>2023-08-11</pubDate>
     <abstract>
-      <para>This monitoring dataset consists of variable circular plot (VCP) - continuous distance - point count bird observations and site conditions along with extensive habitat data for breeding birds in the National Park Service Heartland Inventory and Monitoring Network Parks. The dataset includes approximately 65,000 individual bird observations covering over 200 bird species observed at 12 NPS park units taken between 2001 and 2022.The overall goals of Heartland Inventory and Monitoring Network breeding bird monitoring are to 1) identify significant temporal changes in the species composition and abundance of bird communities that occur on parks during the breeding season, and 2) improve our understanding of relationships between breeding birds and their habitat and the effects of management actions (such as prairie restoration or prescribed fire) on bird populations. These goals are accomplished by examining potential correlations between changes in specific habitat variables (e.g., vegetation structure, ground cover) and changes in bird community composition and abundance. The 12 park units included in this study were in Arkansas - Arkansas Post National Memorial and Pea Ridge National Military Park; Indiana - Lincoln Boyhood National Memorial; Iowa - Effigy Mounds National Monument and Herber Hoover National Historic Site; Kansas - Tallgrass Prairie National Preserve; Minnesota - Pipestone National Monument; Missouri - George Washington Carver National Monument and Wilson's Creek National Battlefield; Nebraska - Agate Fossil Beds National Monument and Homestead National Historical Park; and Ohio - Hopewell Culture National Historical Park.</para>
+      <para>This monitoring dataset consists of variable circular plot - continuous distance - point count bird observations and site conditions along with extensive habitat data for breeding birds in the National Park Service Heartland Inventory and Monitoring Network Parks. The dataset includes approximately 65,000 individual bird observations covering over 200 bird species observed at 12 NPS park units taken between 2001 and 2022. The overall goals of Heartland Inventory and Monitoring Network breeding bird monitoring are to 1) identify significant temporal changes in the species composition and abundance of bird communities that occur on parks during the breeding season, and 2) improve our understanding of relationships between breeding birds and their habitat and the effects of management actions (such as prairie restoration or prescribed fire) on bird populations. These goals are accomplished by examining potential correlations between changes in specific habitat variables (e.g., vegetation structure, ground cover) and changes in bird community composition and abundance. The 12 park units included in this study were in Arkansas - Arkansas Post National Memorial and Pea Ridge National Military Park; Indiana - Lincoln Boyhood National Memorial; Iowa - Effigy Mounds National Monument and Herber Hoover National Historic Site; Kansas - Tallgrass Prairie National Preserve; Minnesota - Pipestone National Monument; Missouri - George Washington Carver National Monument and Wilson's Creek National Battlefield; Nebraska - Agate Fossil Beds National Monument and Homestead National Historical Park; and Ohio - Hopewell Culture National Historical Park.</para>
       <para>&#13;
 </para>
     </abstract>
@@ -14,10 +14,6 @@
       <keyword>land birds</keyword>
       <keyword>avian ecology</keyword>
       <keyword>bird habitat</keyword>
-    </keywordSet>
-    <keywordSet>
-      <keyword>monitoring</keyword>
-      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
     </keywordSet>
     <additionalInfo>
       <para>The Heartland Inventory and Monitoring Network is one of 32 Inventory and Monitoring Networks providing natural resource monitoring at the National Park Service. Additional information is available through the Inventory and Monitoring Division Central Support Office, Fort Collins, Colorado.</para>
@@ -20435,12 +20431,10 @@
                             <taxonomicClassification>
                               <taxonRankName>genus</taxonRankName>
                               <taxonRankValue>Quercus</taxonRankValue>
-                              <commonName>oak</commonName>
                               <taxonId provider="https://itis.gov">19276</taxonId>
                               <taxonomicClassification>
                                 <taxonRankName>species</taxonRankName>
                                 <taxonRankValue>Quercus rubra</taxonRankValue>
-                                <commonName>northern red oak</commonName>
                                 <taxonId provider="https://itis.gov">19408</taxonId>
                               </taxonomicClassification>
                             </taxonomicClassification>
@@ -20457,17 +20451,14 @@
         <taxonomicClassification>
           <taxonRankName>kingdom</taxonRankName>
           <taxonRankValue>Plantae</taxonRankValue>
-          <commonName>plants</commonName>
           <taxonId provider="https://itis.gov">202422</taxonId>
           <taxonomicClassification>
             <taxonRankName>subkingdom</taxonRankName>
             <taxonRankValue>Viridiplantae</taxonRankValue>
-            <commonName>green plants</commonName>
             <taxonId provider="https://itis.gov">954898</taxonId>
             <taxonomicClassification>
               <taxonRankName>infrakingdom</taxonRankName>
               <taxonRankValue>Streptophyta</taxonRankValue>
-              <commonName>land plants</commonName>
               <taxonId provider="https://itis.gov">846494</taxonId>
               <taxonomicClassification>
                 <taxonRankName>superdivision</taxonRankName>
@@ -20476,14 +20467,10 @@
                 <taxonomicClassification>
                   <taxonRankName>division</taxonRankName>
                   <taxonRankValue>Tracheophyta</taxonRankValue>
-                  <commonName>vascular plants</commonName>
-                  <commonName>tracheophytes</commonName>
                   <taxonId provider="https://itis.gov">846496</taxonId>
                   <taxonomicClassification>
                     <taxonRankName>subdivision</taxonRankName>
                     <taxonRankValue>Spermatophytina</taxonRankValue>
-                    <commonName>spermatophytes</commonName>
-                    <commonName>seed plants</commonName>
                     <taxonId provider="https://itis.gov">846504</taxonId>
                     <taxonomicClassification>
                       <taxonRankName>class</taxonRankName>
@@ -20504,12 +20491,10 @@
                             <taxonomicClassification>
                               <taxonRankName>genus</taxonRankName>
                               <taxonRankValue>Quercus</taxonRankValue>
-                              <commonName>oak</commonName>
                               <taxonId provider="https://itis.gov">19276</taxonId>
                               <taxonomicClassification>
                                 <taxonRankName>species</taxonRankName>
                                 <taxonRankValue>Quercus shumardii</taxonRankValue>
-                                <commonName>Shumard's oak</commonName>
                                 <taxonId provider="https://itis.gov">19417</taxonId>
                               </taxonomicClassification>
                             </taxonomicClassification>
@@ -20526,17 +20511,14 @@
         <taxonomicClassification>
           <taxonRankName>kingdom</taxonRankName>
           <taxonRankValue>Plantae</taxonRankValue>
-          <commonName>plants</commonName>
           <taxonId provider="https://itis.gov">202422</taxonId>
           <taxonomicClassification>
             <taxonRankName>subkingdom</taxonRankName>
             <taxonRankValue>Viridiplantae</taxonRankValue>
-            <commonName>green plants</commonName>
             <taxonId provider="https://itis.gov">954898</taxonId>
             <taxonomicClassification>
               <taxonRankName>infrakingdom</taxonRankName>
               <taxonRankValue>Streptophyta</taxonRankValue>
-              <commonName>land plants</commonName>
               <taxonId provider="https://itis.gov">846494</taxonId>
               <taxonomicClassification>
                 <taxonRankName>superdivision</taxonRankName>
@@ -20545,14 +20527,10 @@
                 <taxonomicClassification>
                   <taxonRankName>division</taxonRankName>
                   <taxonRankValue>Tracheophyta</taxonRankValue>
-                  <commonName>vascular plants</commonName>
-                  <commonName>tracheophytes</commonName>
                   <taxonId provider="https://itis.gov">846496</taxonId>
                   <taxonomicClassification>
                     <taxonRankName>subdivision</taxonRankName>
                     <taxonRankValue>Spermatophytina</taxonRankValue>
-                    <commonName>spermatophytes</commonName>
-                    <commonName>seed plants</commonName>
                     <taxonId provider="https://itis.gov">846504</taxonId>
                     <taxonomicClassification>
                       <taxonRankName>class</taxonRankName>
