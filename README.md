@@ -9,6 +9,10 @@ https://www.nps.gov/im/htln/birds.htm
 --------------------------------
 # Notes
 
+20230816
+
+pubDate error - eml_validate
+
 20230807 
 
 make_eml() running, cleaned comments, corrected categorical attribs,
