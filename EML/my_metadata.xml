@@ -2,7 +2,7 @@
 <eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="HTLN-BreedingBird-Metadata" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="unknown">
   <dataset>
     <title>Heartland Inventory and Monitoring Network Breeding Land Bird Data Package</title>
-    <pubDate>2023-08-11</pubDate>
+    <pubDate>2023-08-16</pubDate>
     <abstract>
       <para>This monitoring dataset consists of variable circular plot - continuous distance - point count bird observations and site conditions along with extensive habitat data for breeding birds in the National Park Service Heartland Inventory and Monitoring Network Parks. The dataset includes approximately 65,000 individual bird observations covering over 200 bird species observed at 12 NPS park units taken between 2001 and 2022. The overall goals of Heartland Inventory and Monitoring Network breeding bird monitoring are to 1) identify significant temporal changes in the species composition and abundance of bird communities that occur on parks during the breeding season, and 2) improve our understanding of relationships between breeding birds and their habitat and the effects of management actions (such as prairie restoration or prescribed fire) on bird populations. These goals are accomplished by examining potential correlations between changes in specific habitat variables (e.g., vegetation structure, ground cover) and changes in bird community composition and abundance. The 12 park units included in this study were in Arkansas - Arkansas Post National Memorial and Pea Ridge National Military Park; Indiana - Lincoln Boyhood National Memorial; Iowa - Effigy Mounds National Monument and Herber Hoover National Historic Site; Kansas - Tallgrass Prairie National Preserve; Minnesota - Pipestone National Monument; Missouri - George Washington Carver National Monument and Wilson's Creek National Battlefield; Nebraska - Agate Fossil Beds National Monument and Homestead National Historical Park; and Ohio - Hopewell Culture National Historical Park.</para>
       <para>&#13;
@@ -20431,10 +20431,12 @@
                             <taxonomicClassification>
                               <taxonRankName>genus</taxonRankName>
                               <taxonRankValue>Quercus</taxonRankValue>
+                              <commonName>oak</commonName>
                               <taxonId provider="https://itis.gov">19276</taxonId>
                               <taxonomicClassification>
                                 <taxonRankName>species</taxonRankName>
                                 <taxonRankValue>Quercus rubra</taxonRankValue>
+                                <commonName>northern red oak</commonName>
                                 <taxonId provider="https://itis.gov">19408</taxonId>
                               </taxonomicClassification>
                             </taxonomicClassification>
@@ -20451,14 +20453,17 @@
         <taxonomicClassification>
           <taxonRankName>kingdom</taxonRankName>
           <taxonRankValue>Plantae</taxonRankValue>
+          <commonName>plants</commonName>
           <taxonId provider="https://itis.gov">202422</taxonId>
           <taxonomicClassification>
             <taxonRankName>subkingdom</taxonRankName>
             <taxonRankValue>Viridiplantae</taxonRankValue>
+            <commonName>green plants</commonName>
             <taxonId provider="https://itis.gov">954898</taxonId>
             <taxonomicClassification>
               <taxonRankName>infrakingdom</taxonRankName>
               <taxonRankValue>Streptophyta</taxonRankValue>
+              <commonName>land plants</commonName>
               <taxonId provider="https://itis.gov">846494</taxonId>
               <taxonomicClassification>
                 <taxonRankName>superdivision</taxonRankName>
@@ -20467,10 +20472,14 @@
                 <taxonomicClassification>
                   <taxonRankName>division</taxonRankName>
                   <taxonRankValue>Tracheophyta</taxonRankValue>
+                  <commonName>vascular plants</commonName>
+                  <commonName>tracheophytes</commonName>
                   <taxonId provider="https://itis.gov">846496</taxonId>
                   <taxonomicClassification>
                     <taxonRankName>subdivision</taxonRankName>
                     <taxonRankValue>Spermatophytina</taxonRankValue>
+                    <commonName>spermatophytes</commonName>
+                    <commonName>seed plants</commonName>
                     <taxonId provider="https://itis.gov">846504</taxonId>
                     <taxonomicClassification>
                       <taxonRankName>class</taxonRankName>
@@ -20491,10 +20500,12 @@
                             <taxonomicClassification>
                               <taxonRankName>genus</taxonRankName>
                               <taxonRankValue>Quercus</taxonRankValue>
+                              <commonName>oak</commonName>
                               <taxonId provider="https://itis.gov">19276</taxonId>
                               <taxonomicClassification>
                                 <taxonRankName>species</taxonRankName>
                                 <taxonRankValue>Quercus shumardii</taxonRankValue>
+                                <commonName>Shumard's oak</commonName>
                                 <taxonId provider="https://itis.gov">19417</taxonId>
                               </taxonomicClassification>
                             </taxonomicClassification>
@@ -20511,14 +20522,17 @@
         <taxonomicClassification>
           <taxonRankName>kingdom</taxonRankName>
           <taxonRankValue>Plantae</taxonRankValue>
+          <commonName>plants</commonName>
           <taxonId provider="https://itis.gov">202422</taxonId>
           <taxonomicClassification>
             <taxonRankName>subkingdom</taxonRankName>
             <taxonRankValue>Viridiplantae</taxonRankValue>
+            <commonName>green plants</commonName>
             <taxonId provider="https://itis.gov">954898</taxonId>
             <taxonomicClassification>
               <taxonRankName>infrakingdom</taxonRankName>
               <taxonRankValue>Streptophyta</taxonRankValue>
+              <commonName>land plants</commonName>
               <taxonId provider="https://itis.gov">846494</taxonId>
               <taxonomicClassification>
                 <taxonRankName>superdivision</taxonRankName>
@@ -20527,10 +20541,14 @@
                 <taxonomicClassification>
                   <taxonRankName>division</taxonRankName>
                   <taxonRankValue>Tracheophyta</taxonRankValue>
+                  <commonName>vascular plants</commonName>
+                  <commonName>tracheophytes</commonName>
                   <taxonId provider="https://itis.gov">846496</taxonId>
                   <taxonomicClassification>
                     <taxonRankName>subdivision</taxonRankName>
                     <taxonRankValue>Spermatophytina</taxonRankValue>
+                    <commonName>spermatophytes</commonName>
+                    <commonName>seed plants</commonName>
                     <taxonId provider="https://itis.gov">846504</taxonId>
                     <taxonomicClassification>
                       <taxonRankName>class</taxonRankName>
@@ -22211,6 +22229,443 @@
         </description>
       </methodStep>
     </methods>
+    <dataTable>
+      <entityName>Habitat - Foliar Cover Data</entityName>
+      <entityDescription>Percent foliar cover estimated under 1.5 high grouped into plant guilds</entityDescription>
+      <physical>
+        <objectName>FoliarCover.csv</objectName>
+        <size unit="bytes">2268057</size>
+        <authentication method="MD5">f6d8ea9606289ae773800716011cc88b</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>temporary URL</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>ParkUnit</attributeName>
+          <attributeDefinition>park name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>park name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Plot</attributeName>
+          <attributeDefinition>plot id</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>plot id</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SubPlot</attributeName>
+          <attributeDefinition>subplot number</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>subplot number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>EventDate</attributeName>
+          <attributeDefinition>event date</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>yyyy-mm-dd</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>FoliarCover</attributeName>
+          <attributeDefinition>foliar cover type</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>foliar cover type</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CoverClassCode</attributeName>
+          <attributeDefinition>code code</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>code code</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CoverClassMidPoint</attributeName>
+          <attributeDefinition>midpoint</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>percent</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">97.5</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CoverClassRange</attributeName>
+          <attributeDefinition>description</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>description</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>31733</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Habitat - Ground Cover Data</entityName>
+      <entityDescription>Percent ground cover estimated for conifer, deciduous, grass litter, rock and other classes</entityDescription>
+      <physical>
+        <objectName>GroundCover.csv</objectName>
+        <size unit="bytes">1951856</size>
+        <authentication method="MD5">ee4af00950c8912524163a40e3d52a95</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>temporary URL</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>ParkUnit</attributeName>
+          <attributeDefinition>park name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>park name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Plot</attributeName>
+          <attributeDefinition>plot id</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>plot id</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SubPlot</attributeName>
+          <attributeDefinition>subplot number</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>subplot number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>EventDate</attributeName>
+          <attributeDefinition>event date</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>yyyy-mm-dd</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>GroundCover</attributeName>
+          <attributeDefinition>ground cover type</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>ground cover type</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CoverClassCode</attributeName>
+          <attributeDefinition>cover class code</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>cover class code</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CoverClassMidPoint</attributeName>
+          <attributeDefinition>midpoint</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>percent</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">97.5</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CoverClassRange</attributeName>
+          <attributeDefinition>cover class range type</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>cover class range type</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>30327</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Habitat - Horizontal Distance Profile Data</entityName>
+      <entityDescription>Horizontal vegetation profile readings taken using profile board at 15 m.</entityDescription>
+      <physical>
+        <objectName>HorizDistanceProfile.csv</objectName>
+        <size unit="bytes">1941015</size>
+        <authentication method="MD5">d539c3d733c3c228779b1028070d4703</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>temporary URL</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>ParkUnit</attributeName>
+          <attributeDefinition>park name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>park name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Plot</attributeName>
+          <attributeDefinition>plot ID</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>plot ID</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SubPlot</attributeName>
+          <attributeDefinition>subplot number</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>subplot number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>EventDate</attributeName>
+          <attributeDefinition>event date</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>yyyy-mm-dd</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Distance</attributeName>
+          <attributeDefinition>distance category</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>distance category</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Height</attributeName>
+          <attributeDefinition>height category</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>height category</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CoverClassCode</attributeName>
+          <attributeDefinition>cover class code</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>cover class code</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CoverClassMidPoint</attributeName>
+          <attributeDefinition>cover class mid point</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>percent</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">97.5</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CoverClassRange</attributeName>
+          <attributeDefinition>range category</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>range category</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>26351</numberOfRecords>
+    </dataTable>
   </dataset>
   <additionalMetadata>
     <metadata>

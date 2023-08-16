@@ -1,8 +1,8 @@
 attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
 ParkUnit	park name	character				
 Plot	plot id	character				
-SubPlot	subplot number	numeric				
+SubPlot	subplot number	character				
 EventDate	event date	Date		yyyy-mm-dd		
-Height	height category	categorical				
-Vegetation	herbaceous deciduous coniferous	categorical				
-Count	count	numeric				
+Height	height category	character				
+Vegetation	herbaceous deciduous coniferous	character				
+Count	count	numeric	count			
