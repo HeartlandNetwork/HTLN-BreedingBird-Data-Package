@@ -4,24 +4,24 @@ Plot	plot id	character
 EventID	event code	character				
 EventDateTime	event data and time	Date		yyyy-mm-ddThh:mm		
 Temperature_C	air temperature	numeric	Celcius			
-WindSpeed	estimated speed	categorical				
-WindDesc	wind speed description	categorical				
-Rain	description	categorical				
+WindSpeed	estimated speed	character				
+WindDesc	wind speed description	character				
+Rain	description	character				
 PercentCloud	percent cloud	numeric	percent			
-Noise	description	categorical				
-NoiseSummary	effects on observations	categorical				
-Interval	interval category	categorical				
-ObservationNumber	integer sequence	numeric				
+Noise	description	character				
+NoiseSummary	effects on observations	character				
+Interval	interval category	character				
+ObservationNumber	integer sequence	numeric	sequence			
 AOUCode	taxon code	character				
 TSN	ITIS taxonomic number	character				
 ScientificName	scientific name	character				
 Family	family name	character				
 CommonName	common name	character				
 Distance	estimated distance	numeric	meters		-9999	no distance measure
-DetectionType	detection description	categorical				
-Sex	male female unknown	categorical				
-Age	immature adult unknown	categorical				
-FlockSize	count	numeric				
-IsPreviousPlot	1 is true 0 is false	numeric				
-IsFlyover	1 is true 0 is false	numeric				
+DetectionType	detection description	character				
+Sex	male female unknown	character				
+Age	immature adult unknown	character				
+FlockSize	count	numeric	count			
+IsPreviousPlot	1 is true 0 is false	numeric	true-false			
+IsFlyover	1 is true 0 is false	numeric	true-false			
 Comments	notes	character			NULL	no comments
