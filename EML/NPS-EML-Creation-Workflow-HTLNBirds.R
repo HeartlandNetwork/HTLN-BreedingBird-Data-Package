@@ -314,7 +314,7 @@ library(EML)
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 
 #my_metadata <- make_eml(path = working_folder,  
@@ -346,6 +346,8 @@ library(EML)
 library(NPSdataverse)
 library(tidyverse)
 library(EML)
+1
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 my_metadata <- EML::read_eml("my_metadata.xml", from = "xml")
 
@@ -498,9 +500,9 @@ eml_validate(my_metadata)
 # Sometime seeing your metadata in this format may help you spot errors or inconsistancies 
 # you would otherwise miss. XML was never really designed to be human readable, and it shows.
 
-my_metadata <- set_doi(my_metadata, "2300410")
+my_metadata <- set_doi(my_metadata, "2299582")
 
-write_readme(my_metadata)
+# write_readme(my_metadata)
 
 ## Write your EML to an xml file 
 # Now it's time to convert your R object to an .xml file and save it. Keep in mind 
