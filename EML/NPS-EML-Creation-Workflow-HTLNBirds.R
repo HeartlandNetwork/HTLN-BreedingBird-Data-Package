@@ -58,20 +58,20 @@ library(EML)
 # This becomes the file name of your .xml file. Be sure it ends in _metadata to 
 # comply with data package specifications. You do not need to include the extension (.xml).
 
-metadata_id <- "HTLN-BreedingBird-Metadata"
+#metadata_id <- "HTLN-BreedingBird-Metadata"
 
 
 #### Package Title
 # Give the data package a title. FAIR principles suggest titles of between 7 and 20 words. 
 # Be sure to make your title informative and consider how a naive user would interpret it.
 
-package_title <- "Heartland Inventory and Monitoring Network Breeding Land Bird Data Package"
+#package_title <- "Heartland Inventory and Monitoring Network Breeding Land Bird Data Package"
 
 
 #### Data collection status
 # Choose from either "ongoing" or "complete"
 
-data_type <- "ongoing"
+#data_type <- "ongoing"
 
 
 #### Path to data file(s)
@@ -79,7 +79,7 @@ data_type <- "ongoing"
 # set the working_folder to `getwd()`. If they are in a different directory you will 
 # need to specify that directory.
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 # or:
 # working_folder <- setwd("C:/users/<yourusername>/Documents/my_data_package_folder)
@@ -88,18 +88,18 @@ working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 # Tell R what your data files are called. 
 
 
-data_files <- c("BasalArea.csv",
-                "BirdObservationsThru2022_3.csv",
-                "CanopyCover.csv",
-                "CanopyHeight.csv",
-                "FoliarCover.csv",
-                "GroundCover.csv",
-                "HorizDistanceProfile.csv",
-                "PlotCoordinatesDD.csv",
-                "PlotPhysicalFeatures.csv",
-                "PlotVegCover.csv",
-                "TreeTally.csv",
-                "VerticalProfile.csv")
+#data_files <- c("BasalArea.csv",
+#                "BirdObservationsThru2022_3.csv",
+#                "CanopyCover.csv",
+#                "CanopyHeight.csv",
+#                "FoliarCover.csv",
+#                "GroundCover.csv",
+#                "HorizDistanceProfile.csv",
+#                "PlotCoordinatesDD.csv",
+#                "PlotPhysicalFeatures.csv",
+#                "PlotVegCover.csv",
+#                "TreeTally.csv",
+#                "VerticalProfile.csv")
                 
                 
 
@@ -110,18 +110,18 @@ data_files <- c("BasalArea.csv",
 # These should be relatively short, but perhaps more informative than the actual file names. 
 # Make sure that they are in the same order as the files in data_files.
 
-data_names <- c("Habitat - BasalArea Data",
-                "Bird Observations - Site Conditions Data",
-                "Habitat - Canopy Cover Data",
-                "Habitat - Canopy Height Data",
-                "Habitat - Foliar Cover Data",
-                "Habitat - Ground Cover Data",
-                "Habitat - Horizontal Distance Profile Data",
-                "Sampling Plot Coordinates",
-                "Habitat - Plot Physical Features Data",
-                "Habitat - Plot Vegetation Cover Data",
-                "Habitat - Tree Tally Data",
-                "Habitat - Vertical Profile Data")
+#data_names <- c("Habitat - BasalArea Data",
+#                "Bird Observations - Site Conditions Data",
+#                "Habitat - Canopy Cover Data",
+#                "Habitat - Canopy Height Data",
+#                "Habitat - Foliar Cover Data",
+#                "Habitat - Ground Cover Data",
+#                "Habitat - Horizontal Distance Profile Data",
+#                "Sampling Plot Coordinates",
+#                "Habitat - Plot Physical Features Data",
+#                "Habitat - Plot Vegetation Cover Data",
+#                "Habitat - Tree Tally Data",
+#                "Habitat - Vertical Profile Data")
                 
           
 
@@ -132,18 +132,18 @@ data_names <- c("Habitat - BasalArea Data",
 # the files they are describing.
 
 
-data_descriptions <- c("Basal area of hardwood and conifer species estimated using a 10-factor English cruz-all",
-                "Bird observations taken using variable circular plots using continuous distance",
-                "Canopy cover estimated with densiometer at four cardinal directions (N, E, S, W)",
-                "Canopy heights of the tallest hardwood and coniferous trees estimated with clinometer",
-                "Percent foliar cover estimated under 1.5 high grouped into plant guilds",
-                "Percent ground cover estimated for conifer, deciduous, grass litter, rock and other classes",
-                "Horizontal vegetation profile readings taken using profile board at 15 m.",
-                "Sampling Plot Coordinates in latitude - longitude decimal degrees",
-                "Plot physical attributes including slope, aspect, and topographic description",
-                "Plot cover types estimated by percent cover classes",
-                "Tree tally data for tree species > 1.5 m based on diameter size-classes",
-                "Vertical profile of vegetion measured with 7.5 m rod")
+#data_descriptions <- c("Basal area of hardwood and conifer species estimated using a 10-factor English cruz-all",
+#                "Bird observations taken using variable circular plots using continuous distance",
+#                "Canopy cover estimated with densiometer at four cardinal directions (N, E, S, W)",
+#                "Canopy heights of the tallest hardwood and coniferous trees estimated with clinometer",
+#                "Percent foliar cover estimated under 1.5 high grouped into plant guilds",
+#                "Percent ground cover estimated for conifer, deciduous, grass litter, rock and other classes",
+#                "Horizontal vegetation profile readings taken using profile board at 15 m.",
+#                "Sampling Plot Coordinates in latitude - longitude decimal degrees",
+#                "Plot physical attributes including slope, aspect, and topographic description",
+#                "Plot cover types estimated by percent cover classes",
+#                "Tree tally data for tree species > 1.5 m based on diameter size-classes",
+#                "Vertical profile of vegetion measured with 7.5 m rod")
 
 #### Placeholder URL for data files
 # EMLassemblyline needs to know where the data files will be (a URL). However, because you 
@@ -151,7 +151,7 @@ data_descriptions <- c("Basal area of hardwood and conifer species estimated usi
 # Instead, insert a place holder. Don't worry - this information will be updated later on when 
 # you add a Digital Object Identifier(DOI) to the metadata.
 
-data_urls <- c(rep("temporary URL", length(data_files)))
+#data_urls <- c(rep("temporary URL", length(data_files)))
 
 
 #### Taxonomic information
@@ -162,10 +162,10 @@ data_urls <- c(rep("temporary URL", length(data_files)))
 # taxonomic data, skip this step.```{r taxonomic_info}
 # the file(s) where scientific names are located:
 
-data_taxa_tables <- c("BirdSpeciesNames.csv","TreeSpeciesNames.csv")
+#data_taxa_tables <- c("BirdSpeciesNames.csv","TreeSpeciesNames.csv")
 
 # the column where your scientific names are within the data files.
-data_taxa_fields <- c("ScientificName","ScientificName")
+#data_taxa_fields <- c("ScientificName","ScientificName")
 
 #### Geographic information
 # Specify the tables and fields that contain geographic coordinates 
@@ -179,10 +179,10 @@ data_taxa_fields <- c("ScientificName","ScientificName")
 # (https://nationalparkservice.github.io/QCkit/reference/convert_utm_to_ll.html) 
 # function in the [QCkit package](https://nationalparkservice.github.io/QCkit/)
 
-data_coordinates_table <- "PlotCoodinatesDD.csv"
-data_latitutde <- "decimalLatitude"
-data_longitude <- "decimalLongitude"
-data_sitename <- "PlotID"
+#data_coordinates_table <- "PlotCoodinatesDD.csv"
+#data_latitutde <- "decimalLatitude"
+#data_longitude <- "decimalLongitude"
+#data_sitename <- "PlotID"
 
 #### Temporal information
 # This should indicate collection date of the first and last data point in the 
@@ -194,8 +194,8 @@ data_sitename <- "PlotID"
 # month (01 - 31). Using an alternate format or setting the date to the future 
 # will cause errors down the road!
 
-startdate <- ymd("2001-05-07")
-enddate <- ymd("2022-06-15")
+#startdate <- ymd("2001-05-07")
+#enddate <- ymd("2022-06-15")
 
 ######################################################################################
 
@@ -314,27 +314,27 @@ enddate <- ymd("2022-06-15")
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 
-my_metadata <- make_eml(path = working_folder,  
-               dataset.title = package_title,
-               data.table = data_files,
-               data.table.name = data_names,
-               data.table.description = data_descriptions,
-               data.table.url = data_urls,
-               temporal.coverage = c(startdate, enddate),
-               maintenance.description = data_type,
-               package.id = metadata_id,
-               return.obj = TRUE, 
-               write.file = FALSE)
+#my_metadata <- make_eml(path = working_folder,  
+#               dataset.title = package_title,
+#               data.table = data_files,
+#               data.table.name = data_names,
+#               data.table.description = data_descriptions,
+#               data.table.url = data_urls,
+#               temporal.coverage = c(startdate, enddate),
+#               maintenance.description = data_type,
+#               package.id = metadata_id,
+#               return.obj = TRUE, 
+#               write.file = FALSE)
 
-EML::write_eml(my_metadata, "my_metadata.xml")
+#EML::write_eml(my_metadata, "my_metadata.xml")
 
 ## Check for EML validity 
 #This is a good point to pause and test whether your EML is valid. 
 
-eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< See error messages
+#eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< See error messages
 
 
 # if your EML is valid you should see the following (admittedly cryptic) result:
@@ -342,6 +342,13 @@ eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< See error messages
 # [1] TRUE
 # attr(,"errors")
 # character(0)
+
+library(NPSdataverse)
+library(tidyverse)
+library(EML)
+
+my_metadata <- EML::read_eml("my_metadata.xml", from = "xml")
+
 
 
 # if your EML is not schema valid, the function will notify you of 
@@ -424,7 +431,7 @@ my_metadata <- set_int_rights(my_metadata, "public")
 #   auto-populated based on the metadata you upload. Any fields you do populate will be over-written 
 #   by the content in your metadata.
 
-my_metadata <- set_datastore_doi(my_metadata)
+#my_metadata <- set_datastore_doi(my_metadata)
 
 #### Add information about a DRR (optional) 
 # If you are producing (or plan to produce) a DRR, add links to the DRR describing the data package.
@@ -434,7 +441,7 @@ my_metadata <- set_datastore_doi(my_metadata)
 # fields. At this point, you do not need to activate the DRR reference and, while a DOI has been reserved for your DRR,
 # it will Inot be activated until after publication so that you have plenty of time to construct the DRR.
 
-my_metadata <- set_drr(my_metadata, 7654321, "DRR Title")
+my_metadata <- set_drr(my_metadata, 2299582, "Data Release Report for the Heartland Inventory and Monitoring Breeding Bird Data Package")
 
 
 #### Set the language 
@@ -454,7 +461,7 @@ my_metadata <- set_language(my_metadata, "English")
 # for each park unit listed will automatically be generated and inserted into the metadata. Individual 
 # park units will be more informative than the bounding box for the entire network.
 
-park_units <- c("ROMO", "GRSD", "YELL")
+park_units <- c("ARPO", "PERI", "LIBO", "EFMO", "HEHO", "TAPR", "PIPE", "GWCA", "WICR", "AGFO", "HOME", "HOCU")
 my_metadata <- set_content_units(my_metadata, park_units)
 
 #### Add the Producing Unit(s)
@@ -464,13 +471,15 @@ my_metadata <- set_content_units(my_metadata, park_units)
 # overlapping, or entirely different.
 
 # a single producing unit:
-my_metadata <- set_producing_units(my_metadata, "ROMN")
+my_metadata <- set_producing_units(my_metadata, "HTLN")
 # alternatively, a list of producing units:
-my_metadata <- set_producing_units(my_metadata, c("ROMN", "GRYN"))
+#my_metadata <- set_producing_units(my_metadata, c("ROMN", "GRYN"))
 
 ## Validate your EML 
 # Almost done! This is another great time to validate your EML and make sure
 # Everything is schema valid. Run:
+
+
 
 eml_validate(my_metadata)
 
@@ -489,12 +498,16 @@ eml_validate(my_metadata)
 # Sometime seeing your metadata in this format may help you spot errors or inconsistancies 
 # you would otherwise miss. XML was never really designed to be human readable, and it shows.
 
+my_metadata <- set_doi(my_metadata, "2300410")
+
 write_readme(my_metadata)
 
 ## Write your EML to an xml file 
 # Now it's time to convert your R object to an .xml file and save it. Keep in mind 
 
-write_eml(my_metadata, "mymetadatafilename_metadata.xml")
+
+
+write_eml(my_metadata, "HTLN_BreedingBird_metadata.xml")
 
 ## Check your .xml file  
 # You're EML metadata file should be ready for upload. You can run some additional 

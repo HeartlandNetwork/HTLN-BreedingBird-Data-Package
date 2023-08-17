@@ -6,6 +6,13 @@ Additional background info on HTLN breeding bird monitoring project is here:
 
 https://www.nps.gov/im/htln/birds.htm
 
+https://doi.org/10.57830/2300410.
+
+https://irma.nps.gov/DataStore/Reference/Profile/2300410 
+
+[DRAFT]: Heartland Inventory and Monitoring Network Breeding Land Bird Data Package 
+
+
 --------------------------------
 # Notes
 
