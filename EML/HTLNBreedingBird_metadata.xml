@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="HTLN-BreedingBird-Metadata" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="unknown">
   <dataset>
+    <alternateIdentifier>doi: https://doi.org/10.57830/2300444</alternateIdentifier>
     <title>Heartland Inventory and Monitoring Network Breeding Land Bird Data Package</title>
     <creator>
       <individualName>
@@ -11,9 +12,13 @@
       <organizationName>National-Park-Service</organizationName>
       <electronicMailAddress>david_peitz@npg.gov</electronicMailAddress>
     </creator>
-    <pubDate>2023-08-16</pubDate>
+    <metadataProvider>
+      <organizationName>HTLN</organizationName>
+    </metadataProvider>
+    <pubDate>2023-08-21</pubDate>
+    <language>eng</language>
     <abstract>
-      <para>This monitoring dataset consists of variable circular plot - continuous distance - point count bird observations and site conditions along with extensive habitat data for breeding birds in the National Park Service Heartland Inventory and Monitoring Network Parks. The dataset includes approximately 65,000 individual bird observations covering over 200 bird species observed at 12 NPS park units taken between 2001 and 2022. The overall goals of Heartland Inventory and Monitoring Network breeding bird monitoring are to 1) identify significant temporal changes in the species composition and abundance of bird communities that occur on parks during the breeding season, and 2) improve our understanding of relationships between breeding birds and their habitat and the effects of management actions (such as prairie restoration or prescribed fire) on bird populations. These goals are accomplished by examining potential correlations between changes in specific habitat variables (e.g., vegetation structure, ground cover) and changes in bird community composition and abundance. The 12 park units included in this study were in Arkansas - Arkansas Post National Memorial and Pea Ridge National Military Park; Indiana - Lincoln Boyhood National Memorial; Iowa - Effigy Mounds National Monument and Herber Hoover National Historic Site; Kansas - Tallgrass Prairie National Preserve; Minnesota - Pipestone National Monument; Missouri - George Washington Carver National Monument and Wilson's Creek National Battlefield; Nebraska - Agate Fossil Beds National Monument and Homestead National Historical Park; and Ohio - Hopewell Culture National Historical Park.</para>
+      <para>This monitoring dataset consists of variable circular plot - continuous distance - point count bird observations and site conditions along with extensive habitat data for breeding birds in the National Park Service Heartland Inventory and Monitoring Network Parks. The dataset includes approximately 65,000 individual bird observations covering over 200 bird species observed at 12 NPS park units taken between 2001 and 2022. The overall goals of Heartland Inventory and Monitoring Network breeding bird monitoring are to 1. identify significant temporal changes in the species composition and abundance of bird communities that occur on parks during the breeding season, and 2. improve our understanding of relationships between breeding birds and their habitat and the effects of management actions, such as prairie restoration or prescribed fire, on bird populations. These goals are accomplished by examining potential correlations between changes in specific habitat variables, for example, vegetation structure and ground cover, and changes in bird community composition and abundance. The 12 park units included in this study were in Arkansas - Arkansas Post National Memorial and Pea Ridge National Military Park; Indiana - Lincoln Boyhood National Memorial; Iowa - Effigy Mounds National Monument and Herber Hoover National Historic Site; Kansas - Tallgrass Prairie National Preserve; Minnesota - Pipestone National Monument; Missouri - George Washington Carver National Monument and Wilson's Creek National Battlefield; Nebraska - Agate Fossil Beds National Monument and Homestead National Historical Park; and Ohio - Hopewell Culture National Historical Park.</para>
       <para>&#13;
 </para>
     </abstract>
@@ -27,11 +32,119 @@
     <additionalInfo>
       <para>The Heartland Inventory and Monitoring Network is one of 32 Inventory and Monitoring Networks providing natural resource monitoring at the National Park Service. Additional information is available through the Inventory and Monitoring Division Central Support Office, Fort Collins, Colorado.</para>
     </additionalInfo>
-    <intellectualRights>
-      <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.&#13;
-</para>
-    </intellectualRights>
+    <intellectualRights>This product is released to the "public domain" under U.S. Government Works No Rights Reserved (see: http://www.usa.gov/publicdomain/label/1.0/).</intellectualRights>
+    <licensed>
+      <licenseName>Public Domain</licenseName>
+    </licensed>
     <coverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: ARPO</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-91.2523</westBoundingCoordinate>
+          <eastBoundingCoordinate>-91.3554</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.0273</northBoundingCoordinate>
+          <southBoundingCoordinate>33.976</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: PERI</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-93.9991</westBoundingCoordinate>
+          <eastBoundingCoordinate>-94.0652</eastBoundingCoordinate>
+          <northBoundingCoordinate>36.472</northBoundingCoordinate>
+          <southBoundingCoordinate>36.4194</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: LIBO</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-86.9918</westBoundingCoordinate>
+          <eastBoundingCoordinate>-87.0019</eastBoundingCoordinate>
+          <northBoundingCoordinate>38.1256</northBoundingCoordinate>
+          <southBoundingCoordinate>38.1119</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: EFMO</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-91.1637</westBoundingCoordinate>
+          <eastBoundingCoordinate>-91.2363</eastBoundingCoordinate>
+          <northBoundingCoordinate>43.1099</northBoundingCoordinate>
+          <southBoundingCoordinate>42.935</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: HEHO</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-91.3441</westBoundingCoordinate>
+          <eastBoundingCoordinate>-91.3589</eastBoundingCoordinate>
+          <northBoundingCoordinate>41.6713</northBoundingCoordinate>
+          <southBoundingCoordinate>41.6644</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: TAPR</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-96.5021</westBoundingCoordinate>
+          <eastBoundingCoordinate>-96.5977</eastBoundingCoordinate>
+          <northBoundingCoordinate>38.4966</northBoundingCoordinate>
+          <southBoundingCoordinate>38.3963</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: PIPE</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-96.3176</westBoundingCoordinate>
+          <eastBoundingCoordinate>-96.3316</eastBoundingCoordinate>
+          <northBoundingCoordinate>44.0197</northBoundingCoordinate>
+          <southBoundingCoordinate>44.0086</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: GWCA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-94.3507</westBoundingCoordinate>
+          <eastBoundingCoordinate>-94.3603</eastBoundingCoordinate>
+          <northBoundingCoordinate>36.9922</northBoundingCoordinate>
+          <southBoundingCoordinate>36.981</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: WICR</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-93.394</westBoundingCoordinate>
+          <eastBoundingCoordinate>-93.4236</eastBoundingCoordinate>
+          <northBoundingCoordinate>37.1215</northBoundingCoordinate>
+          <southBoundingCoordinate>37.0799</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: AGFO</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-103.6913</westBoundingCoordinate>
+          <eastBoundingCoordinate>-103.7967</eastBoundingCoordinate>
+          <northBoundingCoordinate>42.4366</northBoundingCoordinate>
+          <southBoundingCoordinate>42.4078</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: HOME</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-96.8223</westBoundingCoordinate>
+          <eastBoundingCoordinate>-96.8426</eastBoundingCoordinate>
+          <northBoundingCoordinate>40.2931</northBoundingCoordinate>
+          <southBoundingCoordinate>40.2845</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage system="content unit link">
+        <geographicDescription>NPS Content Unit Link: HOCU</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-82.9128</westBoundingCoordinate>
+          <eastBoundingCoordinate>-83.2285</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.3902</northBoundingCoordinate>
+          <southBoundingCoordinate>39.2302</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
       <temporalCoverage>
         <rangeOfDates>
           <beginDate>
@@ -22239,6 +22352,19 @@
       <organizationName>National-Park-Service</organizationName>
       <electronicMailAddress>gareth_rowell@nps.gov</electronicMailAddress>
     </contact>
+    <publisher>
+      <organizationName>National Park Service</organizationName>
+      <address>
+        <deliveryPoint>1201 Oakridge Drive, Suite 150</deliveryPoint>
+        <city>Fort Collins</city>
+        <administrativeArea>CO</administrativeArea>
+        <postalCode>80525</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>irma@nps.gov</electronicMailAddress>
+      <onlineUrl>http://www.nps.gov</onlineUrl>
+      <userId directory="https://ror.org/">https://ror.org/044zqqy65</userId>
+    </publisher>
     <methods>
       <methodStep>
         <description>
@@ -22266,7 +22392,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -22379,7 +22505,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -22810,7 +22936,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -22937,7 +23063,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -23050,7 +23176,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -23191,7 +23317,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -23332,7 +23458,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -23487,7 +23613,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -23566,7 +23692,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -23710,7 +23836,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -23837,7 +23963,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -24006,7 +24132,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url>temporary URL</url>
+            <url>https://irma.nps.gov/DataStore/Reference/Profile/2300444</url>
           </online>
         </distribution>
       </physical>
@@ -24114,12 +24240,43 @@
       </attributeList>
       <numberOfRecords>12546</numberOfRecords>
     </dataTable>
+    <usageCitation id="associatedDRR">
+      <alternateIdentifier>DRR: https://doi.org/10.36967/2299582</alternateIdentifier>
+      <title>Data Release Report for the Heartland Inventory and Monitoring Breeding Bird Data Package</title>
+      <creator>
+        <organizationName>NPS</organizationName>
+      </creator>
+      <report>
+        <reportNumber>2299582</reportNumber>
+      </report>
+    </usageCitation>
   </dataset>
+  <additionalMetadata id="CUI">
+    <metadata>
+      <CUI>PUBLIC</CUI>
+    </metadata>
+  </additionalMetadata>
   <additionalMetadata>
     <metadata>
       <emlEditor>
         <app>EMLassemblyline</app>
         <release>3.5.5</release>
+      </emlEditor>
+    </metadata>
+  </additionalMetadata>
+  <additionalMetadata id="agencyOriginated">
+    <metadata>
+      <agencyOriginated>
+        <agency>NPS</agency>
+        <byOrForNPS>TRUE</byOrForNPS>
+      </agencyOriginated>
+    </metadata>
+  </additionalMetadata>
+  <additionalMetadata id="emlEditor">
+    <metadata>
+      <emlEditor>
+        <app>EMLeditor</app>
+        <release>0.1.0.7</release>
       </emlEditor>
     </metadata>
   </additionalMetadata>
