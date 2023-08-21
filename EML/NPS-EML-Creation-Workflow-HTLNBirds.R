@@ -30,10 +30,10 @@
 # If you are on the VPN, you will need to set your CRAN mirror to Texas 1. If you run 
 # into errors installing packages from github on NPS computers you may first need to run:
 
-# options(download.file.method="wininet")
+#options(download.file.method="wininet")
 # install packages
 # install.packages(c("devtools", "tidyverse")
-# devtools::install_github("nationalparkservice/NPSdataverse")
+#devtools::install_github("nationalparkservice/NPSdataverse", force = TRUE)
 
 # When loading packages, you may be advised to update to more recent versions
 # of dependent packages. Most of these updates likely are not critical.  
@@ -231,8 +231,8 @@ enddate <- ymd("2022-06-15")
 # coincides with CUI designations, the best way to update the license information is during a 
 # later step using `EMLeditor::set_int_rights()`. There is no need to edit this .txt file.
 
-template_core_metadata(path = working_folder, 
-                       license = "CC0") # that '0' is a zero!
+#template_core_metadata(path = working_folder, 
+#                       license = "CC0") # that '0' is a zero!
 
 
 #### FUNCTION 2 - Data Table Attributes
@@ -242,11 +242,11 @@ template_core_metadata(path = working_folder,
 # refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
 
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-template_table_attributes(path = working_folder, 
-                          data.table = data_files, 
-                          write.file = TRUE)
+#template_table_attributes(path = working_folder, 
+#                          data.table = data_files, 
+#                          write.file = TRUE)
 
 
 #### FUNCTION 3 - Data Table Categorical Variable
@@ -261,9 +261,9 @@ template_table_attributes(path = working_folder,
 # manually). NOTE that if these files already exist from a previous run, they 
 # are not overwritten.
 
-template_categorical_variables(path = working_folder, 
-                               data.path = working_folder, 
-                               write.file = TRUE)
+#template_categorical_variables(path = working_folder, 
+#                               data.path = working_folder, 
+#                               write.file = TRUE)
 
 
 
@@ -329,7 +329,7 @@ my_metadata <- make_eml(path = working_folder,
                         return.obj = TRUE, 
                         write.file = FALSE)
 
-EML::write_eml(my_metadata, "my_metadata.xml")
+#EML::write_eml(my_metadata, "my_metadata.xml")
 
 
 
@@ -337,7 +337,7 @@ EML::write_eml(my_metadata, "my_metadata.xml")
 ## Check for EML validity 
 #This is a good point to pause and test whether your EML is valid. 
 
-eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< See error messages
+eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< Good here!!
 
 
 # if your EML is valid you should see the following (admittedly cryptic) result:
@@ -494,12 +494,12 @@ eml_validate(my_metadata) #<<<<<<<<<<<<<<<<<<<<<<<< runs to here....
 # Sometime seeing your metadata in this format may help you spot errors or inconsistancies 
 # you would otherwise miss. XML was never really designed to be human readable, and it shows.
 
-write_readme(my_metadata)
+#write_readme(my_metadata) # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< STOPS HERE...
 
 ## Write your EML to an xml file 
 # Now it's time to convert your R object to an .xml file and save it. Keep in mind 
 
-write_eml(my_metadata, "mymetadatafilename_metadata.xml")
+write_eml(my_metadata, "HTLNBreedingBird_metadata.xml")
 
 ## Check your .xml file  
 # You're EML metadata file should be ready for upload. You can run some additional 
@@ -519,7 +519,8 @@ check_eml()
 # is in the root of your R project. 
 
 # this assumes that the data package is the working directory
-run_congruence_checks()
+
+run_congruence_checks() #<<<<<<<<<<<<<<<<< collector_value error
 
 # if your data package is somewhere else, specify that:
 # run_congruence_checks("C:/Users/<yourusername>/Documents/my_data_package")
