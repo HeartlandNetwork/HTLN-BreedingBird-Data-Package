@@ -2,7 +2,7 @@ attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCo
 ParkUnit	park name	character				
 Plot	plot id	character				
 SubPlot	subplot number	character				
-EventDate	event date	Date		yyyy-mm-dd		
+EventDate	event date	Date		YYYY-MM-DD		
 FoliarCover	foliar cover type	character				
 CoverClassCode	code code	character				
 CoverClassMidPoint	midpoint	numeric	percent			

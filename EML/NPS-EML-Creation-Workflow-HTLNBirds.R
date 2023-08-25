@@ -231,8 +231,8 @@ enddate <- ymd("2022-06-15")
 # coincides with CUI designations, the best way to update the license information is during a 
 # later step using `EMLeditor::set_int_rights()`. There is no need to edit this .txt file.
 
-#template_core_metadata(path = working_folder, 
-#                       license = "CC0") # that '0' is a zero!
+template_core_metadata(path = working_folder, 
+                       license = "CC0") # that '0' is a zero!
 
 
 #### FUNCTION 2 - Data Table Attributes
@@ -242,11 +242,11 @@ enddate <- ymd("2022-06-15")
 # refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-#template_table_attributes(path = working_folder, 
-#                          data.table = data_files, 
-#                          write.file = TRUE)
+template_table_attributes(path = working_folder, 
+                          data.table = data_files, 
+                          write.file = TRUE)
 
 
 #### FUNCTION 3 - Data Table Categorical Variable
@@ -261,9 +261,9 @@ enddate <- ymd("2022-06-15")
 # manually). NOTE that if these files already exist from a previous run, they 
 # are not overwritten.
 
-#template_categorical_variables(path = working_folder, 
-#                               data.path = working_folder, 
-#                               write.file = TRUE)
+template_categorical_variables(path = working_folder, 
+                               data.path = working_folder, 
+                               write.file = TRUE)
 
 
 
