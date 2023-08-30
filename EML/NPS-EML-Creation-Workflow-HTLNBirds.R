@@ -525,7 +525,7 @@ run_congruence_checks() #<<<<<<<<<<<<<<<<< collector_value error
 # if your data package is somewhere else, specify that:
 # run_congruence_checks("C:/Users/<yourusername>/Documents/my_data_package")
 
-
+#EMLeditor::set_abstract(my_metadata, abstract, force = FALSE, NPS = TRUE)
 
 ## Upload your data package 
 # If everything checked out, you should be ready to upload your data package! 
@@ -537,7 +537,7 @@ run_congruence_checks() #<<<<<<<<<<<<<<<<< collector_value error
 # files > 32Mb, you will need to upload them manually using the web interface on DataStore. 
 
 # this assumes your data package is in the current working directory
-upload_data_package()
+#upload_data_package()
 
 # If your data package is somewhere else, specify that:
 # upload_data_package("C:/Users/<yourusername>/Documents/my_data_package)
