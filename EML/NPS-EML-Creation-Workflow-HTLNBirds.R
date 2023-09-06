@@ -30,10 +30,6 @@
 # If you are on the VPN, you will need to set your CRAN mirror to Texas 1. If you run 
 # into errors installing packages from github on NPS computers you may first need to run:
 
-#options(download.file.method="wininet")
-# install packages
-# install.packages(c("devtools", "tidyverse")
-#devtools::install_github("nationalparkservice/NPSdataverse", force = TRUE)
 
 # When loading packages, you may be advised to update to more recent versions
 # of dependent packages. Most of these updates likely are not critical.  
@@ -427,7 +423,7 @@ my_metadata <- set_int_rights(my_metadata, "public")
 #   auto-populated based on the metadata you upload. Any fields you do populate will be over-written 
 #   by the content in your metadata.
 
-my_metadata <- set_datastore_doi(my_metadata)
+
 
 #### Add information about a DRR (optional) 
 # If you are producing (or plan to produce) a DRR, add links to the DRR describing the data package.
