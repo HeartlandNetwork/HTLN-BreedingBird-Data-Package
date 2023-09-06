@@ -195,6 +195,9 @@ enddate <- ymd("2022-06-15")
 
 ######################################################################################
 
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+
+
 ## EMLassemblyline Functions
 
 # The next set of functions are meant to be considered one by one and only run if 
@@ -289,15 +292,15 @@ template_categorical_variables(path = working_folder,
 # at ITIS and if it fails will then look at GBIF. If you have lots of taxa, 
 # this could take some time to 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-#template_taxonomic_coverage(path = working_folder, 
-#                            data.path = working_folder, 
-#                            taxa.table = data_taxa_tables,
-#                            taxa.col = data_taxa_fields, 
-#                            taxa.authority = c(3,11),
-#                            taxa.name.type = 'scientific', 
-#                            write.file = TRUE)
+template_taxonomic_coverage(path = working_folder, 
+                            data.path = working_folder, 
+                            taxa.table = data_taxa_tables,
+                            taxa.col = data_taxa_fields, 
+                            taxa.authority = c(3,11),
+                            taxa.name.type = 'scientific', 
+                            write.file = TRUE)
 
 
 
@@ -325,9 +328,9 @@ my_metadata <- make_eml(path = working_folder,
                         return.obj = TRUE, 
                         write.file = FALSE)
 
-#EML::write_eml(my_metadata, "my_metadata.xml")
+EML::write_eml(my_metadata, "my_metadata.xml")
 
-
+#EML::read_eml(my_metadata, "")
 
 
 ## Check for EML validity 
