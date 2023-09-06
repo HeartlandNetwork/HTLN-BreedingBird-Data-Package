@@ -4711,10 +4711,12 @@
               <taxonomicClassification>
                 <taxonRankName>phylum</taxonRankName>
                 <taxonRankValue>Chordata</taxonRankValue>
+                <commonName>chordates</commonName>
                 <taxonId provider="https://itis.gov">158852</taxonId>
                 <taxonomicClassification>
                   <taxonRankName>subphylum</taxonRankName>
                   <taxonRankValue>Vertebrata</taxonRankValue>
+                  <commonName>vertebrates</commonName>
                   <taxonId provider="https://itis.gov">331030</taxonId>
                   <taxonomicClassification>
                     <taxonRankName>infraphylum</taxonRankName>

@@ -230,8 +230,8 @@ enddate <- ymd("2022-06-15")
 # coincides with CUI designations, the best way to update the license information is during a 
 # later step using `EMLeditor::set_int_rights()`. There is no need to edit this .txt file.
 
-#template_core_metadata(path = working_folder, 
-#                       license = "CC0") # that '0' is a zero!
+template_core_metadata(path = working_folder, 
+                       license = "CC0") # that '0' is a zero!
 
 
 #### FUNCTION 2 - Data Table Attributes
@@ -241,11 +241,11 @@ enddate <- ymd("2022-06-15")
 # refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-#template_table_attributes(path = working_folder, 
-#                          data.table = data_files, 
-#                          write.file = TRUE)
+template_table_attributes(path = working_folder, 
+                          data.table = data_files, 
+                          write.file = TRUE)
 
 
 #### FUNCTION 3 - Data Table Categorical Variable
@@ -260,9 +260,9 @@ enddate <- ymd("2022-06-15")
 # manually). NOTE that if these files already exist from a previous run, they 
 # are not overwritten.
 
-#template_categorical_variables(path = working_folder, 
-#                               data.path = working_folder, 
-#                               write.file = TRUE)
+template_categorical_variables(path = working_folder, 
+                               data.path = working_folder, 
+                               write.file = TRUE)
 
 
 
@@ -292,15 +292,15 @@ enddate <- ymd("2022-06-15")
 # at ITIS and if it fails will then look at GBIF. If you have lots of taxa, 
 # this could take some time to 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-#template_taxonomic_coverage(path = working_folder, 
-#                            data.path = working_folder, 
-#                            taxa.table = data_taxa_tables,
-#                            taxa.col = data_taxa_fields, 
-#                            taxa.authority = c(3,11),
-#                            taxa.name.type = 'scientific', 
-#                            write.file = TRUE)
+template_taxonomic_coverage(path = working_folder, 
+                            data.path = working_folder, 
+                            taxa.table = data_taxa_tables,
+                            taxa.col = data_taxa_fields, 
+                            taxa.authority = c(3,11),
+                            taxa.name.type = 'scientific', 
+                            write.file = TRUE)
 
 
 
@@ -313,32 +313,40 @@ enddate <- ymd("2022-06-15")
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 
-#my_metadata <- make_eml(path = working_folder,  
-#                        dataset.title = package_title,
-#                        data.table = data_files,
-#                        data.table.name = data_names,
-#                        data.table.description = data_descriptions,
-#                        data.table.url = data_urls,
-#                        temporal.coverage = c(startdate, enddate),
-#                        maintenance.description = data_type,
-#                        package.id = metadata_id,
-#                        return.obj = TRUE, 
-#                        write.file = FALSE)
+my_metadata <- make_eml(path = working_folder,  
+                        dataset.title = package_title,
+                        data.table = data_files,
+                        data.table.name = data_names,
+                        data.table.description = data_descriptions,
+                        data.table.url = data_urls,
+                        temporal.coverage = c(startdate, enddate),
+                        maintenance.description = data_type,
+                        package.id = metadata_id,
+                        return.obj = TRUE, 
+                        write.file = FALSE)
 
-#EML::write_eml(my_metadata, "my_metadata.xml")
+EML::write_eml(my_metadata, "my_metadata.xml")
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+################################################################################
+################################################################################
+################################################################################
 
-#my_metadata <- EML::read_eml("my_metadata.xml")
+library(NPSdataverse)
+library(tidyverse)
+library(EML)
+
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+
+my_metadata <- EML::read_eml("my_metadata.xml")
 
 
 ## Check for EML validity 
 #This is a good point to pause and test whether your EML is valid. 
 
-#eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< Good here!!
+eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< Good here!!
 
 
 # if your EML is valid you should see the following (admittedly cryptic) result:
@@ -374,7 +382,7 @@ enddate <- ymd("2022-06-15")
 # More information about these codes can be found at: 
 # [https://www.archives.gov/cui/registry/limited-dissemination](https://www.archives.gov/cui/registry/limited-dissemination)
 
-#my_metadata <- set_cui(my_metadata, "PUBLIC")
+my_metadata <- set_cui(my_metadata, "PUBLIC")
 
 # note that in this case I have added the CUI code to the original R object, 
 # "my_metadata" but by giving it a new name, i.e. "my_meta2" I could have
@@ -408,7 +416,7 @@ enddate <- ymd("2022-06-15")
 
 # choose from "restricted", "public" or "CC0" (zero), see above:
 
-#my_metadata <- set_int_rights(my_metadata, "public")
+my_metadata <- set_int_rights(my_metadata, "public")
 
 
 
@@ -429,7 +437,7 @@ enddate <- ymd("2022-06-15")
 #   auto-populated based on the metadata you upload. Any fields you do populate will be over-written 
 #   by the content in your metadata.
 
-
+my_metadata <- set_datastore_doi(my_metadata)
 
 #### Add information about a DRR (optional) 
 # If you are producing (or plan to produce) a DRR, add links to the DRR describing the data package.
@@ -440,7 +448,7 @@ enddate <- ymd("2022-06-15")
 # it will Inot be activated until after publication so that you have plenty of time to construct the DRR.
 
 
-#my_metadata <- set_drr(my_metadata, 2299582, "Data Release Report for the Heartland Inventory and Monitoring Breeding Bird Data Package")
+my_metadata <- set_drr(my_metadata, 2299582, "Data Release Report for the Heartland Inventory and Monitoring Breeding Bird Data Package")
 
 
 #### Set the language 
@@ -450,7 +458,7 @@ enddate <- ymd("2022-06-15")
 # 3-character ISO 639-2 code.Available languages: 
 # [https://www.loc.gov/standards/iso639-2/php/code_list.php](https://www.loc.gov/standards/iso639-2/php/code_list.php)
 
-#my_metadata <- set_language(my_metadata, "English")
+my_metadata <- set_language(my_metadata, "English")
 
 #### Add content unit links 
 #These are the park units where data were collected from, for instance ROMO, not ROMN. 
@@ -460,8 +468,8 @@ enddate <- ymd("2022-06-15")
 # for each park unit listed will automatically be generated and inserted into the metadata. Individual 
 # park units will be more informative than the bounding box for the entire network.
 
-#park_units <- c("ARPO", "PERI", "LIBO", "EFMO", "HEHO", "TAPR", "PIPE", "GWCA", "WICR", "AGFO", "HOME", "HOCU")
-#my_metadata <- set_content_units(my_metadata, park_units)
+park_units <- c("ARPO", "PERI", "LIBO", "EFMO", "HEHO", "TAPR", "PIPE", "GWCA", "WICR", "AGFO", "HOME", "HOCU")
+my_metadata <- set_content_units(my_metadata, park_units)
 
 #### Add the Producing Unit(s)
 
@@ -471,7 +479,7 @@ enddate <- ymd("2022-06-15")
 
 # a single producing unit:
 
-#my_metadata <- set_producing_units(my_metadata, "HTLN")
+my_metadata <- set_producing_units(my_metadata, "HTLN")
 
 # alternatively, a list of producing units:
 #my_metadata <- set_producing_units(my_metadata, c("ROMN", "GRYN"))
@@ -481,7 +489,7 @@ enddate <- ymd("2022-06-15")
 # Everything is schema valid. Run:
 
 
-#eml_validate(my_metadata) #<<<<<<<<<<<<<<<<<<<<<<<< runs to here....
+eml_validate(my_metadata) #<<<<<<<<<<<<<<<<<<<<<<<< runs to here....
 
 # if your EML is valid you should see the following (admittedly crypitic):
 # [1] TRUE
@@ -498,16 +506,22 @@ enddate <- ymd("2022-06-15")
 # Sometime seeing your metadata in this format may help you spot errors or inconsistancies 
 # you would otherwise miss. XML was never really designed to be human readable, and it shows.
 
-#write_readme(my_metadata) # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< STOPS HERE...
+write_readme(my_metadata) # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< STOPS HERE...
 
 ## Write your EML to an xml file 
 # Now it's time to convert your R object to an .xml file and save it. Keep in mind 
 
-#write_eml(my_metadata, "HTLNBreedingBird_metadata.xml")
+write_eml(my_metadata, "HTLNBreedingBird_metadata.xml")
 
-library(NPSdataverse)
-library(tidyverse)
-library(EML)
+################################################################################
+################################################################################
+#################### delete my_metadata.xml before running #####################
+
+#library(NPSdataverse)
+#library(tidyverse)
+#library(EML)
+
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 my_metadata <- EML::read_eml("HTLNBreedingBird_metadata.xml")
 
