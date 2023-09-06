@@ -330,16 +330,15 @@ enddate <- ymd("2022-06-15")
 
 #EML::write_eml(my_metadata, "my_metadata.xml")
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-
-EML::read_eml(my_metadata, "")
+#my_metadata <- EML::read_eml("my_metadata.xml")
 
 
 ## Check for EML validity 
 #This is a good point to pause and test whether your EML is valid. 
 
-eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< Good here!!
+#eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< Good here!!
 
 
 # if your EML is valid you should see the following (admittedly cryptic) result:
@@ -375,7 +374,7 @@ eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< Good here!!
 # More information about these codes can be found at: 
 # [https://www.archives.gov/cui/registry/limited-dissemination](https://www.archives.gov/cui/registry/limited-dissemination)
 
-my_metadata <- set_cui(my_metadata, "PUBLIC")
+#my_metadata <- set_cui(my_metadata, "PUBLIC")
 
 # note that in this case I have added the CUI code to the original R object, 
 # "my_metadata" but by giving it a new name, i.e. "my_meta2" I could have
@@ -409,7 +408,8 @@ my_metadata <- set_cui(my_metadata, "PUBLIC")
 
 # choose from "restricted", "public" or "CC0" (zero), see above:
 
-my_metadata <- set_int_rights(my_metadata, "public")
+#my_metadata <- set_int_rights(my_metadata, "public")
+
 
 
 #### Add a data package DOI 
@@ -440,7 +440,7 @@ my_metadata <- set_int_rights(my_metadata, "public")
 # it will Inot be activated until after publication so that you have plenty of time to construct the DRR.
 
 
-my_metadata <- set_drr(my_metadata, 2299582, "Data Release Report for the Heartland Inventory and Monitoring Breeding Bird Data Package")
+#my_metadata <- set_drr(my_metadata, 2299582, "Data Release Report for the Heartland Inventory and Monitoring Breeding Bird Data Package")
 
 
 #### Set the language 
@@ -450,7 +450,7 @@ my_metadata <- set_drr(my_metadata, 2299582, "Data Release Report for the Heartl
 # 3-character ISO 639-2 code.Available languages: 
 # [https://www.loc.gov/standards/iso639-2/php/code_list.php](https://www.loc.gov/standards/iso639-2/php/code_list.php)
 
-my_metadata <- set_language(my_metadata, "English")
+#my_metadata <- set_language(my_metadata, "English")
 
 #### Add content unit links 
 #These are the park units where data were collected from, for instance ROMO, not ROMN. 
@@ -460,8 +460,8 @@ my_metadata <- set_language(my_metadata, "English")
 # for each park unit listed will automatically be generated and inserted into the metadata. Individual 
 # park units will be more informative than the bounding box for the entire network.
 
-park_units <- c("ARPO", "PERI", "LIBO", "EFMO", "HEHO", "TAPR", "PIPE", "GWCA", "WICR", "AGFO", "HOME", "HOCU")
-my_metadata <- set_content_units(my_metadata, park_units)
+#park_units <- c("ARPO", "PERI", "LIBO", "EFMO", "HEHO", "TAPR", "PIPE", "GWCA", "WICR", "AGFO", "HOME", "HOCU")
+#my_metadata <- set_content_units(my_metadata, park_units)
 
 #### Add the Producing Unit(s)
 
@@ -470,7 +470,9 @@ my_metadata <- set_content_units(my_metadata, park_units)
 # overlapping, or entirely different.
 
 # a single producing unit:
-my_metadata <- set_producing_units(my_metadata, "HTLN")
+
+#my_metadata <- set_producing_units(my_metadata, "HTLN")
+
 # alternatively, a list of producing units:
 #my_metadata <- set_producing_units(my_metadata, c("ROMN", "GRYN"))
 
@@ -479,7 +481,7 @@ my_metadata <- set_producing_units(my_metadata, "HTLN")
 # Everything is schema valid. Run:
 
 
-eml_validate(my_metadata) #<<<<<<<<<<<<<<<<<<<<<<<< runs to here....
+#eml_validate(my_metadata) #<<<<<<<<<<<<<<<<<<<<<<<< runs to here....
 
 # if your EML is valid you should see the following (admittedly crypitic):
 # [1] TRUE
@@ -501,7 +503,13 @@ eml_validate(my_metadata) #<<<<<<<<<<<<<<<<<<<<<<<< runs to here....
 ## Write your EML to an xml file 
 # Now it's time to convert your R object to an .xml file and save it. Keep in mind 
 
-write_eml(my_metadata, "HTLNBreedingBird_metadata.xml")
+#write_eml(my_metadata, "HTLNBreedingBird_metadata.xml")
+
+library(NPSdataverse)
+library(tidyverse)
+library(EML)
+
+my_metadata <- EML::read_eml("HTLNBreedingBird_metadata.xml")
 
 ## Check your .xml file  
 # You're EML metadata file should be ready for upload. You can run some additional 
