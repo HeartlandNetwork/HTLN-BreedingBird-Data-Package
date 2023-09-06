@@ -195,7 +195,7 @@ enddate <- ymd("2022-06-15")
 
 ######################################################################################
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 
 ## EMLassemblyline Functions
@@ -230,8 +230,8 @@ working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 # coincides with CUI designations, the best way to update the license information is during a 
 # later step using `EMLeditor::set_int_rights()`. There is no need to edit this .txt file.
 
-template_core_metadata(path = working_folder, 
-                       license = "CC0") # that '0' is a zero!
+#template_core_metadata(path = working_folder, 
+#                       license = "CC0") # that '0' is a zero!
 
 
 #### FUNCTION 2 - Data Table Attributes
@@ -241,11 +241,11 @@ template_core_metadata(path = working_folder,
 # refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
 
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-template_table_attributes(path = working_folder, 
-                          data.table = data_files, 
-                          write.file = TRUE)
+#template_table_attributes(path = working_folder, 
+#                          data.table = data_files, 
+#                          write.file = TRUE)
 
 
 #### FUNCTION 3 - Data Table Categorical Variable
@@ -260,9 +260,9 @@ template_table_attributes(path = working_folder,
 # manually). NOTE that if these files already exist from a previous run, they 
 # are not overwritten.
 
-template_categorical_variables(path = working_folder, 
-                               data.path = working_folder, 
-                               write.file = TRUE)
+#template_categorical_variables(path = working_folder, 
+#                               data.path = working_folder, 
+#                               write.file = TRUE)
 
 
 
@@ -292,15 +292,15 @@ template_categorical_variables(path = working_folder,
 # at ITIS and if it fails will then look at GBIF. If you have lots of taxa, 
 # this could take some time to 
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-template_taxonomic_coverage(path = working_folder, 
-                            data.path = working_folder, 
-                            taxa.table = data_taxa_tables,
-                            taxa.col = data_taxa_fields, 
-                            taxa.authority = c(3,11),
-                            taxa.name.type = 'scientific', 
-                            write.file = TRUE)
+#template_taxonomic_coverage(path = working_folder, 
+#                            data.path = working_folder, 
+#                            taxa.table = data_taxa_tables,
+#                            taxa.col = data_taxa_fields, 
+#                            taxa.authority = c(3,11),
+#                            taxa.name.type = 'scientific', 
+#                            write.file = TRUE)
 
 
 
@@ -313,24 +313,27 @@ template_taxonomic_coverage(path = working_folder,
 # attention. Fix these issues and then re-run the `make_eml()` function.
 
 
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+
+
+#my_metadata <- make_eml(path = working_folder,  
+#                        dataset.title = package_title,
+#                        data.table = data_files,
+#                        data.table.name = data_names,
+#                        data.table.description = data_descriptions,
+#                        data.table.url = data_urls,
+#                        temporal.coverage = c(startdate, enddate),
+#                        maintenance.description = data_type,
+#                        package.id = metadata_id,
+#                        return.obj = TRUE, 
+#                        write.file = FALSE)
+
+#EML::write_eml(my_metadata, "my_metadata.xml")
+
 working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 
-my_metadata <- make_eml(path = working_folder,  
-                        dataset.title = package_title,
-                        data.table = data_files,
-                        data.table.name = data_names,
-                        data.table.description = data_descriptions,
-                        data.table.url = data_urls,
-                        temporal.coverage = c(startdate, enddate),
-                        maintenance.description = data_type,
-                        package.id = metadata_id,
-                        return.obj = TRUE, 
-                        write.file = FALSE)
-
-EML::write_eml(my_metadata, "my_metadata.xml")
-
-#EML::read_eml(my_metadata, "")
+EML::read_eml(my_metadata, "")
 
 
 ## Check for EML validity 
