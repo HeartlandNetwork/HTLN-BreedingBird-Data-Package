@@ -30,10 +30,6 @@
 # If you are on the VPN, you will need to set your CRAN mirror to Texas 1. If you run 
 # into errors installing packages from github on NPS computers you may first need to run:
 
-#options(download.file.method="wininet")
-# install packages
-# install.packages(c("devtools", "tidyverse")
-#devtools::install_github("nationalparkservice/NPSdataverse", force = TRUE)
 
 # When loading packages, you may be advised to update to more recent versions
 # of dependent packages. Most of these updates likely are not critical.  
@@ -231,8 +227,8 @@ enddate <- ymd("2022-06-15")
 # coincides with CUI designations, the best way to update the license information is during a 
 # later step using `EMLeditor::set_int_rights()`. There is no need to edit this .txt file.
 
-#template_core_metadata(path = working_folder, 
-#                       license = "CC0") # that '0' is a zero!
+template_core_metadata(path = working_folder, 
+                       license = "CC0") # that '0' is a zero!
 
 
 #### FUNCTION 2 - Data Table Attributes
@@ -242,11 +238,11 @@ enddate <- ymd("2022-06-15")
 # refer to https://ediorg.github.io/EMLassemblyline/articles/edit_tmplts.html for helpful hints and `view_unit_dictionary()` for potential units. This will only need to be run again if the attributes (name, order or new/deleted fields) are modified from the previous year. NOTE that if these files already exist from a previous run, they are not overwritten.
 
 
-#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-#template_table_attributes(path = working_folder, 
-#                          data.table = data_files, 
-#                          write.file = TRUE)
+template_table_attributes(path = working_folder, 
+                          data.table = data_files, 
+                          write.file = TRUE)
 
 
 #### FUNCTION 3 - Data Table Categorical Variable
@@ -261,9 +257,9 @@ enddate <- ymd("2022-06-15")
 # manually). NOTE that if these files already exist from a previous run, they 
 # are not overwritten.
 
-#template_categorical_variables(path = working_folder, 
-#                               data.path = working_folder, 
-#                               write.file = TRUE)
+template_categorical_variables(path = working_folder, 
+                               data.path = working_folder, 
+                               write.file = TRUE)
 
 
 
@@ -427,7 +423,7 @@ my_metadata <- set_int_rights(my_metadata, "public")
 #   auto-populated based on the metadata you upload. Any fields you do populate will be over-written 
 #   by the content in your metadata.
 
-my_metadata <- set_datastore_doi(my_metadata)
+
 
 #### Add information about a DRR (optional) 
 # If you are producing (or plan to produce) a DRR, add links to the DRR describing the data package.
@@ -525,7 +521,7 @@ run_congruence_checks() #<<<<<<<<<<<<<<<<< collector_value error
 # if your data package is somewhere else, specify that:
 # run_congruence_checks("C:/Users/<yourusername>/Documents/my_data_package")
 
-
+#EMLeditor::set_abstract(my_metadata, abstract, force = FALSE, NPS = TRUE)
 
 ## Upload your data package 
 # If everything checked out, you should be ready to upload your data package! 
@@ -537,7 +533,7 @@ run_congruence_checks() #<<<<<<<<<<<<<<<<< collector_value error
 # files > 32Mb, you will need to upload them manually using the web interface on DataStore. 
 
 # this assumes your data package is in the current working directory
-upload_data_package()
+#upload_data_package()
 
 # If your data package is somewhere else, specify that:
 # upload_data_package("C:/Users/<yourusername>/Documents/my_data_package)

@@ -30,10 +30,10 @@
 # If you are on the VPN, you will need to set your CRAN mirror to Texas 1. If you run 
 # into errors installing packages from github on NPS computers you may first need to run:
 
-# options(download.file.method="wininet")
+#options(download.file.method="wininet")
 # install packages
 # install.packages(c("devtools", "tidyverse")
-# devtools::install_github("nationalparkservice/NPSdataverse")
+#devtools::install_github("nationalparkservice/NPSdataverse", force = TRUE)
 
 # When loading packages, you may be advised to update to more recent versions
 # of dependent packages. Most of these updates likely are not critical.  
@@ -100,8 +100,8 @@ data_files <- c("BasalArea.csv",
                 "PlotVegCover.csv",
                 "TreeTally.csv",
                 "VerticalProfile.csv")
-                
-                
+
+
 
 # alternatively if the data files are in your working directory:
 # data_files <- list.files(pattern = "*.csv")
@@ -122,8 +122,8 @@ data_names <- c("Habitat - BasalArea Data",
                 "Habitat - Plot Vegetation Cover Data",
                 "Habitat - Tree Tally Data",
                 "Habitat - Vertical Profile Data")
-                
-          
+
+
 
 #### Describe each data file. Data file descriptions should be unique and about 10 words long. 
 # Descriptions will be used in auto-generated tables within the ReadMe and DRR. 
@@ -133,17 +133,17 @@ data_names <- c("Habitat - BasalArea Data",
 
 
 data_descriptions <- c("Basal area of hardwood and conifer species estimated using a 10-factor English cruz-all",
-                "Bird observations taken using variable circular plots using continuous distance",
-                "Canopy cover estimated with densiometer at four cardinal directions (N, E, S, W)",
-                "Canopy heights of the tallest hardwood and coniferous trees estimated with clinometer",
-                "Percent foliar cover estimated under 1.5 high grouped into plant guilds",
-                "Percent ground cover estimated for conifer, deciduous, grass litter, rock and other classes",
-                "Horizontal vegetation profile readings taken using profile board at 15 m.",
-                "Sampling Plot Coordinates in latitude - longitude decimal degrees",
-                "Plot physical attributes including slope, aspect, and topographic description",
-                "Plot cover types estimated by percent cover classes",
-                "Tree tally data for tree species > 1.5 m based on diameter size-classes",
-                "Vertical profile of vegetion measured with 7.5 m rod")
+                       "Bird observations taken using variable circular plots using continuous distance",
+                       "Canopy cover estimated with densiometer at four cardinal directions (N, E, S, W)",
+                       "Canopy heights of the tallest hardwood and coniferous trees estimated with clinometer",
+                       "Percent foliar cover estimated under 1.5 high grouped into plant guilds",
+                       "Percent ground cover estimated for conifer, deciduous, grass litter, rock and other classes",
+                       "Horizontal vegetation profile readings taken using profile board at 15 m.",
+                       "Sampling Plot Coordinates in latitude - longitude decimal degrees",
+                       "Plot physical attributes including slope, aspect, and topographic description",
+                       "Plot cover types estimated by percent cover classes",
+                       "Tree tally data for tree species > 1.5 m based on diameter size-classes",
+                       "Vertical profile of vegetion measured with 7.5 m rod")
 
 #### Placeholder URL for data files
 # EMLassemblyline needs to know where the data files will be (a URL). However, because you 
@@ -165,7 +165,7 @@ data_urls <- c(rep("temporary URL", length(data_files)))
 data_taxa_tables <- c("BirdSpeciesNames.csv","TreeSpeciesNames.csv")
 
 # the column where your scientific names are within the data files.
-#data_taxa_fields <- c("ScientificName","ScientificName")
+data_taxa_fields <- c("ScientificName","ScientificName")
 
 #### Geographic information
 # Specify the tables and fields that contain geographic coordinates 
@@ -293,15 +293,15 @@ template_categorical_variables(path = working_folder,
 # at ITIS and if it fails will then look at GBIF. If you have lots of taxa, 
 # this could take some time to 
 
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
+#working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
-template_taxonomic_coverage(path = working_folder, 
-                            data.path = working_folder, 
-                            taxa.table = data_taxa_tables,
-                            taxa.col = data_taxa_fields, 
-                            taxa.authority = c(3,11),
-                            taxa.name.type = 'scientific', 
-                            write.file = TRUE)
+#template_taxonomic_coverage(path = working_folder, 
+#                            data.path = working_folder, 
+#                            taxa.table = data_taxa_tables,
+#                            taxa.col = data_taxa_fields, 
+#                            taxa.authority = c(3,11),
+#                            taxa.name.type = 'scientific', 
+#                            write.file = TRUE)
 
 
 
@@ -317,24 +317,27 @@ template_taxonomic_coverage(path = working_folder,
 working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 
 
-#my_metadata <- make_eml(path = working_folder,  
-#               dataset.title = package_title,
-#               data.table = data_files,
-#               data.table.name = data_names,
-#               data.table.description = data_descriptions,
-#               data.table.url = data_urls,
-#               temporal.coverage = c(startdate, enddate),
-#               maintenance.description = data_type,
-#               package.id = metadata_id,
-#               return.obj = TRUE, 
-#               write.file = FALSE)
+my_metadata <- make_eml(path = working_folder,  
+                        dataset.title = package_title,
+                        data.table = data_files,
+                        data.table.name = data_names,
+                        data.table.description = data_descriptions,
+                        data.table.url = data_urls,
+                        temporal.coverage = c(startdate, enddate),
+                        maintenance.description = data_type,
+                        package.id = metadata_id,
+                        return.obj = TRUE, 
+                        write.file = FALSE)
 
 #EML::write_eml(my_metadata, "my_metadata.xml")
+
+
+
 
 ## Check for EML validity 
 #This is a good point to pause and test whether your EML is valid. 
 
-#eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< See error messages
+eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< Good here!!
 
 
 # if your EML is valid you should see the following (admittedly cryptic) result:
@@ -342,17 +345,6 @@ working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
 # [1] TRUE
 # attr(,"errors")
 # character(0)
-
-library(NPSdataverse)
-library(tidyverse)
-library(EML)
-
-working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
-my_metadata <- EML::read_eml("my_metadata.xml", from = "xml")
-
-
-# my_metadata <- EML::read_eml("HTLN_BreedingBird_metadata.xml", from = "xml")
-
 
 
 # if your EML is not schema valid, the function will notify you of 
@@ -435,7 +427,7 @@ my_metadata <- set_int_rights(my_metadata, "public")
 #   auto-populated based on the metadata you upload. Any fields you do populate will be over-written 
 #   by the content in your metadata.
 
-#my_metadata <- set_datastore_doi(my_metadata)
+my_metadata <- set_datastore_doi(my_metadata)
 
 #### Add information about a DRR (optional) 
 # If you are producing (or plan to produce) a DRR, add links to the DRR describing the data package.
@@ -444,6 +436,7 @@ my_metadata <- set_int_rights(my_metadata, "public")
 # a draft DRR, including a title. For the purposes of the data package, there is no need to populate any other 
 # fields. At this point, you do not need to activate the DRR reference and, while a DOI has been reserved for your DRR,
 # it will Inot be activated until after publication so that you have plenty of time to construct the DRR.
+
 
 my_metadata <- set_drr(my_metadata, 2299582, "Data Release Report for the Heartland Inventory and Monitoring Breeding Bird Data Package")
 
@@ -484,8 +477,7 @@ my_metadata <- set_producing_units(my_metadata, "HTLN")
 # Everything is schema valid. Run:
 
 
-
-eml_validate(my_metadata)
+eml_validate(my_metadata) #<<<<<<<<<<<<<<<<<<<<<<<< runs to here....
 
 # if your EML is valid you should see the following (admittedly crypitic):
 # [1] TRUE
@@ -502,16 +494,12 @@ eml_validate(my_metadata)
 # Sometime seeing your metadata in this format may help you spot errors or inconsistancies 
 # you would otherwise miss. XML was never really designed to be human readable, and it shows.
 
-my_metadata <- set_doi(my_metadata, "2299582")
-
-# write_readme(my_metadata)
+#write_readme(my_metadata) # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< STOPS HERE...
 
 ## Write your EML to an xml file 
 # Now it's time to convert your R object to an .xml file and save it. Keep in mind 
 
-
-
-write_eml(my_metadata, "HTLN_BreedingBird_metadata.xml")
+write_eml(my_metadata, "HTLNBreedingBird_metadata.xml")
 
 ## Check your .xml file  
 # You're EML metadata file should be ready for upload. You can run some additional 
@@ -531,12 +519,13 @@ check_eml()
 # is in the root of your R project. 
 
 # this assumes that the data package is the working directory
-run_congruence_checks()
+
+run_congruence_checks() #<<<<<<<<<<<<<<<<< collector_value error
 
 # if your data package is somewhere else, specify that:
 # run_congruence_checks("C:/Users/<yourusername>/Documents/my_data_package")
 
-
+#EMLeditor::set_abstract(my_metadata, abstract, force = FALSE, NPS = TRUE)
 
 ## Upload your data package 
 # If everything checked out, you should be ready to upload your data package! 
@@ -548,7 +537,7 @@ run_congruence_checks()
 # files > 32Mb, you will need to upload them manually using the web interface on DataStore. 
 
 # this assumes your data package is in the current working directory
-upload_data_package()
+#upload_data_package()
 
 # If your data package is somewhere else, specify that:
 # upload_data_package("C:/Users/<yourusername>/Documents/my_data_package)
