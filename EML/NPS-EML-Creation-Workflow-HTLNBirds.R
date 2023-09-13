@@ -334,6 +334,8 @@ EML::write_eml(my_metadata, "my_metadata.xml")
 ################################################################################
 ################################################################################
 
+
+
 library(NPSdataverse)
 library(tidyverse)
 library(EML)
@@ -439,6 +441,7 @@ my_metadata <- set_int_rights(my_metadata, "public")
 
 my_metadata <- set_datastore_doi(my_metadata)
 
+
 #### Add information about a DRR (optional) 
 # If you are producing (or plan to produce) a DRR, add links to the DRR describing the data package.
 
@@ -515,15 +518,26 @@ write_eml(my_metadata, "HTLNBreedingBird_metadata.xml")
 
 ################################################################################
 ################################################################################
-#################### delete my_metadata.xml before running #####################
 
-#library(NPSdataverse)
-#library(tidyverse)
-#library(EML)
+
+library(NPSdataverse)
+library(tidyverse)
+library(EML)
 
 working_folder <- setwd("C:/users/growell/HTLN-BreedingBird-Data-Package/EML")
-
 my_metadata <- EML::read_eml("HTLNBreedingBird_metadata.xml")
+
+
+## Check for EML validity 
+#This is a good point to pause and test whether your EML is valid. 
+
+eml_validate(my_metadata) # <<<<<<<<<<<<<<<<<<< Good here!!
+
+################################################################################
+################################################################################
+#################### delete my_metadata.xml before running #####################
+
+
 
 ## Check your .xml file  
 # You're EML metadata file should be ready for upload. You can run some additional 
@@ -544,7 +558,7 @@ check_eml()
 
 # this assumes that the data package is the working directory
 
-run_congruence_checks() #<<<<<<<<<<<<<<<<< collector_value error
+run_congruence_checks() 
 
 # if your data package is somewhere else, specify that:
 # run_congruence_checks("C:/Users/<yourusername>/Documents/my_data_package")
